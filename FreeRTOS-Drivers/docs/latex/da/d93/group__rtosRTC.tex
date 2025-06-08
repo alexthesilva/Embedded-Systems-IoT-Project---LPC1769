@@ -1,0 +1,158 @@
+\hypertarget{group__rtosRTC}{}\doxysection{Real Time Clock}
+\label{group__rtosRTC}\index{Real Time Clock@{Real Time Clock}}
+
+
+This package provides the interface for the real time clock present in the L\+P\+C1769 microcontroller from N\+XP in a multi-\/threaded manner.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__rtosRTC_gaa4f797447e4636fc79c61a1dd6ae28a1}{R\+T\+O\+S\+\_\+\+R\+T\+C\+\_\+\+Q\+U\+E\+U\+E\+S\+\_\+\+S\+I\+ZE}}~5
+\item 
+\#define \mbox{\hyperlink{group__rtosRTC_ga7ae08afa09a750b40fe1fca7bc552a4d}{R\+T\+O\+S\+\_\+\+R\+T\+C\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}}~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{group__rtosRTC_ga7b8e312ccd693a3cc0c763b2d2e709d3}{rtos\+R\+T\+C\+\_\+\+Init}} (struct tm $\ast$date\+Time)
+\begin{DoxyCompactList}\small\item\em Initializes rtos\+R\+TC A\+PI and starts counting. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__rtosRTC_ga7e3b6d363dec49d52b917b2f8175e714}{rtos\+R\+T\+C\+\_\+\+Init\+Seconds}} (time\+\_\+t time)
+\begin{DoxyCompactList}\small\item\em Initializes rtos\+R\+TC and starts counting. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosRTC_ga006f6a4301ee557e096e8887228a8a46}{rtos\+R\+T\+C\+\_\+\+Get\+Value}} (struct tm $\ast$date\+Time)
+\begin{DoxyCompactList}\small\item\em Gets date and time from R\+TC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosRTC_gafbfaac88584b6eb0e5c712ffb16d0ea3}{rtos\+R\+T\+C\+\_\+\+Set\+Value}} (struct tm $\ast$date\+Time)
+\begin{DoxyCompactList}\small\item\em Sets date and time to R\+TC. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{group__rtosRTC_ga8ef9e7376104f9822f8946121b30c1ab}{rtos\+R\+T\+C\+\_\+\+Get\+Seconds}} (void)
+\begin{DoxyCompactList}\small\item\em Gets date and time from R\+TC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosRTC_ga04085ff82d9e8e839972ef053330161d}{rtos\+R\+T\+C\+\_\+\+Set\+Seconds}} (time\+\_\+t time)
+\begin{DoxyCompactList}\small\item\em Sets date and time from R\+TC. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This package provides the interface for the real time clock present in the L\+P\+C1769 microcontroller from N\+XP in a multi-\/threaded manner. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__rtosRTC_gaa4f797447e4636fc79c61a1dd6ae28a1}\label{group__rtosRTC_gaa4f797447e4636fc79c61a1dd6ae28a1}} 
+\index{Real Time Clock@{Real Time Clock}!RTOS\_RTC\_QUEUES\_SIZE@{RTOS\_RTC\_QUEUES\_SIZE}}
+\index{RTOS\_RTC\_QUEUES\_SIZE@{RTOS\_RTC\_QUEUES\_SIZE}!Real Time Clock@{Real Time Clock}}
+\doxysubsubsection{\texorpdfstring{RTOS\_RTC\_QUEUES\_SIZE}{RTOS\_RTC\_QUEUES\_SIZE}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+R\+T\+C\+\_\+\+Q\+U\+E\+U\+E\+S\+\_\+\+S\+I\+ZE~5}
+
+Queue size for the rtos\+R\+TC queues. \mbox{\Hypertarget{group__rtosRTC_ga7ae08afa09a750b40fe1fca7bc552a4d}\label{group__rtosRTC_ga7ae08afa09a750b40fe1fca7bc552a4d}} 
+\index{Real Time Clock@{Real Time Clock}!RTOS\_RTC\_TASK\_STACK\_SIZE@{RTOS\_RTC\_TASK\_STACK\_SIZE}}
+\index{RTOS\_RTC\_TASK\_STACK\_SIZE@{RTOS\_RTC\_TASK\_STACK\_SIZE}!Real Time Clock@{Real Time Clock}}
+\doxysubsubsection{\texorpdfstring{RTOS\_RTC\_TASK\_STACK\_SIZE}{RTOS\_RTC\_TASK\_STACK\_SIZE}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+R\+T\+C\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}
+
+Minimum stack size for the R\+TC managing task. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__rtosRTC_ga8ef9e7376104f9822f8946121b30c1ab}\label{group__rtosRTC_ga8ef9e7376104f9822f8946121b30c1ab}} 
+\index{Real Time Clock@{Real Time Clock}!rtosRTC\_GetSeconds@{rtosRTC\_GetSeconds}}
+\index{rtosRTC\_GetSeconds@{rtosRTC\_GetSeconds}!Real Time Clock@{Real Time Clock}}
+\doxysubsubsection{\texorpdfstring{rtosRTC\_GetSeconds()}{rtosRTC\_GetSeconds()}}
+{\footnotesize\ttfamily time\+\_\+t rtos\+R\+T\+C\+\_\+\+Get\+Seconds (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gets date and time from R\+TC. 
+
+\begin{DoxyReturn}{Returns}
+A C standard time\+\_\+t with the number of seconds since 01.\+01.\+1970 00\+:00\+:00 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosRTC_ga006f6a4301ee557e096e8887228a8a46}\label{group__rtosRTC_ga006f6a4301ee557e096e8887228a8a46}} 
+\index{Real Time Clock@{Real Time Clock}!rtosRTC\_GetValue@{rtosRTC\_GetValue}}
+\index{rtosRTC\_GetValue@{rtosRTC\_GetValue}!Real Time Clock@{Real Time Clock}}
+\doxysubsubsection{\texorpdfstring{rtosRTC\_GetValue()}{rtosRTC\_GetValue()}}
+{\footnotesize\ttfamily void rtos\+R\+T\+C\+\_\+\+Get\+Value (\begin{DoxyParamCaption}\item[{struct tm $\ast$}]{date\+Time }\end{DoxyParamCaption})}
+
+
+
+Gets date and time from R\+TC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$date\+Time} & A pointer to C standard structure tm to save data to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosRTC_ga7b8e312ccd693a3cc0c763b2d2e709d3}\label{group__rtosRTC_ga7b8e312ccd693a3cc0c763b2d2e709d3}} 
+\index{Real Time Clock@{Real Time Clock}!rtosRTC\_Init@{rtosRTC\_Init}}
+\index{rtosRTC\_Init@{rtosRTC\_Init}!Real Time Clock@{Real Time Clock}}
+\doxysubsubsection{\texorpdfstring{rtosRTC\_Init()}{rtosRTC\_Init()}}
+{\footnotesize\ttfamily bool rtos\+R\+T\+C\+\_\+\+Init (\begin{DoxyParamCaption}\item[{struct tm $\ast$}]{date\+Time }\end{DoxyParamCaption})}
+
+
+
+Initializes rtos\+R\+TC A\+PI and starts counting. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date\+Time} & A pointer to C standard structure tm. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If you power off the L\+P\+C\+Xpresso board the R\+TC will stop. 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosRTC_ga7e3b6d363dec49d52b917b2f8175e714}\label{group__rtosRTC_ga7e3b6d363dec49d52b917b2f8175e714}} 
+\index{Real Time Clock@{Real Time Clock}!rtosRTC\_InitSeconds@{rtosRTC\_InitSeconds}}
+\index{rtosRTC\_InitSeconds@{rtosRTC\_InitSeconds}!Real Time Clock@{Real Time Clock}}
+\doxysubsubsection{\texorpdfstring{rtosRTC\_InitSeconds()}{rtosRTC\_InitSeconds()}}
+{\footnotesize\ttfamily bool rtos\+R\+T\+C\+\_\+\+Init\+Seconds (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{time }\end{DoxyParamCaption})}
+
+
+
+Initializes rtos\+R\+TC and starts counting. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & A C standard time\+\_\+t value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If you use \mbox{\hyperlink{group__rtosRTC_ga7b8e312ccd693a3cc0c763b2d2e709d3}{rtos\+R\+T\+C\+\_\+\+Init}}, do not use this function. 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosRTC_ga04085ff82d9e8e839972ef053330161d}\label{group__rtosRTC_ga04085ff82d9e8e839972ef053330161d}} 
+\index{Real Time Clock@{Real Time Clock}!rtosRTC\_SetSeconds@{rtosRTC\_SetSeconds}}
+\index{rtosRTC\_SetSeconds@{rtosRTC\_SetSeconds}!Real Time Clock@{Real Time Clock}}
+\doxysubsubsection{\texorpdfstring{rtosRTC\_SetSeconds()}{rtosRTC\_SetSeconds()}}
+{\footnotesize\ttfamily void rtos\+R\+T\+C\+\_\+\+Set\+Seconds (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{time }\end{DoxyParamCaption})}
+
+
+
+Sets date and time from R\+TC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & A C standard time\+\_\+t with the number of seconds since 01.\+01.\+1970 00\+:00\+:00 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__rtosRTC_gafbfaac88584b6eb0e5c712ffb16d0ea3}\label{group__rtosRTC_gafbfaac88584b6eb0e5c712ffb16d0ea3}} 
+\index{Real Time Clock@{Real Time Clock}!rtosRTC\_SetValue@{rtosRTC\_SetValue}}
+\index{rtosRTC\_SetValue@{rtosRTC\_SetValue}!Real Time Clock@{Real Time Clock}}
+\doxysubsubsection{\texorpdfstring{rtosRTC\_SetValue()}{rtosRTC\_SetValue()}}
+{\footnotesize\ttfamily void rtos\+R\+T\+C\+\_\+\+Set\+Value (\begin{DoxyParamCaption}\item[{struct tm $\ast$}]{date\+Time }\end{DoxyParamCaption})}
+
+
+
+Sets date and time to R\+TC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$date\+Time} & A pointer to C standard structure tm with date and time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}

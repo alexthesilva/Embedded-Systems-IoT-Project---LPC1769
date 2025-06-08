@@ -1,0 +1,243 @@
+\hypertarget{group__LCD}{}\doxysection{Text L\+CD}
+\label{group__LCD}\index{Text LCD@{Text LCD}}
+
+
+This package provides the interface for driving 4-\/bit H\+D44780-\/based L\+C\+Ds used in L\+P\+C\+Xpresso development board based on L\+P\+C1769 from N\+XP.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__LCD_gadd727dddc29a757f507f30ee355ccba0}{L\+C\+D\+Text\+\_\+\+L\+I\+N\+ES}}~2
+\item 
+\#define \mbox{\hyperlink{group__LCD_gae0304a744b55bbfc24a672fcf4a5d4d6}{L\+C\+D\+Text\+\_\+\+C\+O\+L\+U\+M\+NS}}~16
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__LCD_gaf08b3a00e789773b6d3ff1cbd42aa6cb}{L\+C\+D\+Text\+\_\+\+Init}} ()
+\item 
+void \mbox{\hyperlink{group__LCD_gafcc571b369f3355923e69001977fae21}{L\+C\+D\+Text\+\_\+\+Write\+Char}} (char c)
+\item 
+void \mbox{\hyperlink{group__LCD_gab50a00c42339a1c06d5c1333563fe9cb}{L\+C\+D\+Text\+\_\+\+Write\+String}} (const char $\ast$str)
+\item 
+void \mbox{\hyperlink{group__LCD_ga4e16cbd3c5f2aca7ec0106e4f37fcd48}{L\+C\+D\+Text\+\_\+\+Write\+Line}} (const char $\ast$first\+Line, const char $\ast$second\+Line)
+\item 
+void \mbox{\hyperlink{group__LCD_gacab12388017eca37b7168fc1246c7734}{L\+C\+D\+Text\+\_\+\+Clear}} ()
+\item 
+void \mbox{\hyperlink{group__LCD_ga5a4a2be0a2d7121e6100f4407e4efa8d}{L\+C\+D\+Text\+\_\+\+Locate}} (int line, int column)
+\item 
+void \mbox{\hyperlink{group__LCD_gad0a5f8cbe0fa7ee3c6231ddb8e774a22}{L\+C\+D\+Text\+\_\+\+Cursor\+On}} (void)
+\item 
+void \mbox{\hyperlink{group__LCD_ga9d39a84bfc9806615150147623233f73}{L\+C\+D\+Text\+\_\+\+Cursor\+Off}} (void)
+\item 
+void \mbox{\hyperlink{group__LCD_ga3375b768752a6c245966fcf02457de34}{L\+C\+D\+Text\+\_\+\+Create\+Char}} (unsigned char location, unsigned char charmap\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{group__LCD_gae8cd66f765b9089a72a5818aecefc54c}{L\+C\+D\+Text\+\_\+\+On}} (void)
+\item 
+void \mbox{\hyperlink{group__LCD_ga7d28bb214432c5d7010db9683a885bed}{L\+C\+D\+Text\+\_\+\+Off}} (void)
+\item 
+void \mbox{\hyperlink{group__LCD_ga5797ce923cec266550ce040ea0f0d7dd}{L\+C\+D\+Text\+\_\+\+Printf}} (const char $\ast$fmt,...)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This package provides the interface for driving 4-\/bit H\+D44780-\/based L\+C\+Ds used in L\+P\+C\+Xpresso development board based on L\+P\+C1769 from N\+XP. 
+
+The L\+CD data bits are connect to the microcontroller L\+P\+C1769 as show in the follow table\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ L\+CD  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ L\+P\+C1769   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ L\+CD  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ L\+P\+C1769   }\\\cline{1-2}
+\endhead
+\PBS\centering D0 .. D3  &\PBS\centering Not connected   \\\cline{1-2}
+\PBS\centering D4 .. D7  &\PBS\centering P2.\+0 .. P2.\+3   \\\cline{1-2}
+\PBS\centering EN  &\PBS\centering P0.\+10   \\\cline{1-2}
+\PBS\centering RS  &\PBS\centering P0.\+11   \\\cline{1-2}
+\PBS\centering WR  &\PBS\centering G\+ND   \\\cline{1-2}
+\end{longtabu}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__LCD_gae0304a744b55bbfc24a672fcf4a5d4d6}\label{group__LCD_gae0304a744b55bbfc24a672fcf4a5d4d6}} 
+\index{Text LCD@{Text LCD}!LCDText\_COLUMNS@{LCDText\_COLUMNS}}
+\index{LCDText\_COLUMNS@{LCDText\_COLUMNS}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{LCDText\_COLUMNS}{LCDText\_COLUMNS}}
+{\footnotesize\ttfamily \#define L\+C\+D\+Text\+\_\+\+C\+O\+L\+U\+M\+NS~16}
+
+L\+CD number of columns \mbox{\Hypertarget{group__LCD_gadd727dddc29a757f507f30ee355ccba0}\label{group__LCD_gadd727dddc29a757f507f30ee355ccba0}} 
+\index{Text LCD@{Text LCD}!LCDText\_LINES@{LCDText\_LINES}}
+\index{LCDText\_LINES@{LCDText\_LINES}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{LCDText\_LINES}{LCDText\_LINES}}
+{\footnotesize\ttfamily \#define L\+C\+D\+Text\+\_\+\+L\+I\+N\+ES~2}
+
+L\+CD number of lines ~\newline
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__LCD_gacab12388017eca37b7168fc1246c7734}\label{group__LCD_gacab12388017eca37b7168fc1246c7734}} 
+\index{Text LCD@{Text LCD}!LCDText\_Clear@{LCDText\_Clear}}
+\index{LCDText\_Clear@{LCDText\_Clear}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{LCDText\_Clear()}{LCDText\_Clear()}}
+{\footnotesize\ttfamily void L\+C\+D\+Text\+\_\+\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clear the screen and locate cursor to home position (0,0)
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__LCD_ga3375b768752a6c245966fcf02457de34}\label{group__LCD_ga3375b768752a6c245966fcf02457de34}} 
+\index{Text LCD@{Text LCD}!LCDText\_CreateChar@{LCDText\_CreateChar}}
+\index{LCDText\_CreateChar@{LCDText\_CreateChar}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{LCDText\_CreateChar()}{LCDText\_CreateChar()}}
+{\footnotesize\ttfamily void L\+C\+D\+Text\+\_\+\+Create\+Char (\begin{DoxyParamCaption}\item[{unsigned char}]{location,  }\item[{unsigned char}]{charmap\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+User define character.
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & The new character position, \\
+\hline
+{\em charmap} & The user defined character values.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__LCD_ga9d39a84bfc9806615150147623233f73}\label{group__LCD_ga9d39a84bfc9806615150147623233f73}} 
+\index{Text LCD@{Text LCD}!LCDText\_CursorOff@{LCDText\_CursorOff}}
+\index{LCDText\_CursorOff@{LCDText\_CursorOff}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{LCDText\_CursorOff()}{LCDText\_CursorOff()}}
+{\footnotesize\ttfamily void L\+C\+D\+Text\+\_\+\+Cursor\+Off (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Turns cursor on.
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__LCD_gad0a5f8cbe0fa7ee3c6231ddb8e774a22}\label{group__LCD_gad0a5f8cbe0fa7ee3c6231ddb8e774a22}} 
+\index{Text LCD@{Text LCD}!LCDText\_CursorOn@{LCDText\_CursorOn}}
+\index{LCDText\_CursorOn@{LCDText\_CursorOn}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{LCDText\_CursorOn()}{LCDText\_CursorOn()}}
+{\footnotesize\ttfamily void L\+C\+D\+Text\+\_\+\+Cursor\+On (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Turns cursor on.
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__LCD_gaf08b3a00e789773b6d3ff1cbd42aa6cb}\label{group__LCD_gaf08b3a00e789773b6d3ff1cbd42aa6cb}} 
+\index{Text LCD@{Text LCD}!LCDText\_Init@{LCDText\_Init}}
+\index{LCDText\_Init@{LCDText\_Init}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{LCDText\_Init()}{LCDText\_Init()}}
+{\footnotesize\ttfamily void L\+C\+D\+Text\+\_\+\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initializes the L\+CD A\+PI.
+
+\begin{DoxyReturn}{Returns}
+None.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function must be called prior to any other L\+C\+D\+Text functions. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__LCD_ga5a4a2be0a2d7121e6100f4407e4efa8d}\label{group__LCD_ga5a4a2be0a2d7121e6100f4407e4efa8d}} 
+\index{Text LCD@{Text LCD}!LCDText\_Locate@{LCDText\_Locate}}
+\index{LCDText\_Locate@{LCDText\_Locate}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{LCDText\_Locate()}{LCDText\_Locate()}}
+{\footnotesize\ttfamily void L\+C\+D\+Text\+\_\+\+Locate (\begin{DoxyParamCaption}\item[{int}]{line,  }\item[{int}]{column }\end{DoxyParamCaption})}
+
+Locate cursor to a screen line and column
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & The vertical position from the top, indexed from 0 \\
+\hline
+{\em column} & The horizontal position from the left, indexed from 0\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__LCD_ga7d28bb214432c5d7010db9683a885bed}\label{group__LCD_ga7d28bb214432c5d7010db9683a885bed}} 
+\index{Text LCD@{Text LCD}!LCDText\_Off@{LCDText\_Off}}
+\index{LCDText\_Off@{LCDText\_Off}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{LCDText\_Off()}{LCDText\_Off()}}
+{\footnotesize\ttfamily void L\+C\+D\+Text\+\_\+\+Off (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Turns display off.
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__LCD_gae8cd66f765b9089a72a5818aecefc54c}\label{group__LCD_gae8cd66f765b9089a72a5818aecefc54c}} 
+\index{Text LCD@{Text LCD}!LCDText\_On@{LCDText\_On}}
+\index{LCDText\_On@{LCDText\_On}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{LCDText\_On()}{LCDText\_On()}}
+{\footnotesize\ttfamily void L\+C\+D\+Text\+\_\+\+On (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Turns display on.
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__LCD_ga5797ce923cec266550ce040ea0f0d7dd}\label{group__LCD_ga5797ce923cec266550ce040ea0f0d7dd}} 
+\index{Text LCD@{Text LCD}!LCDText\_Printf@{LCDText\_Printf}}
+\index{LCDText\_Printf@{LCDText\_Printf}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{LCDText\_Printf()}{LCDText\_Printf()}}
+{\footnotesize\ttfamily void L\+C\+D\+Text\+\_\+\+Printf (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+Write a formated string to the L\+CD
+
+
+\begin{DoxyParams}{Parameters}
+{\em fmt} & A printf-\/style format string, followed by the variables to use in formating the string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__LCD_gafcc571b369f3355923e69001977fae21}\label{group__LCD_gafcc571b369f3355923e69001977fae21}} 
+\index{Text LCD@{Text LCD}!LCDText\_WriteChar@{LCDText\_WriteChar}}
+\index{LCDText\_WriteChar@{LCDText\_WriteChar}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{LCDText\_WriteChar()}{LCDText\_WriteChar()}}
+{\footnotesize\ttfamily void L\+C\+D\+Text\+\_\+\+Write\+Char (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+Write a character to the L\+CD
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The character to write to the display \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__LCD_ga4e16cbd3c5f2aca7ec0106e4f37fcd48}\label{group__LCD_ga4e16cbd3c5f2aca7ec0106e4f37fcd48}} 
+\index{Text LCD@{Text LCD}!LCDText\_WriteLine@{LCDText\_WriteLine}}
+\index{LCDText\_WriteLine@{LCDText\_WriteLine}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{LCDText\_WriteLine()}{LCDText\_WriteLine()}}
+{\footnotesize\ttfamily void L\+C\+D\+Text\+\_\+\+Write\+Line (\begin{DoxyParamCaption}\item[{const char $\ast$}]{first\+Line,  }\item[{const char $\ast$}]{second\+Line }\end{DoxyParamCaption})}
+
+Write a C-\/string to specified line of the L\+CD
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+Line} & The C-\/string to write to the first of display. If N\+U\+LL nothing is write. \\
+\hline
+{\em second\+Line} & The C-\/string to write to the second of display. If N\+U\+LL nothing is write.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__LCD_gab50a00c42339a1c06d5c1333563fe9cb}\label{group__LCD_gab50a00c42339a1c06d5c1333563fe9cb}} 
+\index{Text LCD@{Text LCD}!LCDText\_WriteString@{LCDText\_WriteString}}
+\index{LCDText\_WriteString@{LCDText\_WriteString}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{LCDText\_WriteString()}{LCDText\_WriteString()}}
+{\footnotesize\ttfamily void L\+C\+D\+Text\+\_\+\+Write\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})}
+
+Write a C-\/string to the L\+CD
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The C-\/string to write to the display \\
+\hline
+\end{DoxyParams}

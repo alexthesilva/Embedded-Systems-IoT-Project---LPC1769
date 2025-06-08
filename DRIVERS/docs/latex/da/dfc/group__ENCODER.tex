@@ -1,0 +1,140 @@
+\hypertarget{group__ENCODER}{}\doxysection{Rotary and press button.}
+\label{group__ENCODER}\index{Rotary and press button.@{Rotary and press button.}}
+
+
+This package provides the interface for driving the rotary and the push button.  
+
+
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__ENCODER_gaae24137332b04fff6d94f236697b2e6f}\label{group__ENCODER_gaae24137332b04fff6d94f236697b2e6f}} 
+typedef enum \mbox{\hyperlink{group__ENCODER_ga94f7389d205c78830a5441370d7870fd}{Button\+Enum}} \mbox{\hyperlink{group__ENCODER_gaae24137332b04fff6d94f236697b2e6f}{E\+N\+C\+O\+D\+E\+R\+\_\+\+Button\+Value\+Type}}
+\begin{DoxyCompactList}\small\item\em Push button state structures definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__ENCODER_ga94f7389d205c78830a5441370d7870fd}{Button\+Enum}} \{ \newline
+\mbox{\hyperlink{group__ENCODER_gga94f7389d205c78830a5441370d7870fdaa3ecb4a755ea389c5f0f0affff0459bb}{B\+U\+T\+T\+O\+N\+\_\+\+N\+O\+T\+P\+R\+E\+S\+S\+ED}}, 
+\mbox{\hyperlink{group__ENCODER_gga94f7389d205c78830a5441370d7870fdabd19dea9e19d02d7d39464dfdde1e48b}{B\+U\+T\+T\+O\+N\+\_\+\+P\+R\+E\+S\+S\+ED}}, 
+\mbox{\hyperlink{group__ENCODER_gga94f7389d205c78830a5441370d7870fda60c06ab1325643b750ee17c1e75af06c}{B\+U\+T\+T\+O\+N\+\_\+\+H\+E\+LD}}, 
+\mbox{\hyperlink{group__ENCODER_gga94f7389d205c78830a5441370d7870fdaea2b5dae08e5a11bd2c23252c11497da}{B\+U\+T\+T\+O\+N\+\_\+\+R\+E\+L\+E\+A\+SE}}, 
+\newline
+\mbox{\hyperlink{group__ENCODER_gga94f7389d205c78830a5441370d7870fdab63737bf45cac6920637d10043875853}{B\+U\+T\+T\+O\+N\+\_\+\+C\+L\+I\+C\+K\+ED}}, 
+\mbox{\hyperlink{group__ENCODER_gga94f7389d205c78830a5441370d7870fda25f18cba94023471f6e4dc39ffa84b98}{B\+U\+T\+T\+O\+N\+\_\+\+D\+C\+L\+I\+C\+K\+ED}}
+ \}
+\begin{DoxyCompactList}\small\item\em Push button state structures definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__ENCODER_gabbce733c2531f81a1a957a2aeff870ab}{E\+N\+C\+O\+D\+E\+R\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes Encoder. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__ENCODER_gaae24137332b04fff6d94f236697b2e6f}{E\+N\+C\+O\+D\+E\+R\+\_\+\+Button\+Value\+Type}} \mbox{\hyperlink{group__ENCODER_ga02cdf86fb57f73ddcdbb88690dc28f36}{E\+N\+C\+O\+D\+E\+R\+\_\+\+Get\+Button}} (void)
+\begin{DoxyCompactList}\small\item\em Gets the value of the push button. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__ENCODER_ga1543f94837ea69610f1ae91c9a464081}{E\+N\+C\+O\+D\+E\+R\+\_\+\+Get\+Value}} (void)
+\begin{DoxyCompactList}\small\item\em Gets the value of the rotary button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This package provides the interface for driving the rotary and the push button. 
+
+The rotary data bits are connect to the microcontroller L\+P\+C1769 as show in the follow table\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Rotary Button  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ L\+P\+C1769   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Rotary Button  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ L\+P\+C1769   }\\\cline{1-2}
+\endhead
+\PBS\centering C\+LK  &\PBS\centering P0.\+3   \\\cline{1-2}
+\PBS\centering DT  &\PBS\centering P0.\+2   \\\cline{1-2}
+\PBS\centering SW  &\PBS\centering P2.\+13   \\\cline{1-2}
+\PBS\centering +  &\PBS\centering 3V3   \\\cline{1-2}
+\end{longtabu}
+
+
+The driver has the following behavior\+: i) two steps to vary in the same direction. i) one step when the inversion is performed.
+
+After initialization its assume that the direction is the clockwise. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__ENCODER_ga94f7389d205c78830a5441370d7870fd}\label{group__ENCODER_ga94f7389d205c78830a5441370d7870fd}} 
+\index{Rotary and press button.@{Rotary and press button.}!ButtonEnum@{ButtonEnum}}
+\index{ButtonEnum@{ButtonEnum}!Rotary and press button.@{Rotary and press button.}}
+\doxysubsubsection{\texorpdfstring{ButtonEnum}{ButtonEnum}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__ENCODER_ga94f7389d205c78830a5441370d7870fd}{Button\+Enum}}}
+
+
+
+Push button state structures definition. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUTTON\_NOTPRESSED@{BUTTON\_NOTPRESSED}!Rotary and press button.@{Rotary and press button.}}\index{Rotary and press button.@{Rotary and press button.}!BUTTON\_NOTPRESSED@{BUTTON\_NOTPRESSED}}}\mbox{\Hypertarget{group__ENCODER_gga94f7389d205c78830a5441370d7870fdaa3ecb4a755ea389c5f0f0affff0459bb}\label{group__ENCODER_gga94f7389d205c78830a5441370d7870fdaa3ecb4a755ea389c5f0f0affff0459bb}} 
+B\+U\+T\+T\+O\+N\+\_\+\+N\+O\+T\+P\+R\+E\+S\+S\+ED&Button not pressed \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUTTON\_PRESSED@{BUTTON\_PRESSED}!Rotary and press button.@{Rotary and press button.}}\index{Rotary and press button.@{Rotary and press button.}!BUTTON\_PRESSED@{BUTTON\_PRESSED}}}\mbox{\Hypertarget{group__ENCODER_gga94f7389d205c78830a5441370d7870fdabd19dea9e19d02d7d39464dfdde1e48b}\label{group__ENCODER_gga94f7389d205c78830a5441370d7870fdabd19dea9e19d02d7d39464dfdde1e48b}} 
+B\+U\+T\+T\+O\+N\+\_\+\+P\+R\+E\+S\+S\+ED&Button pressed \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUTTON\_HELD@{BUTTON\_HELD}!Rotary and press button.@{Rotary and press button.}}\index{Rotary and press button.@{Rotary and press button.}!BUTTON\_HELD@{BUTTON\_HELD}}}\mbox{\Hypertarget{group__ENCODER_gga94f7389d205c78830a5441370d7870fda60c06ab1325643b750ee17c1e75af06c}\label{group__ENCODER_gga94f7389d205c78830a5441370d7870fda60c06ab1325643b750ee17c1e75af06c}} 
+B\+U\+T\+T\+O\+N\+\_\+\+H\+E\+LD&Button held (still pressed) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUTTON\_RELEASE@{BUTTON\_RELEASE}!Rotary and press button.@{Rotary and press button.}}\index{Rotary and press button.@{Rotary and press button.}!BUTTON\_RELEASE@{BUTTON\_RELEASE}}}\mbox{\Hypertarget{group__ENCODER_gga94f7389d205c78830a5441370d7870fdaea2b5dae08e5a11bd2c23252c11497da}\label{group__ENCODER_gga94f7389d205c78830a5441370d7870fdaea2b5dae08e5a11bd2c23252c11497da}} 
+B\+U\+T\+T\+O\+N\+\_\+\+R\+E\+L\+E\+A\+SE&Button released \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUTTON\_CLICKED@{BUTTON\_CLICKED}!Rotary and press button.@{Rotary and press button.}}\index{Rotary and press button.@{Rotary and press button.}!BUTTON\_CLICKED@{BUTTON\_CLICKED}}}\mbox{\Hypertarget{group__ENCODER_gga94f7389d205c78830a5441370d7870fdab63737bf45cac6920637d10043875853}\label{group__ENCODER_gga94f7389d205c78830a5441370d7870fdab63737bf45cac6920637d10043875853}} 
+B\+U\+T\+T\+O\+N\+\_\+\+C\+L\+I\+C\+K\+ED&Button short pressed and released \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUTTON\_DCLICKED@{BUTTON\_DCLICKED}!Rotary and press button.@{Rotary and press button.}}\index{Rotary and press button.@{Rotary and press button.}!BUTTON\_DCLICKED@{BUTTON\_DCLICKED}}}\mbox{\Hypertarget{group__ENCODER_gga94f7389d205c78830a5441370d7870fda25f18cba94023471f6e4dc39ffa84b98}\label{group__ENCODER_gga94f7389d205c78830a5441370d7870fda25f18cba94023471f6e4dc39ffa84b98}} 
+B\+U\+T\+T\+O\+N\+\_\+\+D\+C\+L\+I\+C\+K\+ED&Button double short pressed and released \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__ENCODER_ga02cdf86fb57f73ddcdbb88690dc28f36}\label{group__ENCODER_ga02cdf86fb57f73ddcdbb88690dc28f36}} 
+\index{Rotary and press button.@{Rotary and press button.}!ENCODER\_GetButton@{ENCODER\_GetButton}}
+\index{ENCODER\_GetButton@{ENCODER\_GetButton}!Rotary and press button.@{Rotary and press button.}}
+\doxysubsubsection{\texorpdfstring{ENCODER\_GetButton()}{ENCODER\_GetButton()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__ENCODER_gaae24137332b04fff6d94f236697b2e6f}{E\+N\+C\+O\+D\+E\+R\+\_\+\+Button\+Value\+Type}} E\+N\+C\+O\+D\+E\+R\+\_\+\+Get\+Button (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gets the value of the push button. 
+
+\begin{DoxyReturn}{Returns}
+A valid state of the push button (see \mbox{\hyperlink{group__ENCODER_gaae24137332b04fff6d94f236697b2e6f}{E\+N\+C\+O\+D\+E\+R\+\_\+\+Button\+Value\+Type}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__ENCODER_ga1543f94837ea69610f1ae91c9a464081}\label{group__ENCODER_ga1543f94837ea69610f1ae91c9a464081}} 
+\index{Rotary and press button.@{Rotary and press button.}!ENCODER\_GetValue@{ENCODER\_GetValue}}
+\index{ENCODER\_GetValue@{ENCODER\_GetValue}!Rotary and press button.@{Rotary and press button.}}
+\doxysubsubsection{\texorpdfstring{ENCODER\_GetValue()}{ENCODER\_GetValue()}}
+{\footnotesize\ttfamily int E\+N\+C\+O\+D\+E\+R\+\_\+\+Get\+Value (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gets the value of the rotary button. 
+
+\begin{DoxyReturn}{Returns}
+0 if not rotate. If rotate returns 1 if was clockwise or -\/1 if was anticlockwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__ENCODER_gabbce733c2531f81a1a957a2aeff870ab}\label{group__ENCODER_gabbce733c2531f81a1a957a2aeff870ab}} 
+\index{Rotary and press button.@{Rotary and press button.}!ENCODER\_Init@{ENCODER\_Init}}
+\index{ENCODER\_Init@{ENCODER\_Init}!Rotary and press button.@{Rotary and press button.}}
+\doxysubsubsection{\texorpdfstring{ENCODER\_Init()}{ENCODER\_Init()}}
+{\footnotesize\ttfamily void E\+N\+C\+O\+D\+E\+R\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initializes Encoder. 
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}

@@ -1,0 +1,162 @@
+\hypertarget{group__rtosENCODER}{}\doxysection{E\+N\+C\+O\+D\+ER}
+\label{group__rtosENCODER}\index{ENCODER@{ENCODER}}
+
+
+This package provides the interface for driving the rotary and the push button.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__rtosENCODER_gad2a9fcd7e4cd6f79b61304993644e30f}{R\+T\+O\+S\+\_\+\+E\+N\+C\+O\+D\+E\+R\+\_\+\+Q\+U\+E\+U\+E\+S\+\_\+\+S\+I\+ZE}}~5
+\item 
+\#define \mbox{\hyperlink{group__rtosENCODER_ga5aed7aad2d7c7f40ce7296f32c46da3b}{R\+T\+O\+S\+\_\+\+E\+N\+C\+O\+D\+E\+R\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}}~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__rtosENCODER_gaae24137332b04fff6d94f236697b2e6f}\label{group__rtosENCODER_gaae24137332b04fff6d94f236697b2e6f}} 
+typedef enum \mbox{\hyperlink{group__rtosENCODER_ga94f7389d205c78830a5441370d7870fd}{Button\+Enum}} \mbox{\hyperlink{group__rtosENCODER_gaae24137332b04fff6d94f236697b2e6f}{E\+N\+C\+O\+D\+E\+R\+\_\+\+Button\+Value\+Type}}
+\begin{DoxyCompactList}\small\item\em Push button state structures definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__rtosENCODER_ga94f7389d205c78830a5441370d7870fd}{Button\+Enum}} \{ \newline
+\mbox{\hyperlink{group__rtosENCODER_gga94f7389d205c78830a5441370d7870fdaa3ecb4a755ea389c5f0f0affff0459bb}{B\+U\+T\+T\+O\+N\+\_\+\+N\+O\+T\+P\+R\+E\+S\+S\+ED}}, 
+\mbox{\hyperlink{group__rtosENCODER_gga94f7389d205c78830a5441370d7870fdabd19dea9e19d02d7d39464dfdde1e48b}{B\+U\+T\+T\+O\+N\+\_\+\+P\+R\+E\+S\+S\+ED}}, 
+\mbox{\hyperlink{group__rtosENCODER_gga94f7389d205c78830a5441370d7870fda60c06ab1325643b750ee17c1e75af06c}{B\+U\+T\+T\+O\+N\+\_\+\+H\+E\+LD}}, 
+\mbox{\hyperlink{group__rtosENCODER_gga94f7389d205c78830a5441370d7870fdaea2b5dae08e5a11bd2c23252c11497da}{B\+U\+T\+T\+O\+N\+\_\+\+R\+E\+L\+E\+A\+SE}}, 
+\newline
+\mbox{\hyperlink{group__rtosENCODER_gga94f7389d205c78830a5441370d7870fdab63737bf45cac6920637d10043875853}{B\+U\+T\+T\+O\+N\+\_\+\+C\+L\+I\+C\+K\+ED}}, 
+\mbox{\hyperlink{group__rtosENCODER_gga94f7389d205c78830a5441370d7870fda25f18cba94023471f6e4dc39ffa84b98}{B\+U\+T\+T\+O\+N\+\_\+\+D\+C\+L\+I\+C\+K\+ED}}
+ \}
+\begin{DoxyCompactList}\small\item\em Push button state structures definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{group__rtosENCODER_gaf4598bad6daad1f74a603ea4093bf8ff}{rtos\+E\+N\+C\+O\+D\+E\+R\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes Encoder. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__rtosENCODER_gaae24137332b04fff6d94f236697b2e6f}{E\+N\+C\+O\+D\+E\+R\+\_\+\+Button\+Value\+Type}} \mbox{\hyperlink{group__rtosENCODER_gab0d307581a7ca9e3e5abca5644ce312c}{rtos\+E\+N\+C\+O\+D\+E\+R\+\_\+\+Get\+Button}} (void)
+\begin{DoxyCompactList}\small\item\em Gets the value of the push button. \end{DoxyCompactList}\item 
+E\+N\+C\+O\+D\+E\+R\+\_\+\+Rotation\+Value\+Type \mbox{\hyperlink{group__rtosENCODER_ga8b43f9e742bea0d62c1884b457496b1e}{rtos\+E\+N\+C\+O\+D\+E\+R\+\_\+\+Get\+Value}} (void)
+\begin{DoxyCompactList}\small\item\em Gets the value of the rotary button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This package provides the interface for driving the rotary and the push button. 
+
+The rotary data bits are connected to the L\+P\+C1769 microcontroller as shown in the following table\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Rotary Button  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ L\+P\+C1769   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Rotary Button  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ L\+P\+C1769   }\\\cline{1-2}
+\endhead
+\PBS\centering C\+LK  &\PBS\centering P0.\+3   \\\cline{1-2}
+\PBS\centering DT  &\PBS\centering P0.\+2   \\\cline{1-2}
+\PBS\centering SW  &\PBS\centering P2.\+13   \\\cline{1-2}
+\PBS\centering +  &\PBS\centering 3V3   \\\cline{1-2}
+\end{longtabu}
+
+
+The driver has the following behavior\+: i) two steps to vary in the same direction. i) one step when an inversion is performed.
+
+After initialization clockwise direction is assumed. 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__rtosENCODER_gad2a9fcd7e4cd6f79b61304993644e30f}\label{group__rtosENCODER_gad2a9fcd7e4cd6f79b61304993644e30f}} 
+\index{ENCODER@{ENCODER}!RTOS\_ENCODER\_QUEUES\_SIZE@{RTOS\_ENCODER\_QUEUES\_SIZE}}
+\index{RTOS\_ENCODER\_QUEUES\_SIZE@{RTOS\_ENCODER\_QUEUES\_SIZE}!ENCODER@{ENCODER}}
+\doxysubsubsection{\texorpdfstring{RTOS\_ENCODER\_QUEUES\_SIZE}{RTOS\_ENCODER\_QUEUES\_SIZE}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+E\+N\+C\+O\+D\+E\+R\+\_\+\+Q\+U\+E\+U\+E\+S\+\_\+\+S\+I\+ZE~5}
+
+Queue size for the rtos\+E\+N\+C\+O\+D\+ER queues. \mbox{\Hypertarget{group__rtosENCODER_ga5aed7aad2d7c7f40ce7296f32c46da3b}\label{group__rtosENCODER_ga5aed7aad2d7c7f40ce7296f32c46da3b}} 
+\index{ENCODER@{ENCODER}!RTOS\_ENCODER\_TASK\_STACK\_SIZE@{RTOS\_ENCODER\_TASK\_STACK\_SIZE}}
+\index{RTOS\_ENCODER\_TASK\_STACK\_SIZE@{RTOS\_ENCODER\_TASK\_STACK\_SIZE}!ENCODER@{ENCODER}}
+\doxysubsubsection{\texorpdfstring{RTOS\_ENCODER\_TASK\_STACK\_SIZE}{RTOS\_ENCODER\_TASK\_STACK\_SIZE}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+E\+N\+C\+O\+D\+E\+R\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}
+
+Minimum stack size for the E\+N\+C\+O\+D\+ER managing task. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__rtosENCODER_ga94f7389d205c78830a5441370d7870fd}\label{group__rtosENCODER_ga94f7389d205c78830a5441370d7870fd}} 
+\index{ENCODER@{ENCODER}!ButtonEnum@{ButtonEnum}}
+\index{ButtonEnum@{ButtonEnum}!ENCODER@{ENCODER}}
+\doxysubsubsection{\texorpdfstring{ButtonEnum}{ButtonEnum}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__rtosENCODER_ga94f7389d205c78830a5441370d7870fd}{Button\+Enum}}}
+
+
+
+Push button state structures definition. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUTTON\_NOTPRESSED@{BUTTON\_NOTPRESSED}!ENCODER@{ENCODER}}\index{ENCODER@{ENCODER}!BUTTON\_NOTPRESSED@{BUTTON\_NOTPRESSED}}}\mbox{\Hypertarget{group__rtosENCODER_gga94f7389d205c78830a5441370d7870fdaa3ecb4a755ea389c5f0f0affff0459bb}\label{group__rtosENCODER_gga94f7389d205c78830a5441370d7870fdaa3ecb4a755ea389c5f0f0affff0459bb}} 
+B\+U\+T\+T\+O\+N\+\_\+\+N\+O\+T\+P\+R\+E\+S\+S\+ED&Button not pressed \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUTTON\_PRESSED@{BUTTON\_PRESSED}!ENCODER@{ENCODER}}\index{ENCODER@{ENCODER}!BUTTON\_PRESSED@{BUTTON\_PRESSED}}}\mbox{\Hypertarget{group__rtosENCODER_gga94f7389d205c78830a5441370d7870fdabd19dea9e19d02d7d39464dfdde1e48b}\label{group__rtosENCODER_gga94f7389d205c78830a5441370d7870fdabd19dea9e19d02d7d39464dfdde1e48b}} 
+B\+U\+T\+T\+O\+N\+\_\+\+P\+R\+E\+S\+S\+ED&Button pressed \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUTTON\_HELD@{BUTTON\_HELD}!ENCODER@{ENCODER}}\index{ENCODER@{ENCODER}!BUTTON\_HELD@{BUTTON\_HELD}}}\mbox{\Hypertarget{group__rtosENCODER_gga94f7389d205c78830a5441370d7870fda60c06ab1325643b750ee17c1e75af06c}\label{group__rtosENCODER_gga94f7389d205c78830a5441370d7870fda60c06ab1325643b750ee17c1e75af06c}} 
+B\+U\+T\+T\+O\+N\+\_\+\+H\+E\+LD&Button held (still pressed) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUTTON\_RELEASE@{BUTTON\_RELEASE}!ENCODER@{ENCODER}}\index{ENCODER@{ENCODER}!BUTTON\_RELEASE@{BUTTON\_RELEASE}}}\mbox{\Hypertarget{group__rtosENCODER_gga94f7389d205c78830a5441370d7870fdaea2b5dae08e5a11bd2c23252c11497da}\label{group__rtosENCODER_gga94f7389d205c78830a5441370d7870fdaea2b5dae08e5a11bd2c23252c11497da}} 
+B\+U\+T\+T\+O\+N\+\_\+\+R\+E\+L\+E\+A\+SE&Button released \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUTTON\_CLICKED@{BUTTON\_CLICKED}!ENCODER@{ENCODER}}\index{ENCODER@{ENCODER}!BUTTON\_CLICKED@{BUTTON\_CLICKED}}}\mbox{\Hypertarget{group__rtosENCODER_gga94f7389d205c78830a5441370d7870fdab63737bf45cac6920637d10043875853}\label{group__rtosENCODER_gga94f7389d205c78830a5441370d7870fdab63737bf45cac6920637d10043875853}} 
+B\+U\+T\+T\+O\+N\+\_\+\+C\+L\+I\+C\+K\+ED&Button short pressed and released \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUTTON\_DCLICKED@{BUTTON\_DCLICKED}!ENCODER@{ENCODER}}\index{ENCODER@{ENCODER}!BUTTON\_DCLICKED@{BUTTON\_DCLICKED}}}\mbox{\Hypertarget{group__rtosENCODER_gga94f7389d205c78830a5441370d7870fda25f18cba94023471f6e4dc39ffa84b98}\label{group__rtosENCODER_gga94f7389d205c78830a5441370d7870fda25f18cba94023471f6e4dc39ffa84b98}} 
+B\+U\+T\+T\+O\+N\+\_\+\+D\+C\+L\+I\+C\+K\+ED&Button double short pressed and released \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__rtosENCODER_gab0d307581a7ca9e3e5abca5644ce312c}\label{group__rtosENCODER_gab0d307581a7ca9e3e5abca5644ce312c}} 
+\index{ENCODER@{ENCODER}!rtosENCODER\_GetButton@{rtosENCODER\_GetButton}}
+\index{rtosENCODER\_GetButton@{rtosENCODER\_GetButton}!ENCODER@{ENCODER}}
+\doxysubsubsection{\texorpdfstring{rtosENCODER\_GetButton()}{rtosENCODER\_GetButton()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__rtosENCODER_gaae24137332b04fff6d94f236697b2e6f}{E\+N\+C\+O\+D\+E\+R\+\_\+\+Button\+Value\+Type}} rtos\+E\+N\+C\+O\+D\+E\+R\+\_\+\+Get\+Button (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gets the value of the push button. 
+
+\begin{DoxyReturn}{Returns}
+A valid state of the push button (see \mbox{\hyperlink{group__rtosENCODER_gaae24137332b04fff6d94f236697b2e6f}{E\+N\+C\+O\+D\+E\+R\+\_\+\+Button\+Value\+Type}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosENCODER_ga8b43f9e742bea0d62c1884b457496b1e}\label{group__rtosENCODER_ga8b43f9e742bea0d62c1884b457496b1e}} 
+\index{ENCODER@{ENCODER}!rtosENCODER\_GetValue@{rtosENCODER\_GetValue}}
+\index{rtosENCODER\_GetValue@{rtosENCODER\_GetValue}!ENCODER@{ENCODER}}
+\doxysubsubsection{\texorpdfstring{rtosENCODER\_GetValue()}{rtosENCODER\_GetValue()}}
+{\footnotesize\ttfamily E\+N\+C\+O\+D\+E\+R\+\_\+\+Rotation\+Value\+Type rtos\+E\+N\+C\+O\+D\+E\+R\+\_\+\+Get\+Value (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Gets the value of the rotary button. 
+
+\begin{DoxyReturn}{Returns}
+0 no rotation has beed performed; returns 1 or -\/1 in case of clockwise and counter-\/clockwise rotation, respectively. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosENCODER_gaf4598bad6daad1f74a603ea4093bf8ff}\label{group__rtosENCODER_gaf4598bad6daad1f74a603ea4093bf8ff}} 
+\index{ENCODER@{ENCODER}!rtosENCODER\_Init@{rtosENCODER\_Init}}
+\index{rtosENCODER\_Init@{rtosENCODER\_Init}!ENCODER@{ENCODER}}
+\doxysubsubsection{\texorpdfstring{rtosENCODER\_Init()}{rtosENCODER\_Init()}}
+{\footnotesize\ttfamily bool rtos\+E\+N\+C\+O\+D\+E\+R\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initializes Encoder. 
+
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise 
+\end{DoxyReturn}

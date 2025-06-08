@@ -1,0 +1,10 @@
+../src/main.c:49:6:RTOS_Init	8	static
+../src/main.c:68:6:NETWORK_Init	8	static
+../src/main.c:76:6:APPLICATION_Init	16	static
+../src/main.c:83:6:appMENU_NormalAffixHandler	48	static
+../src/main.c:104:6:appMENU_NormalManageLightISR	16	static
+../src/main.c:131:6:appMENU_NormalPublishISR	24	static
+../src/main.c:148:6:appMENU_NormalMode	56	static
+../src/main.c:188:6:appMENU_MaintenanceMode	144	static
+../src/main.c:220:5:main	8	static
+../src/main.c:245:6:vApplicationStackOverflowHook	16	static

@@ -1,0 +1,123 @@
+\hypertarget{group__rtosLED}{}\doxysection{L\+ED}
+\label{group__rtosLED}\index{LED@{LED}}
+
+
+This package provides the capabilities to interact with the built-\/in L\+ED in the L\+P\+C\+Xpresso development board based on L\+P\+C1769 from N\+XP in a multi-\/threaded manner.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__rtosLED_gaf70be3b892f5bce12ff41f8bec961c29}{R\+T\+O\+S\+\_\+\+L\+E\+D\+\_\+\+Q\+U\+E\+U\+E\+S\+\_\+\+S\+I\+ZE}}~5
+\item 
+\#define \mbox{\hyperlink{group__rtosLED_ga55918fb7fb58fd53268e52af83f2d172}{R\+T\+O\+S\+\_\+\+L\+E\+D\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}}~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{group__rtosLED_gae96c018ff2d55d66f80deb17f7620b63}{rtos\+L\+E\+D\+\_\+\+Init}} (bool state)
+\begin{DoxyCompactList}\small\item\em Initializes the rtos\+L\+ED A\+PI. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__rtosLED_ga670c7f04c412b23f7b5ea697f06d0b09}{rtos\+L\+E\+D\+\_\+\+Get\+State}} (void)
+\begin{DoxyCompactList}\small\item\em Get the current L\+ED state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosLED_ga565b1ce6cefa60de172fdd92b9248e17}{rtos\+L\+E\+D\+\_\+\+On}} (void)
+\begin{DoxyCompactList}\small\item\em Turn the L\+ED on. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosLED_ga403d9e0c5972d26354f24b932cc55139}{rtos\+L\+E\+D\+\_\+\+Off}} (void)
+\begin{DoxyCompactList}\small\item\em Turn the L\+ED off. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosLED_gac0a462e0633b244889b662df318cde9a}{rtos\+L\+E\+D\+\_\+\+Toggle}} (void)
+\begin{DoxyCompactList}\small\item\em Toggle the L\+ED. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This package provides the capabilities to interact with the built-\/in L\+ED in the L\+P\+C\+Xpresso development board based on L\+P\+C1769 from N\+XP in a multi-\/threaded manner. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__rtosLED_gaf70be3b892f5bce12ff41f8bec961c29}\label{group__rtosLED_gaf70be3b892f5bce12ff41f8bec961c29}} 
+\index{LED@{LED}!RTOS\_LED\_QUEUES\_SIZE@{RTOS\_LED\_QUEUES\_SIZE}}
+\index{RTOS\_LED\_QUEUES\_SIZE@{RTOS\_LED\_QUEUES\_SIZE}!LED@{LED}}
+\doxysubsubsection{\texorpdfstring{RTOS\_LED\_QUEUES\_SIZE}{RTOS\_LED\_QUEUES\_SIZE}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+L\+E\+D\+\_\+\+Q\+U\+E\+U\+E\+S\+\_\+\+S\+I\+ZE~5}
+
+Queue size for the rtos\+L\+ED queues. \mbox{\Hypertarget{group__rtosLED_ga55918fb7fb58fd53268e52af83f2d172}\label{group__rtosLED_ga55918fb7fb58fd53268e52af83f2d172}} 
+\index{LED@{LED}!RTOS\_LED\_TASK\_STACK\_SIZE@{RTOS\_LED\_TASK\_STACK\_SIZE}}
+\index{RTOS\_LED\_TASK\_STACK\_SIZE@{RTOS\_LED\_TASK\_STACK\_SIZE}!LED@{LED}}
+\doxysubsubsection{\texorpdfstring{RTOS\_LED\_TASK\_STACK\_SIZE}{RTOS\_LED\_TASK\_STACK\_SIZE}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+L\+E\+D\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}
+
+Minimum stack size for the L\+ED managing task. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__rtosLED_ga670c7f04c412b23f7b5ea697f06d0b09}\label{group__rtosLED_ga670c7f04c412b23f7b5ea697f06d0b09}} 
+\index{LED@{LED}!rtosLED\_GetState@{rtosLED\_GetState}}
+\index{rtosLED\_GetState@{rtosLED\_GetState}!LED@{LED}}
+\doxysubsubsection{\texorpdfstring{rtosLED\_GetState()}{rtosLED\_GetState()}}
+{\footnotesize\ttfamily bool rtos\+L\+E\+D\+\_\+\+Get\+State (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the current L\+ED state. 
+
+\begin{DoxyReturn}{Returns}
+status of L\+ED\+: \char`\"{}false\char`\"{} indicate L\+ED is off and \char`\"{}true\char`\"{} L\+ED is on. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosLED_gae96c018ff2d55d66f80deb17f7620b63}\label{group__rtosLED_gae96c018ff2d55d66f80deb17f7620b63}} 
+\index{LED@{LED}!rtosLED\_Init@{rtosLED\_Init}}
+\index{rtosLED\_Init@{rtosLED\_Init}!LED@{LED}}
+\doxysubsubsection{\texorpdfstring{rtosLED\_Init()}{rtosLED\_Init()}}
+{\footnotesize\ttfamily bool rtos\+L\+E\+D\+\_\+\+Init (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})}
+
+
+
+Initializes the rtos\+L\+ED A\+PI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & set L\+ED state\+: \char`\"{}false\char`\"{} turns L\+ED off and \char`\"{}true\char`\"{} turns L\+ED on. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function must be called prior to any other rtos\+L\+ED functions. The L\+ED will be started with the value passed in the state parameter. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__rtosLED_ga403d9e0c5972d26354f24b932cc55139}\label{group__rtosLED_ga403d9e0c5972d26354f24b932cc55139}} 
+\index{LED@{LED}!rtosLED\_Off@{rtosLED\_Off}}
+\index{rtosLED\_Off@{rtosLED\_Off}!LED@{LED}}
+\doxysubsubsection{\texorpdfstring{rtosLED\_Off()}{rtosLED\_Off()}}
+{\footnotesize\ttfamily void rtos\+L\+E\+D\+\_\+\+Off (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Turn the L\+ED off. 
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosLED_ga565b1ce6cefa60de172fdd92b9248e17}\label{group__rtosLED_ga565b1ce6cefa60de172fdd92b9248e17}} 
+\index{LED@{LED}!rtosLED\_On@{rtosLED\_On}}
+\index{rtosLED\_On@{rtosLED\_On}!LED@{LED}}
+\doxysubsubsection{\texorpdfstring{rtosLED\_On()}{rtosLED\_On()}}
+{\footnotesize\ttfamily void rtos\+L\+E\+D\+\_\+\+On (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Turn the L\+ED on. 
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosLED_gac0a462e0633b244889b662df318cde9a}\label{group__rtosLED_gac0a462e0633b244889b662df318cde9a}} 
+\index{LED@{LED}!rtosLED\_Toggle@{rtosLED\_Toggle}}
+\index{rtosLED\_Toggle@{rtosLED\_Toggle}!LED@{LED}}
+\doxysubsubsection{\texorpdfstring{rtosLED\_Toggle()}{rtosLED\_Toggle()}}
+{\footnotesize\ttfamily void rtos\+L\+E\+D\+\_\+\+Toggle (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Toggle the L\+ED. 
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}

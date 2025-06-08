@@ -1,0 +1,26 @@
+var group__uiMENU =
+[
+    [ "UI_MENU_BLINK_PERIOD_MS", "de/d79/group__uiMENU.html#ga8ecc110f3ab00be83a13aa5019fdb838", null ],
+    [ "UI_MENU_COLUMNS", "de/d79/group__uiMENU.html#ga3223478a587d3b08833a359b8d56f7bb", null ],
+    [ "UI_MENU_ENCODER_INVERT", "de/d79/group__uiMENU.html#ga5660b0fefca8edb12557fe811127654b", null ],
+    [ "UI_MENU_FAIL_MESSAGE", "de/d79/group__uiMENU.html#gabb12c17d9f98f6358a0602347d0c484e", null ],
+    [ "UI_MENU_LINES", "de/d79/group__uiMENU.html#ga8b5358d4b9cef53537472ffe3992bf27", null ],
+    [ "UI_MENU_PROCESSING_MESSAGE", "de/d79/group__uiMENU.html#ga191ba35e196af9f9f75370b7e01d2688", null ],
+    [ "UI_MENU_REFRESH_PERIOD_MS", "de/d79/group__uiMENU.html#ga5d39a3a7997ef53560bd3334bb8c009a", null ],
+    [ "UI_MENU_SUCCESS_MESSAGE", "de/d79/group__uiMENU.html#gae3ce05410591d0f8232057583c700e9d", null ],
+    [ "CommandFunction_t", "de/d79/group__uiMENU.html#gac445103bf1eff474cc32f652ab5ed822", null ],
+    [ "ItemHandler_t", "de/d79/group__uiMENU.html#ga4201ee12da7ce88b8d695fa8eceda4e4", null ],
+    [ "uiENCODER_Handle", "de/d79/group__uiMENU.html#ga4c5dbf99a4e71aeffbaecb871476e5ec", null ],
+    [ "uiMENU_Ask", "de/d79/group__uiMENU.html#ga53d7e213800c01f21d16c63c48cf3d8f", null ],
+    [ "uiMENU_BlinkStr", "de/d79/group__uiMENU.html#gab2adaf3bdd09c0a34fbf7afa16041c5b", null ],
+    [ "uiMENU_BlinkStrClear", "de/d79/group__uiMENU.html#ga01e52d1c116e2627c2ccfaeca8dbfcfa", null ],
+    [ "uiMENU_CenterString", "de/d79/group__uiMENU.html#ga1a3286dc2264ee01fb6d474a2a486306", null ],
+    [ "uiMENU_Destroy", "de/d79/group__uiMENU.html#gac2352234afe9507a7ecaf970f8173176", null ],
+    [ "uiMENU_Execute", "de/d79/group__uiMENU.html#gad0a44b237231f5f1e8cc2676226630e2", null ],
+    [ "uiMENU_ExecuteCMD", "de/d79/group__uiMENU.html#ga39d93a7dcee1d9bd88abe57782bfd1f8", null ],
+    [ "uiMENU_FillString", "de/d79/group__uiMENU.html#ga09f14a9292efa8a87fb05c00546c9bcd", null ],
+    [ "uiMENU_Generate", "de/d79/group__uiMENU.html#ga837465c2f1a04dbe4bb0cb2ea60f2646", null ],
+    [ "uiMENU_InputData", "de/d79/group__uiMENU.html#ga5221644f719a817218ddc07691e54829", null ],
+    [ "uiMENU_ItemizeString", "de/d79/group__uiMENU.html#gab41985bbdda4b597afddc5576f023fd1", null ],
+    [ "uiMENU_SelectOptions", "de/d79/group__uiMENU.html#ga0f011e520ae90ea7662b416fc4cd515b", null ]
+];

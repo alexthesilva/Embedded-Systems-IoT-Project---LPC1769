@@ -1,0 +1,133 @@
+\indexentry{BH1750@{BH1750}|hyperpage}{5}
+\indexentry{BH1750@{BH1750}!BH1750MeasurementTimeEnum@{BH1750MeasurementTimeEnum}|hyperpage}{6}
+\indexentry{BH1750MeasurementTimeEnum@{BH1750MeasurementTimeEnum}!BH1750@{BH1750}|hyperpage}{6}
+\indexentry{DEFAULT\_MEASUREMENT\_TIME@{DEFAULT\_MEASUREMENT\_TIME}!BH1750@{BH1750}|hyperpage}{6}
+\indexentry{BH1750@{BH1750}!DEFAULT\_MEASUREMENT\_TIME@{DEFAULT\_MEASUREMENT\_TIME}|hyperpage}{6}
+\indexentry{MIN\_MEASUREMENT\_TIME@{MIN\_MEASUREMENT\_TIME}!BH1750@{BH1750}|hyperpage}{6}
+\indexentry{BH1750@{BH1750}!MIN\_MEASUREMENT\_TIME@{MIN\_MEASUREMENT\_TIME}|hyperpage}{6}
+\indexentry{MAX\_MEASUREMENT\_TIME@{MAX\_MEASUREMENT\_TIME}!BH1750@{BH1750}|hyperpage}{6}
+\indexentry{BH1750@{BH1750}!MAX\_MEASUREMENT\_TIME@{MAX\_MEASUREMENT\_TIME}|hyperpage}{6}
+\indexentry{BH1750@{BH1750}!BH1750ModeEnum@{BH1750ModeEnum}|hyperpage}{6}
+\indexentry{BH1750ModeEnum@{BH1750ModeEnum}!BH1750@{BH1750}|hyperpage}{6}
+\indexentry{UNCONFIGURED@{UNCONFIGURED}!BH1750@{BH1750}|hyperpage}{6}
+\indexentry{BH1750@{BH1750}!UNCONFIGURED@{UNCONFIGURED}|hyperpage}{6}
+\indexentry{CONTINUOUS\_HIGH\_RES\_MODE@{CONTINUOUS\_HIGH\_RES\_MODE}!BH1750@{BH1750}|hyperpage}{6}
+\indexentry{BH1750@{BH1750}!CONTINUOUS\_HIGH\_RES\_MODE@{CONTINUOUS\_HIGH\_RES\_MODE}|hyperpage}{6}
+\indexentry{CONTINUOUS\_HIGH\_RES\_MODE\_2@{CONTINUOUS\_HIGH\_RES\_MODE\_2}!BH1750@{BH1750}|hyperpage}{6}
+\indexentry{BH1750@{BH1750}!CONTINUOUS\_HIGH\_RES\_MODE\_2@{CONTINUOUS\_HIGH\_RES\_MODE\_2}|hyperpage}{6}
+\indexentry{CONTINUOUS\_LOW\_RES\_MODE@{CONTINUOUS\_LOW\_RES\_MODE}!BH1750@{BH1750}|hyperpage}{6}
+\indexentry{BH1750@{BH1750}!CONTINUOUS\_LOW\_RES\_MODE@{CONTINUOUS\_LOW\_RES\_MODE}|hyperpage}{6}
+\indexentry{ONE\_TIME\_HIGH\_RES\_MODE@{ONE\_TIME\_HIGH\_RES\_MODE}!BH1750@{BH1750}|hyperpage}{6}
+\indexentry{BH1750@{BH1750}!ONE\_TIME\_HIGH\_RES\_MODE@{ONE\_TIME\_HIGH\_RES\_MODE}|hyperpage}{6}
+\indexentry{ONE\_TIME\_HIGH\_RES\_MODE\_2@{ONE\_TIME\_HIGH\_RES\_MODE\_2}!BH1750@{BH1750}|hyperpage}{6}
+\indexentry{BH1750@{BH1750}!ONE\_TIME\_HIGH\_RES\_MODE\_2@{ONE\_TIME\_HIGH\_RES\_MODE\_2}|hyperpage}{6}
+\indexentry{ONE\_TIME\_LOW\_RES\_MODE@{ONE\_TIME\_LOW\_RES\_MODE}!BH1750@{BH1750}|hyperpage}{6}
+\indexentry{BH1750@{BH1750}!ONE\_TIME\_LOW\_RES\_MODE@{ONE\_TIME\_LOW\_RES\_MODE}|hyperpage}{6}
+\indexentry{BH1750@{BH1750}!BH1750\_ConfigureMode@{BH1750\_ConfigureMode}|hyperpage}{6}
+\indexentry{BH1750\_ConfigureMode@{BH1750\_ConfigureMode}!BH1750@{BH1750}|hyperpage}{6}
+\indexentry{BH1750@{BH1750}!BH1750\_GetLight@{BH1750\_GetLight}|hyperpage}{7}
+\indexentry{BH1750\_GetLight@{BH1750\_GetLight}!BH1750@{BH1750}|hyperpage}{7}
+\indexentry{BH1750@{BH1750}!BH1750\_Init@{BH1750\_Init}|hyperpage}{7}
+\indexentry{BH1750\_Init@{BH1750\_Init}!BH1750@{BH1750}|hyperpage}{7}
+\indexentry{BH1750@{BH1750}!BH1750\_Ready@{BH1750\_Ready}|hyperpage}{7}
+\indexentry{BH1750\_Ready@{BH1750\_Ready}!BH1750@{BH1750}|hyperpage}{7}
+\indexentry{BH1750@{BH1750}!BH1750\_SetMeasurementTime@{BH1750\_SetMeasurementTime}|hyperpage}{8}
+\indexentry{BH1750\_SetMeasurementTime@{BH1750\_SetMeasurementTime}!BH1750@{BH1750}|hyperpage}{8}
+\indexentry{Rotary and press button.@{Rotary and press button.}|hyperpage}{9}
+\indexentry{Rotary and press button.@{Rotary and press button.}!ButtonEnum@{ButtonEnum}|hyperpage}{9}
+\indexentry{ButtonEnum@{ButtonEnum}!Rotary and press button.@{Rotary and press button.}|hyperpage}{9}
+\indexentry{BUTTON\_NOTPRESSED@{BUTTON\_NOTPRESSED}!Rotary and press button.@{Rotary and press button.}|hyperpage}{10}
+\indexentry{Rotary and press button.@{Rotary and press button.}!BUTTON\_NOTPRESSED@{BUTTON\_NOTPRESSED}|hyperpage}{10}
+\indexentry{BUTTON\_PRESSED@{BUTTON\_PRESSED}!Rotary and press button.@{Rotary and press button.}|hyperpage}{10}
+\indexentry{Rotary and press button.@{Rotary and press button.}!BUTTON\_PRESSED@{BUTTON\_PRESSED}|hyperpage}{10}
+\indexentry{BUTTON\_HELD@{BUTTON\_HELD}!Rotary and press button.@{Rotary and press button.}|hyperpage}{10}
+\indexentry{Rotary and press button.@{Rotary and press button.}!BUTTON\_HELD@{BUTTON\_HELD}|hyperpage}{10}
+\indexentry{BUTTON\_RELEASE@{BUTTON\_RELEASE}!Rotary and press button.@{Rotary and press button.}|hyperpage}{10}
+\indexentry{Rotary and press button.@{Rotary and press button.}!BUTTON\_RELEASE@{BUTTON\_RELEASE}|hyperpage}{10}
+\indexentry{BUTTON\_CLICKED@{BUTTON\_CLICKED}!Rotary and press button.@{Rotary and press button.}|hyperpage}{10}
+\indexentry{Rotary and press button.@{Rotary and press button.}!BUTTON\_CLICKED@{BUTTON\_CLICKED}|hyperpage}{10}
+\indexentry{BUTTON\_DCLICKED@{BUTTON\_DCLICKED}!Rotary and press button.@{Rotary and press button.}|hyperpage}{10}
+\indexentry{Rotary and press button.@{Rotary and press button.}!BUTTON\_DCLICKED@{BUTTON\_DCLICKED}|hyperpage}{10}
+\indexentry{Rotary and press button.@{Rotary and press button.}!ENCODER\_GetButton@{ENCODER\_GetButton}|hyperpage}{10}
+\indexentry{ENCODER\_GetButton@{ENCODER\_GetButton}!Rotary and press button.@{Rotary and press button.}|hyperpage}{10}
+\indexentry{Rotary and press button.@{Rotary and press button.}!ENCODER\_GetValue@{ENCODER\_GetValue}|hyperpage}{10}
+\indexentry{ENCODER\_GetValue@{ENCODER\_GetValue}!Rotary and press button.@{Rotary and press button.}|hyperpage}{10}
+\indexentry{Rotary and press button.@{Rotary and press button.}!ENCODER\_Init@{ENCODER\_Init}|hyperpage}{10}
+\indexentry{ENCODER\_Init@{ENCODER\_Init}!Rotary and press button.@{Rotary and press button.}|hyperpage}{10}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{11}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!ESPSERIAL\_Init@{ESPSERIAL\_Init}|hyperpage}{11}
+\indexentry{ESPSERIAL\_Init@{ESPSERIAL\_Init}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{11}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!ESPSERIAL\_Recv@{ESPSERIAL\_Recv}|hyperpage}{11}
+\indexentry{ESPSERIAL\_Recv@{ESPSERIAL\_Recv}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{11}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!ESPSERIAL\_Send@{ESPSERIAL\_Send}|hyperpage}{12}
+\indexentry{ESPSERIAL\_Send@{ESPSERIAL\_Send}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{12}
+\indexentry{Drivers@{Drivers}|hyperpage}{13}
+\indexentry{Library information@{Library information}|hyperpage}{14}
+\indexentry{Library information@{Library information}!INFO\_GetVersion@{INFO\_GetVersion}|hyperpage}{14}
+\indexentry{INFO\_GetVersion@{INFO\_GetVersion}!Library information@{Library information}|hyperpage}{14}
+\indexentry{Text LCD@{Text LCD}|hyperpage}{15}
+\indexentry{Text LCD@{Text LCD}!LCDText\_COLUMNS@{LCDText\_COLUMNS}|hyperpage}{15}
+\indexentry{LCDText\_COLUMNS@{LCDText\_COLUMNS}!Text LCD@{Text LCD}|hyperpage}{15}
+\indexentry{Text LCD@{Text LCD}!LCDText\_LINES@{LCDText\_LINES}|hyperpage}{15}
+\indexentry{LCDText\_LINES@{LCDText\_LINES}!Text LCD@{Text LCD}|hyperpage}{15}
+\indexentry{Text LCD@{Text LCD}!LCDText\_Clear@{LCDText\_Clear}|hyperpage}{16}
+\indexentry{LCDText\_Clear@{LCDText\_Clear}!Text LCD@{Text LCD}|hyperpage}{16}
+\indexentry{Text LCD@{Text LCD}!LCDText\_CreateChar@{LCDText\_CreateChar}|hyperpage}{16}
+\indexentry{LCDText\_CreateChar@{LCDText\_CreateChar}!Text LCD@{Text LCD}|hyperpage}{16}
+\indexentry{Text LCD@{Text LCD}!LCDText\_CursorOff@{LCDText\_CursorOff}|hyperpage}{16}
+\indexentry{LCDText\_CursorOff@{LCDText\_CursorOff}!Text LCD@{Text LCD}|hyperpage}{16}
+\indexentry{Text LCD@{Text LCD}!LCDText\_CursorOn@{LCDText\_CursorOn}|hyperpage}{17}
+\indexentry{LCDText\_CursorOn@{LCDText\_CursorOn}!Text LCD@{Text LCD}|hyperpage}{17}
+\indexentry{Text LCD@{Text LCD}!LCDText\_Init@{LCDText\_Init}|hyperpage}{17}
+\indexentry{LCDText\_Init@{LCDText\_Init}!Text LCD@{Text LCD}|hyperpage}{17}
+\indexentry{Text LCD@{Text LCD}!LCDText\_Locate@{LCDText\_Locate}|hyperpage}{17}
+\indexentry{LCDText\_Locate@{LCDText\_Locate}!Text LCD@{Text LCD}|hyperpage}{17}
+\indexentry{Text LCD@{Text LCD}!LCDText\_Off@{LCDText\_Off}|hyperpage}{18}
+\indexentry{LCDText\_Off@{LCDText\_Off}!Text LCD@{Text LCD}|hyperpage}{18}
+\indexentry{Text LCD@{Text LCD}!LCDText\_On@{LCDText\_On}|hyperpage}{18}
+\indexentry{LCDText\_On@{LCDText\_On}!Text LCD@{Text LCD}|hyperpage}{18}
+\indexentry{Text LCD@{Text LCD}!LCDText\_Printf@{LCDText\_Printf}|hyperpage}{18}
+\indexentry{LCDText\_Printf@{LCDText\_Printf}!Text LCD@{Text LCD}|hyperpage}{18}
+\indexentry{Text LCD@{Text LCD}!LCDText\_WriteChar@{LCDText\_WriteChar}|hyperpage}{18}
+\indexentry{LCDText\_WriteChar@{LCDText\_WriteChar}!Text LCD@{Text LCD}|hyperpage}{18}
+\indexentry{Text LCD@{Text LCD}!LCDText\_WriteLine@{LCDText\_WriteLine}|hyperpage}{19}
+\indexentry{LCDText\_WriteLine@{LCDText\_WriteLine}!Text LCD@{Text LCD}|hyperpage}{19}
+\indexentry{Text LCD@{Text LCD}!LCDText\_WriteString@{LCDText\_WriteString}|hyperpage}{19}
+\indexentry{LCDText\_WriteString@{LCDText\_WriteString}!Text LCD@{Text LCD}|hyperpage}{19}
+\indexentry{LED@{LED}|hyperpage}{20}
+\indexentry{LED@{LED}!LED\_GetState@{LED\_GetState}|hyperpage}{20}
+\indexentry{LED\_GetState@{LED\_GetState}!LED@{LED}|hyperpage}{20}
+\indexentry{LED@{LED}!LED\_Init@{LED\_Init}|hyperpage}{20}
+\indexentry{LED\_Init@{LED\_Init}!LED@{LED}|hyperpage}{20}
+\indexentry{LED@{LED}!LED\_Off@{LED\_Off}|hyperpage}{21}
+\indexentry{LED\_Off@{LED\_Off}!LED@{LED}|hyperpage}{21}
+\indexentry{LED@{LED}!LED\_On@{LED\_On}|hyperpage}{21}
+\indexentry{LED\_On@{LED\_On}!LED@{LED}|hyperpage}{21}
+\indexentry{LED@{LED}!LED\_Toggle@{LED\_Toggle}|hyperpage}{21}
+\indexentry{LED\_Toggle@{LED\_Toggle}!LED@{LED}|hyperpage}{21}
+\indexentry{Presence detect sensor.@{Presence detect sensor.}|hyperpage}{22}
+\indexentry{Presence detect sensor.@{Presence detect sensor.}!PIR\_GetValue@{PIR\_GetValue}|hyperpage}{22}
+\indexentry{PIR\_GetValue@{PIR\_GetValue}!Presence detect sensor.@{Presence detect sensor.}|hyperpage}{22}
+\indexentry{Presence detect sensor.@{Presence detect sensor.}!PIR\_Init@{PIR\_Init}|hyperpage}{22}
+\indexentry{PIR\_Init@{PIR\_Init}!Presence detect sensor.@{Presence detect sensor.}|hyperpage}{22}
+\indexentry{Real Time Clock@{Real Time Clock}|hyperpage}{23}
+\indexentry{Real Time Clock@{Real Time Clock}!RTC\_GetSeconds@{RTC\_GetSeconds}|hyperpage}{23}
+\indexentry{RTC\_GetSeconds@{RTC\_GetSeconds}!Real Time Clock@{Real Time Clock}|hyperpage}{23}
+\indexentry{Real Time Clock@{Real Time Clock}!RTC\_GetValue@{RTC\_GetValue}|hyperpage}{23}
+\indexentry{RTC\_GetValue@{RTC\_GetValue}!Real Time Clock@{Real Time Clock}|hyperpage}{23}
+\indexentry{Real Time Clock@{Real Time Clock}!RTC\_Init@{RTC\_Init}|hyperpage}{24}
+\indexentry{RTC\_Init@{RTC\_Init}!Real Time Clock@{Real Time Clock}|hyperpage}{24}
+\indexentry{Real Time Clock@{Real Time Clock}!RTC\_InitSeconds@{RTC\_InitSeconds}|hyperpage}{24}
+\indexentry{RTC\_InitSeconds@{RTC\_InitSeconds}!Real Time Clock@{Real Time Clock}|hyperpage}{24}
+\indexentry{Real Time Clock@{Real Time Clock}!RTC\_SetSeconds@{RTC\_SetSeconds}|hyperpage}{25}
+\indexentry{RTC\_SetSeconds@{RTC\_SetSeconds}!Real Time Clock@{Real Time Clock}|hyperpage}{25}
+\indexentry{Real Time Clock@{Real Time Clock}!RTC\_SetValue@{RTC\_SetValue}|hyperpage}{25}
+\indexentry{RTC\_SetValue@{RTC\_SetValue}!Real Time Clock@{Real Time Clock}|hyperpage}{25}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/DRIVERS/inc/bh1750.h@{C:/Users/alext/Desktop/SE/Workspace/DRIVERS/inc/bh1750.h}|hyperpage}{27}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/DRIVERS/inc/encoder.h@{C:/Users/alext/Desktop/SE/Workspace/DRIVERS/inc/encoder.h}|hyperpage}{28}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/DRIVERS/inc/espserial.h@{C:/Users/alext/Desktop/SE/Workspace/DRIVERS/inc/espserial.h}|hyperpage}{29}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/DRIVERS/inc/info.h@{C:/Users/alext/Desktop/SE/Workspace/DRIVERS/inc/info.h}|hyperpage}{30}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/DRIVERS/inc/lcdtext.h@{C:/Users/alext/Desktop/SE/Workspace/DRIVERS/inc/lcdtext.h}|hyperpage}{30}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/DRIVERS/inc/led.h@{C:/Users/alext/Desktop/SE/Workspace/DRIVERS/inc/led.h}|hyperpage}{31}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/DRIVERS/inc/pir.h@{C:/Users/alext/Desktop/SE/Workspace/DRIVERS/inc/pir.h}|hyperpage}{32}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/DRIVERS/inc/rtc.h@{C:/Users/alext/Desktop/SE/Workspace/DRIVERS/inc/rtc.h}|hyperpage}{33}

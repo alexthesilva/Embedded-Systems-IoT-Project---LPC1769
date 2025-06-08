@@ -1,0 +1,6 @@
+../src/rtosbh1750.c:37:6:rtosBH1750_Task	24	static
+../src/rtosbh1750.c:66:6:rtosBH1750_Init	16	static
+../src/rtosbh1750.c:84:6:rtosBH1750_ConfigureMode	32	static
+../src/rtosbh1750.c:99:6:rtosBH1750_SetMeasurementTime	32	static
+../src/rtosbh1750.c:115:6:rtosBH1750_Ready	32	static
+../src/rtosbh1750.c:130:7:rtosBH1750_GetLight	24	static

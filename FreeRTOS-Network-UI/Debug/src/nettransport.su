@@ -1,0 +1,6 @@
+../src/nettransport.c:16:6:netUDP_Start	32	static
+../src/nettransport.c:33:6:netTCP_Start	32	static
+../src/nettransport.c:52:6:netUDP_Close	24	static
+../src/nettransport.c:65:6:netTCP_Close	8	static
+../src/nettransport.c:70:5:netTRANSPORT_Send	56	static
+../src/nettransport.c:142:5:netTRANSPORT_Recv	48	static

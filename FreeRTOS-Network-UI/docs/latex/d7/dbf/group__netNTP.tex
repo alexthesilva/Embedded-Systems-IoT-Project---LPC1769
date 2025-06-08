@@ -1,0 +1,78 @@
+\hypertarget{group__netNTP}{}\doxysection{N\+TP}
+\label{group__netNTP}\index{NTP@{NTP}}
+
+
+This package provides the ability to interact with remote servers through the N\+TP protocol.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__netNTP_ga819037b538db18276e0e4f4c0d2722bf}{N\+E\+T\+W\+O\+R\+K\+\_\+\+N\+T\+P\+\_\+\+Q\+U\+E\+U\+E\+S\+\_\+\+S\+I\+ZE}}~10
+\item 
+\#define \mbox{\hyperlink{group__netNTP_ga33b41ce6b952684953ed1ddf60ff3fd3}{N\+E\+T\+W\+O\+R\+K\+\_\+\+N\+T\+P\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}}~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE $\ast$ 6
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{group__netNTP_ga073c119bbe7760ad80ac70f75fc39ce4}{net\+N\+T\+P\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the net\+N\+TP A\+PI. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{group__netNTP_gaa7f43b60fd6f7bedabf3271788344cae}{net\+N\+T\+P\+\_\+\+Get\+Time}} (int hour\+\_\+adjust)
+\begin{DoxyCompactList}\small\item\em Retrieves the number of seconds elapsed since the year 1900 from an N\+TP remote server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This package provides the ability to interact with remote servers through the N\+TP protocol. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__netNTP_ga819037b538db18276e0e4f4c0d2722bf}\label{group__netNTP_ga819037b538db18276e0e4f4c0d2722bf}} 
+\index{NTP@{NTP}!NETWORK\_NTP\_QUEUES\_SIZE@{NETWORK\_NTP\_QUEUES\_SIZE}}
+\index{NETWORK\_NTP\_QUEUES\_SIZE@{NETWORK\_NTP\_QUEUES\_SIZE}!NTP@{NTP}}
+\doxysubsubsection{\texorpdfstring{NETWORK\_NTP\_QUEUES\_SIZE}{NETWORK\_NTP\_QUEUES\_SIZE}}
+{\footnotesize\ttfamily \#define N\+E\+T\+W\+O\+R\+K\+\_\+\+N\+T\+P\+\_\+\+Q\+U\+E\+U\+E\+S\+\_\+\+S\+I\+ZE~10}
+
+Size for the N\+TP queues. \mbox{\Hypertarget{group__netNTP_ga33b41ce6b952684953ed1ddf60ff3fd3}\label{group__netNTP_ga33b41ce6b952684953ed1ddf60ff3fd3}} 
+\index{NTP@{NTP}!NETWORK\_NTP\_TASK\_STACK\_SIZE@{NETWORK\_NTP\_TASK\_STACK\_SIZE}}
+\index{NETWORK\_NTP\_TASK\_STACK\_SIZE@{NETWORK\_NTP\_TASK\_STACK\_SIZE}!NTP@{NTP}}
+\doxysubsubsection{\texorpdfstring{NETWORK\_NTP\_TASK\_STACK\_SIZE}{NETWORK\_NTP\_TASK\_STACK\_SIZE}}
+{\footnotesize\ttfamily \#define N\+E\+T\+W\+O\+R\+K\+\_\+\+N\+T\+P\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE $\ast$ 6}
+
+Stack size for the N\+TP task. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__netNTP_gaa7f43b60fd6f7bedabf3271788344cae}\label{group__netNTP_gaa7f43b60fd6f7bedabf3271788344cae}} 
+\index{NTP@{NTP}!netNTP\_GetTime@{netNTP\_GetTime}}
+\index{netNTP\_GetTime@{netNTP\_GetTime}!NTP@{NTP}}
+\doxysubsubsection{\texorpdfstring{netNTP\_GetTime()}{netNTP\_GetTime()}}
+{\footnotesize\ttfamily time\+\_\+t net\+N\+T\+P\+\_\+\+Get\+Time (\begin{DoxyParamCaption}\item[{int}]{hour\+\_\+adjust }\end{DoxyParamCaption})}
+
+
+
+Retrieves the number of seconds elapsed since the year 1900 from an N\+TP remote server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hour\+\_\+adjust} & Number of hours to add or subtract in order to get the desired time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of seconds elapsed since 1900 if successful, 0 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__netNTP_ga073c119bbe7760ad80ac70f75fc39ce4}\label{group__netNTP_ga073c119bbe7760ad80ac70f75fc39ce4}} 
+\index{NTP@{NTP}!netNTP\_Init@{netNTP\_Init}}
+\index{netNTP\_Init@{netNTP\_Init}!NTP@{NTP}}
+\doxysubsubsection{\texorpdfstring{netNTP\_Init()}{netNTP\_Init()}}
+{\footnotesize\ttfamily bool net\+N\+T\+P\+\_\+\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the net\+N\+TP A\+PI. 
+
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function must be called prior to any other net\+N\+TP functions. 
+\end{DoxyNote}

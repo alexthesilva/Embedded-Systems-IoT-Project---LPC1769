@@ -1,0 +1,7 @@
+../src/netmqtt.c:41:6:netMQTT_Init	16	static
+../src/netmqtt.c:61:6:netMQTT_Config	24	static
+../src/netmqtt.c:69:6:netMQTT_Ready	4	static
+../src/netmqtt.c:73:6:netMQTT_Start	8	static
+../src/netmqtt.c:79:6:netMQTT_Stop	16	static
+../src/netmqtt.c:99:6:netMQTT_Publish	32	static
+../src/netmqtt.c:122:13:netMQTT_Task	360	static

@@ -1,0 +1,55 @@
+\hypertarget{group__rtosTIMEOUT}{}\doxysection{Timeout}
+\label{group__rtosTIMEOUT}\index{Timeout@{Timeout}}
+
+
+This package provides the A\+PI to execute non-\/blocking timeouts in Free\+R\+T\+OS.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tick\+Type\+\_\+t \mbox{\hyperlink{group__rtosTIMEOUT_gae9c32dcafe455f0755506743bdf38124}{rtos\+T\+I\+M\+E\+O\+U\+T\+\_\+\+Start}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a timeout. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__rtosTIMEOUT_gaeb79949250319d2605fc38a17291156b}{rtos\+T\+I\+M\+E\+O\+U\+T\+\_\+\+Expired}} (Tick\+Type\+\_\+t start\+\_\+time, Tick\+Type\+\_\+t timeout)
+\begin{DoxyCompactList}\small\item\em Checks if a timeout has occurred. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This package provides the A\+PI to execute non-\/blocking timeouts in Free\+R\+T\+OS. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__rtosTIMEOUT_gaeb79949250319d2605fc38a17291156b}\label{group__rtosTIMEOUT_gaeb79949250319d2605fc38a17291156b}} 
+\index{Timeout@{Timeout}!rtosTIMEOUT\_Expired@{rtosTIMEOUT\_Expired}}
+\index{rtosTIMEOUT\_Expired@{rtosTIMEOUT\_Expired}!Timeout@{Timeout}}
+\doxysubsubsection{\texorpdfstring{rtosTIMEOUT\_Expired()}{rtosTIMEOUT\_Expired()}}
+{\footnotesize\ttfamily bool rtos\+T\+I\+M\+E\+O\+U\+T\+\_\+\+Expired (\begin{DoxyParamCaption}\item[{Tick\+Type\+\_\+t}]{start\+\_\+time,  }\item[{Tick\+Type\+\_\+t}]{timeout }\end{DoxyParamCaption})}
+
+
+
+Checks if a timeout has occurred. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+\_\+time} & Tick ammount of a previously initiated timeout. \\
+\hline
+{\em timeout} & Timeout period to check for, in ticks. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True whenever a timeout has occurred, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosTIMEOUT_gae9c32dcafe455f0755506743bdf38124}\label{group__rtosTIMEOUT_gae9c32dcafe455f0755506743bdf38124}} 
+\index{Timeout@{Timeout}!rtosTIMEOUT\_Start@{rtosTIMEOUT\_Start}}
+\index{rtosTIMEOUT\_Start@{rtosTIMEOUT\_Start}!Timeout@{Timeout}}
+\doxysubsubsection{\texorpdfstring{rtosTIMEOUT\_Start()}{rtosTIMEOUT\_Start()}}
+{\footnotesize\ttfamily Tick\+Type\+\_\+t rtos\+T\+I\+M\+E\+O\+U\+T\+\_\+\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a timeout. 
+
+\begin{DoxyReturn}{Returns}
+Starting tick ammount. 
+\end{DoxyReturn}

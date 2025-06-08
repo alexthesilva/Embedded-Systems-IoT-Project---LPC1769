@@ -1,0 +1,155 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Module Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Modules}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Module Documentation}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Drivers}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{5}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Library information}{6}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{6}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Function Documentation}{6}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}INFO\_GetVersion()}{6}{subsubsection.3.2.2.1}%
+\contentsline {section}{\numberline {3.3}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}H1750}{7}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{7}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Macro Definition Documentation}{8}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}RTOS\_BH1750\_QUEUES\_SIZE}{8}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}RTOS\_BH1750\_TASK\_STACK\_SIZE}{8}{subsubsection.3.3.2.2}%
+\contentsline {subsection}{\numberline {3.3.3}Enumeration Type Documentation}{8}{subsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}BH1750MeasurementTimeEnum}{8}{subsubsection.3.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}BH1750ModeEnum}{8}{subsubsection.3.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.4}Function Documentation}{10}{subsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.4.1}rtosBH1750\_ConfigureMode()}{10}{subsubsection.3.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.3.4.2}rtosBH1750\_GetLight()}{10}{subsubsection.3.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.3.4.3}rtosBH1750\_Init()}{11}{subsubsection.3.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.3.4.4}rtosBH1750\_Ready()}{11}{subsubsection.3.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.3.4.5}rtosBH1750\_SetMeasurementTime()}{11}{subsubsection.3.3.4.5}%
+\contentsline {section}{\numberline {3.4}E\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}N\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ER}{12}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{12}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Macro Definition Documentation}{13}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}RTOS\_ENCODER\_QUEUES\_SIZE}{13}{subsubsection.3.4.2.1}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}RTOS\_ENCODER\_TASK\_STACK\_SIZE}{13}{subsubsection.3.4.2.2}%
+\contentsline {subsection}{\numberline {3.4.3}Enumeration Type Documentation}{13}{subsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.3.1}ButtonEnum}{13}{subsubsection.3.4.3.1}%
+\contentsline {subsection}{\numberline {3.4.4}Function Documentation}{13}{subsection.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.4.4.1}rtosENCODER\_GetButton()}{13}{subsubsection.3.4.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.4.2}rtosENCODER\_GetValue()}{14}{subsubsection.3.4.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.4.3}rtosENCODER\_Init()}{14}{subsubsection.3.4.4.3}%
+\contentsline {section}{\numberline {3.5}E\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P8266 serial interface}{15}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Detailed Description}{16}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Macro Definition Documentation}{16}{subsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}RTOS\_ESPSERIAL\_BUFFER\_SIZE}{16}{subsubsection.3.5.2.1}%
+\contentsline {subsubsection}{\numberline {3.5.2.2}RTOS\_ESPSERIAL\_BUFFERREFRESH\_TIMEOUT}{16}{subsubsection.3.5.2.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.3}RTOS\_ESPSERIAL\_DEFAULT\_SETUP}{16}{subsubsection.3.5.2.3}%
+\contentsline {subsubsection}{\numberline {3.5.2.4}RTOS\_ESPSERIAL\_LONG\_PAUSE}{16}{subsubsection.3.5.2.4}%
+\contentsline {subsubsection}{\numberline {3.5.2.5}RTOS\_ESPSERIAL\_PRINTF\_DEBUG}{17}{subsubsection.3.5.2.5}%
+\contentsline {subsubsection}{\numberline {3.5.2.6}RTOS\_ESPSERIAL\_QUEUES\_SIZE}{17}{subsubsection.3.5.2.6}%
+\contentsline {subsubsection}{\numberline {3.5.2.7}RTOS\_ESPSERIAL\_REFRESH\_PERIOD\_MS}{17}{subsubsection.3.5.2.7}%
+\contentsline {subsubsection}{\numberline {3.5.2.8}RTOS\_ESPSERIAL\_RESTORE\_ON\_DEFAULT\_SETUP}{17}{subsubsection.3.5.2.8}%
+\contentsline {subsubsection}{\numberline {3.5.2.9}RTOS\_ESPSERIAL\_SETUP\_TASK\_STACK\_SIZE}{17}{subsubsection.3.5.2.9}%
+\contentsline {subsubsection}{\numberline {3.5.2.10}RTOS\_ESPSERIAL\_SETUP\_TIMEOUT}{17}{subsubsection.3.5.2.10}%
+\contentsline {subsubsection}{\numberline {3.5.2.11}RTOS\_ESPSERIAL\_SHORT\_PAUSE}{17}{subsubsection.3.5.2.11}%
+\contentsline {subsection}{\numberline {3.5.3}Enumeration Type Documentation}{17}{subsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.3.1}ESPState\_t}{17}{subsubsection.3.5.3.1}%
+\contentsline {subsection}{\numberline {3.5.4}Function Documentation}{18}{subsection.3.5.4}%
+\contentsline {subsubsection}{\numberline {3.5.4.1}rtosESPSERIAL\_Clear()}{18}{subsubsection.3.5.4.1}%
+\contentsline {subsubsection}{\numberline {3.5.4.2}rtosESPSERIAL\_FindStr()}{18}{subsubsection.3.5.4.2}%
+\contentsline {subsubsection}{\numberline {3.5.4.3}rtosESPSERIAL\_Init()}{19}{subsubsection.3.5.4.3}%
+\contentsline {subsubsection}{\numberline {3.5.4.4}rtosESPSERIAL\_LockBegin()}{19}{subsubsection.3.5.4.4}%
+\contentsline {subsubsection}{\numberline {3.5.4.5}rtosESPSERIAL\_LockEnd()}{19}{subsubsection.3.5.4.5}%
+\contentsline {subsubsection}{\numberline {3.5.4.6}rtosESPSERIAL\_ReadLine()}{19}{subsubsection.3.5.4.6}%
+\contentsline {subsubsection}{\numberline {3.5.4.7}rtosESPSERIAL\_Recv()}{20}{subsubsection.3.5.4.7}%
+\contentsline {subsubsection}{\numberline {3.5.4.8}rtosESPSERIAL\_RecvByte()}{20}{subsubsection.3.5.4.8}%
+\contentsline {subsubsection}{\numberline {3.5.4.9}rtosESPSERIAL\_Refresh()}{21}{subsubsection.3.5.4.9}%
+\contentsline {subsubsection}{\numberline {3.5.4.10}rtosESPSERIAL\_Send()}{21}{subsubsection.3.5.4.10}%
+\contentsline {subsubsection}{\numberline {3.5.4.11}rtosESPSERIAL\_SendAT()}{21}{subsubsection.3.5.4.11}%
+\contentsline {subsubsection}{\numberline {3.5.4.12}rtosESPSERIAL\_Setup()}{22}{subsubsection.3.5.4.12}%
+\contentsline {subsubsection}{\numberline {3.5.4.13}rtosESPSERIAL\_WaitResp()}{22}{subsubsection.3.5.4.13}%
+\contentsline {subsubsection}{\numberline {3.5.4.14}rtosESPSERIAL\_WaitStr()}{22}{subsubsection.3.5.4.14}%
+\contentsline {section}{\numberline {3.6}Text L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CD}{24}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{24}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Macro Definition Documentation}{24}{subsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.2.1}LCDText\_COLUMNS}{24}{subsubsection.3.6.2.1}%
+\contentsline {subsubsection}{\numberline {3.6.2.2}LCDText\_LINES}{24}{subsubsection.3.6.2.2}%
+\contentsline {subsubsection}{\numberline {3.6.2.3}RTOS\_LCD\_QUEUE\_SIZE}{25}{subsubsection.3.6.2.3}%
+\contentsline {subsubsection}{\numberline {3.6.2.4}RTOS\_LCD\_TASK\_STACKSIZE}{25}{subsubsection.3.6.2.4}%
+\contentsline {subsection}{\numberline {3.6.3}Function Documentation}{25}{subsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.3.1}rtosLCDText\_Clear()}{25}{subsubsection.3.6.3.1}%
+\contentsline {subsubsection}{\numberline {3.6.3.2}rtosLCDText\_CreateChar()}{25}{subsubsection.3.6.3.2}%
+\contentsline {subsubsection}{\numberline {3.6.3.3}rtosLCDText\_CursorOff()}{25}{subsubsection.3.6.3.3}%
+\contentsline {subsubsection}{\numberline {3.6.3.4}rtosLCDText\_CursorOn()}{26}{subsubsection.3.6.3.4}%
+\contentsline {subsubsection}{\numberline {3.6.3.5}rtosLCDText\_Init()}{26}{subsubsection.3.6.3.5}%
+\contentsline {subsubsection}{\numberline {3.6.3.6}rtosLCDText\_Locate()}{26}{subsubsection.3.6.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.3.7}rtosLCDText\_LockBegin()}{27}{subsubsection.3.6.3.7}%
+\contentsline {subsubsection}{\numberline {3.6.3.8}rtosLCDText\_LockEnd()}{27}{subsubsection.3.6.3.8}%
+\contentsline {subsubsection}{\numberline {3.6.3.9}rtosLCDText\_Off()}{27}{subsubsection.3.6.3.9}%
+\contentsline {subsubsection}{\numberline {3.6.3.10}rtosLCDText\_On()}{27}{subsubsection.3.6.3.10}%
+\contentsline {subsubsection}{\numberline {3.6.3.11}rtosLCDText\_Printf()}{27}{subsubsection.3.6.3.11}%
+\contentsline {subsubsection}{\numberline {3.6.3.12}rtosLCDText\_WriteChar()}{28}{subsubsection.3.6.3.12}%
+\contentsline {subsubsection}{\numberline {3.6.3.13}rtosLCDText\_WriteLine()}{28}{subsubsection.3.6.3.13}%
+\contentsline {subsubsection}{\numberline {3.6.3.14}rtosLCDText\_WriteString()}{28}{subsubsection.3.6.3.14}%
+\contentsline {section}{\numberline {3.7}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ED}{29}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{29}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Macro Definition Documentation}{29}{subsection.3.7.2}%
+\contentsline {subsubsection}{\numberline {3.7.2.1}RTOS\_LED\_QUEUES\_SIZE}{29}{subsubsection.3.7.2.1}%
+\contentsline {subsubsection}{\numberline {3.7.2.2}RTOS\_LED\_TASK\_STACK\_SIZE}{29}{subsubsection.3.7.2.2}%
+\contentsline {subsection}{\numberline {3.7.3}Function Documentation}{29}{subsection.3.7.3}%
+\contentsline {subsubsection}{\numberline {3.7.3.1}rtosLED\_GetState()}{29}{subsubsection.3.7.3.1}%
+\contentsline {subsubsection}{\numberline {3.7.3.2}rtosLED\_Init()}{30}{subsubsection.3.7.3.2}%
+\contentsline {subsubsection}{\numberline {3.7.3.3}rtosLED\_Off()}{30}{subsubsection.3.7.3.3}%
+\contentsline {subsubsection}{\numberline {3.7.3.4}rtosLED\_On()}{30}{subsubsection.3.7.3.4}%
+\contentsline {subsubsection}{\numberline {3.7.3.5}rtosLED\_Toggle()}{30}{subsubsection.3.7.3.5}%
+\contentsline {section}{\numberline {3.8}Task locking mechanism for Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}OS}{31}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{31}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Enumeration Type Documentation}{31}{subsection.3.8.2}%
+\contentsline {subsubsection}{\numberline {3.8.2.1}LockState\_t}{31}{subsubsection.3.8.2.1}%
+\contentsline {subsection}{\numberline {3.8.3}Function Documentation}{32}{subsection.3.8.3}%
+\contentsline {subsubsection}{\numberline {3.8.3.1}rtosLOCK\_Begin()}{32}{subsubsection.3.8.3.1}%
+\contentsline {subsubsection}{\numberline {3.8.3.2}rtosLOCK\_Destroy()}{32}{subsubsection.3.8.3.2}%
+\contentsline {subsubsection}{\numberline {3.8.3.3}rtosLOCK\_End()}{32}{subsubsection.3.8.3.3}%
+\contentsline {subsubsection}{\numberline {3.8.3.4}rtosLOCK\_Init()}{33}{subsubsection.3.8.3.4}%
+\contentsline {section}{\numberline {3.9}Presence detecting sensor.}{34}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Detailed Description}{34}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Macro Definition Documentation}{34}{subsection.3.9.2}%
+\contentsline {subsubsection}{\numberline {3.9.2.1}RTOS\_PIR\_PERIOD\_MS}{34}{subsubsection.3.9.2.1}%
+\contentsline {subsection}{\numberline {3.9.3}Function Documentation}{34}{subsection.3.9.3}%
+\contentsline {subsubsection}{\numberline {3.9.3.1}rtosPIR\_GetValue()}{34}{subsubsection.3.9.3.1}%
+\contentsline {subsubsection}{\numberline {3.9.3.2}rtosPIR\_Init()}{34}{subsubsection.3.9.3.2}%
+\contentsline {section}{\numberline {3.10}Real Time Clock}{35}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}Detailed Description}{35}{subsection.3.10.1}%
+\contentsline {subsection}{\numberline {3.10.2}Macro Definition Documentation}{35}{subsection.3.10.2}%
+\contentsline {subsubsection}{\numberline {3.10.2.1}RTOS\_RTC\_QUEUES\_SIZE}{35}{subsubsection.3.10.2.1}%
+\contentsline {subsubsection}{\numberline {3.10.2.2}RTOS\_RTC\_TASK\_STACK\_SIZE}{35}{subsubsection.3.10.2.2}%
+\contentsline {subsection}{\numberline {3.10.3}Function Documentation}{35}{subsection.3.10.3}%
+\contentsline {subsubsection}{\numberline {3.10.3.1}rtosRTC\_GetSeconds()}{35}{subsubsection.3.10.3.1}%
+\contentsline {subsubsection}{\numberline {3.10.3.2}rtosRTC\_GetValue()}{36}{subsubsection.3.10.3.2}%
+\contentsline {subsubsection}{\numberline {3.10.3.3}rtosRTC\_Init()}{36}{subsubsection.3.10.3.3}%
+\contentsline {subsubsection}{\numberline {3.10.3.4}rtosRTC\_InitSeconds()}{36}{subsubsection.3.10.3.4}%
+\contentsline {subsubsection}{\numberline {3.10.3.5}rtosRTC\_SetSeconds()}{36}{subsubsection.3.10.3.5}%
+\contentsline {subsubsection}{\numberline {3.10.3.6}rtosRTC\_SetValue()}{38}{subsubsection.3.10.3.6}%
+\contentsline {section}{\numberline {3.11}Timeout}{39}{section.3.11}%
+\contentsline {subsection}{\numberline {3.11.1}Detailed Description}{39}{subsection.3.11.1}%
+\contentsline {subsection}{\numberline {3.11.2}Function Documentation}{39}{subsection.3.11.2}%
+\contentsline {subsubsection}{\numberline {3.11.2.1}rtosTIMEOUT\_Expired()}{39}{subsubsection.3.11.2.1}%
+\contentsline {subsubsection}{\numberline {3.11.2.2}rtosTIMEOUT\_Start()}{39}{subsubsection.3.11.2.2}%
+\contentsline {chapter}{\numberline {4}File Documentation}{41}{chapter.4}%
+\contentsline {section}{\numberline {4.1}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alext/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Drivers/inc/info.h File Reference}{41}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{41}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alext/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Drivers/inc/rtosbh1750.h File Reference}{41}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{42}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alext/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Drivers/inc/rtosencoder.h File Reference}{43}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{43}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alext/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Drivers/inc/rtosespserial.h File Reference}{44}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{45}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alext/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Drivers/inc/rtoslcd.h File Reference}{45}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{46}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alext/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Drivers/inc/rtosled.h File Reference}{46}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{47}{subsection.4.6.1}%
+\contentsline {section}{\numberline {4.7}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alext/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Drivers/inc/rtoslock.h File Reference}{47}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{48}{subsection.4.7.1}%
+\contentsline {section}{\numberline {4.8}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alext/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Drivers/inc/rtospir.h File Reference}{48}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{48}{subsection.4.8.1}%
+\contentsline {section}{\numberline {4.9}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alext/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Drivers/inc/rtosrtc.h File Reference}{49}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{49}{subsection.4.9.1}%
+\contentsline {section}{\numberline {4.10}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alext/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Drivers/inc/rtostimeout.h File Reference}{49}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{50}{subsection.4.10.1}%

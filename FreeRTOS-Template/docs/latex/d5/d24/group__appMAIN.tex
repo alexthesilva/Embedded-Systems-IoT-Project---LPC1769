@@ -1,0 +1,233 @@
+\hypertarget{group__appMAIN}{}\doxysection{Main application functions.}
+\label{group__appMAIN}\index{Main application functions.@{Main application functions.}}
+
+
+This package provides the functions to be used in the main application.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__appMAIN_ga495fea6c0bbfe2c018480ae2d51880ac}{D\+E\+F\+A\+U\+L\+T\+\_\+\+W\+I\+F\+I\+\_\+\+C\+O\+N\+N\+E\+CT}}~false
+\item 
+\#define \mbox{\hyperlink{group__appMAIN_ga50ecef7521f23d7c3bd38bd244f09aa7}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+S\+ID}}~\char`\"{}\char`\"{}
+\item 
+\#define \mbox{\hyperlink{group__appMAIN_gab6ccc7f54e6ef3f170e9afbf4f2a21d8}{D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+A\+SS}}~\char`\"{}\char`\"{}
+\item 
+\#define \mbox{\hyperlink{group__appMAIN_ga1b4ed831250544ffcabf0a98c84446af}{M\+Q\+T\+T\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L\+\_\+S}}~30
+\item 
+\#define \mbox{\hyperlink{group__appMAIN_gab484a7f673b8d914176cdcba22184b5e}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+K\+E\+E\+P\+A\+L\+I\+V\+E\+\_\+S}}~60\+UL
+\item 
+\#define \mbox{\hyperlink{group__appMAIN_gacc7170f27dae6f8fb1897bcb98d0962b}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+Q\+T\+T\+\_\+\+A\+D\+D\+R\+E\+SS}}~\char`\"{}iot-\/ps.\+ddns.\+net\char`\"{}
+\item 
+\#define \mbox{\hyperlink{group__appMAIN_ga01342056d524ed0b20f9e0ccc800d1db}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+Q\+T\+T\+\_\+\+P\+O\+RT}}~1883
+\item 
+\#define \mbox{\hyperlink{group__appMAIN_ga1200bc2d8558c631d491f5802a702ea1}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+Q\+T\+T\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+O\+K\+EN}}~\char`\"{}G2-\/S\+E\+IoT\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__appMAIN_ga1d4fe220241e3c1262a46670a499a833}{R\+T\+O\+S\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Asserts correct initialization of every Free\+R\+T\+O\+S-\/\+Drivers A\+PI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__appMAIN_gafc539987e56540799aa09049611e6a74}{N\+E\+T\+W\+O\+R\+K\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Asserts correct initialization of every Free\+R\+T\+O\+S-\/\+Drivers A\+PI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__appMAIN_ga030b4cb15977d1c497466d1079f34846}{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Asserts correct initialization of every Application layer task. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__appMAIN_ga92513baeaf16c498055e00588b63819a}{app\+M\+E\+N\+U\+\_\+\+Normal\+Affix\+Handler}} (void $\ast$a)
+\begin{DoxyCompactList}\small\item\em Handler for the display affixing option in normal mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__appMAIN_ga8e50aec85312696c72b9c34e22c79252}{app\+M\+E\+N\+U\+\_\+\+Normal\+Manage\+Light\+I\+SR}} (Timer\+Handle\+\_\+t x\+Timer)
+\begin{DoxyCompactList}\small\item\em Light managing I\+SR. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__appMAIN_ga3ac313b44a89c6123be960d4ab11558a}{app\+M\+E\+N\+U\+\_\+\+Normal\+Publish\+I\+SR}} (Timer\+Handle\+\_\+t x\+Timer)
+\begin{DoxyCompactList}\small\item\em M\+Q\+TT data publishing I\+SR. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__appMAIN_ga87ea7be2238fe45d1e0385696b1604db}{app\+M\+E\+N\+U\+\_\+\+Normal\+Mode}} (void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em Normal mode task. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__appMAIN_ga5149db67f1f04e67debb2088f4ea5dad}{app\+M\+E\+N\+U\+\_\+\+Maintenance\+Mode}} (void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em Maintenance mode task. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This package provides the functions to be used in the main application. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__appMAIN_gab484a7f673b8d914176cdcba22184b5e}\label{group__appMAIN_gab484a7f673b8d914176cdcba22184b5e}} 
+\index{Main application functions.@{Main application functions.}!DEFAULT\_CONNECTION\_KEEPALIVE\_S@{DEFAULT\_CONNECTION\_KEEPALIVE\_S}}
+\index{DEFAULT\_CONNECTION\_KEEPALIVE\_S@{DEFAULT\_CONNECTION\_KEEPALIVE\_S}!Main application functions.@{Main application functions.}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_CONNECTION\_KEEPALIVE\_S}{DEFAULT\_CONNECTION\_KEEPALIVE\_S}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+K\+E\+E\+P\+A\+L\+I\+V\+E\+\_\+S~60\+UL}
+
+Default keepalive time for the M\+Q\+TT connection, in seconds. \mbox{\Hypertarget{group__appMAIN_gacc7170f27dae6f8fb1897bcb98d0962b}\label{group__appMAIN_gacc7170f27dae6f8fb1897bcb98d0962b}} 
+\index{Main application functions.@{Main application functions.}!DEFAULT\_MQTT\_ADDRESS@{DEFAULT\_MQTT\_ADDRESS}}
+\index{DEFAULT\_MQTT\_ADDRESS@{DEFAULT\_MQTT\_ADDRESS}!Main application functions.@{Main application functions.}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_MQTT\_ADDRESS}{DEFAULT\_MQTT\_ADDRESS}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+Q\+T\+T\+\_\+\+A\+D\+D\+R\+E\+SS~\char`\"{}iot-\/ps.\+ddns.\+net\char`\"{}}
+
+Default M\+Q\+TT server address to connect to. \mbox{\Hypertarget{group__appMAIN_ga1200bc2d8558c631d491f5802a702ea1}\label{group__appMAIN_ga1200bc2d8558c631d491f5802a702ea1}} 
+\index{Main application functions.@{Main application functions.}!DEFAULT\_MQTT\_DEVICE\_TOKEN@{DEFAULT\_MQTT\_DEVICE\_TOKEN}}
+\index{DEFAULT\_MQTT\_DEVICE\_TOKEN@{DEFAULT\_MQTT\_DEVICE\_TOKEN}!Main application functions.@{Main application functions.}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_MQTT\_DEVICE\_TOKEN}{DEFAULT\_MQTT\_DEVICE\_TOKEN}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+Q\+T\+T\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+O\+K\+EN~\char`\"{}G2-\/S\+E\+IoT\char`\"{}}
+
+Default access token for the M\+Q\+TT server to connect to. \mbox{\Hypertarget{group__appMAIN_ga01342056d524ed0b20f9e0ccc800d1db}\label{group__appMAIN_ga01342056d524ed0b20f9e0ccc800d1db}} 
+\index{Main application functions.@{Main application functions.}!DEFAULT\_MQTT\_PORT@{DEFAULT\_MQTT\_PORT}}
+\index{DEFAULT\_MQTT\_PORT@{DEFAULT\_MQTT\_PORT}!Main application functions.@{Main application functions.}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_MQTT\_PORT}{DEFAULT\_MQTT\_PORT}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+Q\+T\+T\+\_\+\+P\+O\+RT~1883}
+
+Default M\+Q\+TT server port to connect to. \mbox{\Hypertarget{group__appMAIN_gab6ccc7f54e6ef3f170e9afbf4f2a21d8}\label{group__appMAIN_gab6ccc7f54e6ef3f170e9afbf4f2a21d8}} 
+\index{Main application functions.@{Main application functions.}!DEFAULT\_PASS@{DEFAULT\_PASS}}
+\index{DEFAULT\_PASS@{DEFAULT\_PASS}!Main application functions.@{Main application functions.}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_PASS}{DEFAULT\_PASS}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+A\+SS~\char`\"{}\char`\"{}}
+
+Default password of the AP for the system to connect to upon boot, if the respective option was enabled \mbox{\Hypertarget{group__appMAIN_ga50ecef7521f23d7c3bd38bd244f09aa7}\label{group__appMAIN_ga50ecef7521f23d7c3bd38bd244f09aa7}} 
+\index{Main application functions.@{Main application functions.}!DEFAULT\_SSID@{DEFAULT\_SSID}}
+\index{DEFAULT\_SSID@{DEFAULT\_SSID}!Main application functions.@{Main application functions.}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_SSID}{DEFAULT\_SSID}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+S\+ID~\char`\"{}\char`\"{}}
+
+Default S\+S\+ID of the AP for the system to connect to upon boot, if the respective option was enabled \mbox{\Hypertarget{group__appMAIN_ga495fea6c0bbfe2c018480ae2d51880ac}\label{group__appMAIN_ga495fea6c0bbfe2c018480ae2d51880ac}} 
+\index{Main application functions.@{Main application functions.}!DEFAULT\_WIFI\_CONNECT@{DEFAULT\_WIFI\_CONNECT}}
+\index{DEFAULT\_WIFI\_CONNECT@{DEFAULT\_WIFI\_CONNECT}!Main application functions.@{Main application functions.}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_WIFI\_CONNECT}{DEFAULT\_WIFI\_CONNECT}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+W\+I\+F\+I\+\_\+\+C\+O\+N\+N\+E\+CT~false}
+
+Allows the system to connect to a predefined network before booting into normal mode. \mbox{\Hypertarget{group__appMAIN_ga1b4ed831250544ffcabf0a98c84446af}\label{group__appMAIN_ga1b4ed831250544ffcabf0a98c84446af}} 
+\index{Main application functions.@{Main application functions.}!MQTT\_PUBLISH\_INTERVAL\_S@{MQTT\_PUBLISH\_INTERVAL\_S}}
+\index{MQTT\_PUBLISH\_INTERVAL\_S@{MQTT\_PUBLISH\_INTERVAL\_S}!Main application functions.@{Main application functions.}}
+\doxysubsubsection{\texorpdfstring{MQTT\_PUBLISH\_INTERVAL\_S}{MQTT\_PUBLISH\_INTERVAL\_S}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L\+\_\+S~30}
+
+Default period for the publication of data through M\+Q\+TT, in seconds. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__appMAIN_ga030b4cb15977d1c497466d1079f34846}\label{group__appMAIN_ga030b4cb15977d1c497466d1079f34846}} 
+\index{Main application functions.@{Main application functions.}!APPLICATION\_Init@{APPLICATION\_Init}}
+\index{APPLICATION\_Init@{APPLICATION\_Init}!Main application functions.@{Main application functions.}}
+\doxysubsubsection{\texorpdfstring{APPLICATION\_Init()}{APPLICATION\_Init()}}
+{\footnotesize\ttfamily void A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Asserts correct initialization of every Application layer task. 
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__appMAIN_ga5149db67f1f04e67debb2088f4ea5dad}\label{group__appMAIN_ga5149db67f1f04e67debb2088f4ea5dad}} 
+\index{Main application functions.@{Main application functions.}!appMENU\_MaintenanceMode@{appMENU\_MaintenanceMode}}
+\index{appMENU\_MaintenanceMode@{appMENU\_MaintenanceMode}!Main application functions.@{Main application functions.}}
+\doxysubsubsection{\texorpdfstring{appMENU\_MaintenanceMode()}{appMENU\_MaintenanceMode()}}
+{\footnotesize\ttfamily void app\+M\+E\+N\+U\+\_\+\+Maintenance\+Mode (\begin{DoxyParamCaption}\item[{void $\ast$}]{arg }\end{DoxyParamCaption})}
+
+
+
+Maintenance mode task. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__appMAIN_ga92513baeaf16c498055e00588b63819a}\label{group__appMAIN_ga92513baeaf16c498055e00588b63819a}} 
+\index{Main application functions.@{Main application functions.}!appMENU\_NormalAffixHandler@{appMENU\_NormalAffixHandler}}
+\index{appMENU\_NormalAffixHandler@{appMENU\_NormalAffixHandler}!Main application functions.@{Main application functions.}}
+\doxysubsubsection{\texorpdfstring{appMENU\_NormalAffixHandler()}{appMENU\_NormalAffixHandler()}}
+{\footnotesize\ttfamily void app\+M\+E\+N\+U\+\_\+\+Normal\+Affix\+Handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{a }\end{DoxyParamCaption})}
+
+
+
+Handler for the display affixing option in normal mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__appMAIN_ga8e50aec85312696c72b9c34e22c79252}\label{group__appMAIN_ga8e50aec85312696c72b9c34e22c79252}} 
+\index{Main application functions.@{Main application functions.}!appMENU\_NormalManageLightISR@{appMENU\_NormalManageLightISR}}
+\index{appMENU\_NormalManageLightISR@{appMENU\_NormalManageLightISR}!Main application functions.@{Main application functions.}}
+\doxysubsubsection{\texorpdfstring{appMENU\_NormalManageLightISR()}{appMENU\_NormalManageLightISR()}}
+{\footnotesize\ttfamily void app\+M\+E\+N\+U\+\_\+\+Normal\+Manage\+Light\+I\+SR (\begin{DoxyParamCaption}\item[{Timer\+Handle\+\_\+t}]{x\+Timer }\end{DoxyParamCaption})}
+
+
+
+Light managing I\+SR. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Timer} & Handle of the timer being used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__appMAIN_ga87ea7be2238fe45d1e0385696b1604db}\label{group__appMAIN_ga87ea7be2238fe45d1e0385696b1604db}} 
+\index{Main application functions.@{Main application functions.}!appMENU\_NormalMode@{appMENU\_NormalMode}}
+\index{appMENU\_NormalMode@{appMENU\_NormalMode}!Main application functions.@{Main application functions.}}
+\doxysubsubsection{\texorpdfstring{appMENU\_NormalMode()}{appMENU\_NormalMode()}}
+{\footnotesize\ttfamily void app\+M\+E\+N\+U\+\_\+\+Normal\+Mode (\begin{DoxyParamCaption}\item[{void $\ast$}]{arg }\end{DoxyParamCaption})}
+
+
+
+Normal mode task. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & Arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__appMAIN_ga3ac313b44a89c6123be960d4ab11558a}\label{group__appMAIN_ga3ac313b44a89c6123be960d4ab11558a}} 
+\index{Main application functions.@{Main application functions.}!appMENU\_NormalPublishISR@{appMENU\_NormalPublishISR}}
+\index{appMENU\_NormalPublishISR@{appMENU\_NormalPublishISR}!Main application functions.@{Main application functions.}}
+\doxysubsubsection{\texorpdfstring{appMENU\_NormalPublishISR()}{appMENU\_NormalPublishISR()}}
+{\footnotesize\ttfamily void app\+M\+E\+N\+U\+\_\+\+Normal\+Publish\+I\+SR (\begin{DoxyParamCaption}\item[{Timer\+Handle\+\_\+t}]{x\+Timer }\end{DoxyParamCaption})}
+
+
+
+M\+Q\+TT data publishing I\+SR. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Timer} & Handle of the timer being used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__appMAIN_gafc539987e56540799aa09049611e6a74}\label{group__appMAIN_gafc539987e56540799aa09049611e6a74}} 
+\index{Main application functions.@{Main application functions.}!NETWORK\_Init@{NETWORK\_Init}}
+\index{NETWORK\_Init@{NETWORK\_Init}!Main application functions.@{Main application functions.}}
+\doxysubsubsection{\texorpdfstring{NETWORK\_Init()}{NETWORK\_Init()}}
+{\footnotesize\ttfamily void N\+E\+T\+W\+O\+R\+K\+\_\+\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Asserts correct initialization of every Free\+R\+T\+O\+S-\/\+Drivers A\+PI. 
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__appMAIN_ga1d4fe220241e3c1262a46670a499a833}\label{group__appMAIN_ga1d4fe220241e3c1262a46670a499a833}} 
+\index{Main application functions.@{Main application functions.}!RTOS\_Init@{RTOS\_Init}}
+\index{RTOS\_Init@{RTOS\_Init}!Main application functions.@{Main application functions.}}
+\doxysubsubsection{\texorpdfstring{RTOS\_Init()}{RTOS\_Init()}}
+{\footnotesize\ttfamily void R\+T\+O\+S\+\_\+\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Asserts correct initialization of every Free\+R\+T\+O\+S-\/\+Drivers A\+PI. 
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}

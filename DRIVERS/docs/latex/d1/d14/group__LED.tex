@@ -1,0 +1,101 @@
+\hypertarget{group__LED}{}\doxysection{L\+ED}
+\label{group__LED}\index{LED@{LED}}
+
+
+This package provides the capabilities such as on/off/toggle to the L\+ED in L\+P\+C\+Xpresso development board based on L\+P\+C1769 from N\+XP.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__LED_gab278fb7416c57a0720beafac49c11d3a}{L\+E\+D\+\_\+\+Init}} (bool state)
+\begin{DoxyCompactList}\small\item\em Initializes the L\+ED A\+PI. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__LED_ga05448f68852f7baac7e2be2609275f1f}{L\+E\+D\+\_\+\+Get\+State}} (void)
+\begin{DoxyCompactList}\small\item\em Get L\+ED state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LED_ga94ffebcdd3b5bbbf9a89e9f9ab52028d}{L\+E\+D\+\_\+\+On}} (void)
+\begin{DoxyCompactList}\small\item\em Turn L\+ED on. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LED_gaf842f9996045107cd0841a4f0707fc65}{L\+E\+D\+\_\+\+Off}} (void)
+\begin{DoxyCompactList}\small\item\em Turn L\+ED off. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__LED_ga3b0db98f4b9d8da4c54223aa39ebc557}{L\+E\+D\+\_\+\+Toggle}} (void)
+\begin{DoxyCompactList}\small\item\em Toggle L\+ED. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This package provides the capabilities such as on/off/toggle to the L\+ED in L\+P\+C\+Xpresso development board based on L\+P\+C1769 from N\+XP. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__LED_ga05448f68852f7baac7e2be2609275f1f}\label{group__LED_ga05448f68852f7baac7e2be2609275f1f}} 
+\index{LED@{LED}!LED\_GetState@{LED\_GetState}}
+\index{LED\_GetState@{LED\_GetState}!LED@{LED}}
+\doxysubsubsection{\texorpdfstring{LED\_GetState()}{LED\_GetState()}}
+{\footnotesize\ttfamily bool L\+E\+D\+\_\+\+Get\+State (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get L\+ED state. 
+
+\begin{DoxyReturn}{Returns}
+status of L\+ED\+: \char`\"{}false\char`\"{} indicate L\+ED is off and \char`\"{}true\char`\"{} L\+ED is on. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__LED_gab278fb7416c57a0720beafac49c11d3a}\label{group__LED_gab278fb7416c57a0720beafac49c11d3a}} 
+\index{LED@{LED}!LED\_Init@{LED\_Init}}
+\index{LED\_Init@{LED\_Init}!LED@{LED}}
+\doxysubsubsection{\texorpdfstring{LED\_Init()}{LED\_Init()}}
+{\footnotesize\ttfamily void L\+E\+D\+\_\+\+Init (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})}
+
+
+
+Initializes the L\+ED A\+PI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & set L\+ED state\+: \char`\"{}false\char`\"{} turns L\+ED off and \char`\"{}true\char`\"{} turns L\+ED on. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function must be called prior to any other L\+ED functions. The L\+ED will started in the value passed in the parameter. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__LED_gaf842f9996045107cd0841a4f0707fc65}\label{group__LED_gaf842f9996045107cd0841a4f0707fc65}} 
+\index{LED@{LED}!LED\_Off@{LED\_Off}}
+\index{LED\_Off@{LED\_Off}!LED@{LED}}
+\doxysubsubsection{\texorpdfstring{LED\_Off()}{LED\_Off()}}
+{\footnotesize\ttfamily void L\+E\+D\+\_\+\+Off (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Turn L\+ED off. 
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__LED_ga94ffebcdd3b5bbbf9a89e9f9ab52028d}\label{group__LED_ga94ffebcdd3b5bbbf9a89e9f9ab52028d}} 
+\index{LED@{LED}!LED\_On@{LED\_On}}
+\index{LED\_On@{LED\_On}!LED@{LED}}
+\doxysubsubsection{\texorpdfstring{LED\_On()}{LED\_On()}}
+{\footnotesize\ttfamily void L\+E\+D\+\_\+\+On (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Turn L\+ED on. 
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__LED_ga3b0db98f4b9d8da4c54223aa39ebc557}\label{group__LED_ga3b0db98f4b9d8da4c54223aa39ebc557}} 
+\index{LED@{LED}!LED\_Toggle@{LED\_Toggle}}
+\index{LED\_Toggle@{LED\_Toggle}!LED@{LED}}
+\doxysubsubsection{\texorpdfstring{LED\_Toggle()}{LED\_Toggle()}}
+{\footnotesize\ttfamily void L\+E\+D\+\_\+\+Toggle (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Toggle L\+ED. 
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}

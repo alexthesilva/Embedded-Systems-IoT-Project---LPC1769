@@ -1,0 +1,11 @@
+../src/main.c:79:6:testmqtt	24	static
+../src/main.c:97:6:testntp	40	static
+../src/main.c:143:6:RTOS_Init	4	static
+../src/main.c:162:6:NETWORK_Init	4	static
+../src/main.c:167:6:APPLICATION_Init	16	static
+../src/main.c:178:6:appMENU_NormalAffix	40	static
+../src/main.c:198:6:appMENU_NormalManageLight	24	static
+../src/main.c:227:6:appMENU_NormalMode	56	static
+../src/main.c:253:6:appMENU_MaintenanceMode	152	static
+../src/main.c:280:5:main	8	static
+../src/main.c:311:6:vApplicationStackOverflowHook	16	static

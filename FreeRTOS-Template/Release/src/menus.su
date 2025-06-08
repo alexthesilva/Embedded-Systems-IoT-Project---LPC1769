@@ -1,0 +1,9 @@
+../src/menus.c:33:6:handler	16	static
+../src/menus.c:37:6:appMAINTENANCE_xSyncTime	72	static
+../src/menus.c:51:6:appMAINTENANCE_SyncTimeHandler	16	static
+../src/menus.c:83:6:appMAINTENANCE_SetLightHandler	40	static
+../src/menus.c:114:5:uiMENU_DaysOfMonth	24	static
+../src/menus.c:150:6:appMAINTENANCE_xSetDate	64	static
+../src/menus.c:171:6:appMAINTENANCE_SetDateHandler	40	static
+../src/menus.c:287:6:appMAINTENANCE_xSetTime	24	static
+../src/menus.c:303:6:appMAINTENANCE_SetTimeHandler	24	static

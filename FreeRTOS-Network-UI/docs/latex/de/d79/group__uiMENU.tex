@@ -1,0 +1,432 @@
+\hypertarget{group__uiMENU}{}\doxysection{Menu interfacing}
+\label{group__uiMENU}\index{Menu interfacing@{Menu interfacing}}
+
+
+This package provides the means to easily interface menus through an L\+CD and a rotary encoder.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__uiMENU_ga5660b0fefca8edb12557fe811127654b}{U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+E\+N\+C\+O\+D\+E\+R\+\_\+\+I\+N\+V\+E\+RT}}~true
+\item 
+\#define \mbox{\hyperlink{group__uiMENU_ga5d39a3a7997ef53560bd3334bb8c009a}{U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+MS}}~33
+\item 
+\#define \mbox{\hyperlink{group__uiMENU_ga8ecc110f3ab00be83a13aa5019fdb838}{U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+B\+L\+I\+N\+K\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+MS}}~250
+\item 
+\#define \mbox{\hyperlink{group__uiMENU_ga8b5358d4b9cef53537472ffe3992bf27}{U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+L\+I\+N\+ES}}~L\+C\+D\+Text\+\_\+\+L\+I\+N\+ES
+\item 
+\#define \mbox{\hyperlink{group__uiMENU_ga3223478a587d3b08833a359b8d56f7bb}{U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+C\+O\+L\+U\+M\+NS}}~L\+C\+D\+Text\+\_\+\+C\+O\+L\+U\+M\+NS
+\item 
+\#define \mbox{\hyperlink{group__uiMENU_gae3ce05410591d0f8232057583c700e9d}{U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+\+M\+E\+S\+S\+A\+GE}}~\char`\"{}success\char`\"{}
+\item 
+\#define \mbox{\hyperlink{group__uiMENU_gabb12c17d9f98f6358a0602347d0c484e}{U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+GE}}~\char`\"{}failure\char`\"{}
+\item 
+\#define \mbox{\hyperlink{group__uiMENU_ga191ba35e196af9f9f75370b7e01d2688}{U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+N\+G\+\_\+\+M\+E\+S\+S\+A\+GE}}~\char`\"{}processing...\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{group__uiMENU_ga4201ee12da7ce88b8d695fa8eceda4e4}{Item\+Handler\+\_\+t}}) (void $\ast$)
+\item 
+typedef bool($\ast$ \mbox{\hyperlink{group__uiMENU_gac445103bf1eff474cc32f652ab5ed822}{Command\+Function\+\_\+t}}) (void $\ast$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Menu\+\_\+t $\ast$ \mbox{\hyperlink{group__uiMENU_ga837465c2f1a04dbe4bb0cb2ea60f2646}{ui\+M\+E\+N\+U\+\_\+\+Generate}} (char $\ast$menu, char $\ast$$\ast$item\+\_\+names, \mbox{\hyperlink{group__uiMENU_ga4201ee12da7ce88b8d695fa8eceda4e4}{Item\+Handler\+\_\+t}} $\ast$handlers, void $\ast$$\ast$args, int nr\+\_\+items)
+\begin{DoxyCompactList}\small\item\em Initializes a menu object with the given parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__uiMENU_gad0a44b237231f5f1e8cc2676226630e2}{ui\+M\+E\+N\+U\+\_\+\+Execute}} (Menu\+\_\+t $\ast$menu)
+\begin{DoxyCompactList}\small\item\em Executes a previously generated menu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__uiMENU_ga39d93a7dcee1d9bd88abe57782bfd1f8}{ui\+M\+E\+N\+U\+\_\+\+Execute\+C\+MD}} (char $\ast$message\+\_\+title, \mbox{\hyperlink{group__uiMENU_gac445103bf1eff474cc32f652ab5ed822}{Command\+Function\+\_\+t}} function, void $\ast$args)
+\begin{DoxyCompactList}\small\item\em Executes a given function with bool return type and displays the status of its execution. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__uiMENU_ga5221644f719a817218ddc07691e54829}{ui\+M\+E\+N\+U\+\_\+\+Input\+Data}} (char $\ast$message\+\_\+title, char $\ast$input\+\_\+data, int max\+\_\+chars, char $\ast$char\+\_\+table, char $\ast$output\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Allows the input of data through a rotary encoder. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__uiMENU_ga0f011e520ae90ea7662b416fc4cd515b}{ui\+M\+E\+N\+U\+\_\+\+Select\+Options}} (char $\ast$menu\+\_\+name, char $\ast$$\ast$options, int nr\+\_\+options, bool cancel)
+\begin{DoxyCompactList}\small\item\em Allows the selection of a given ammount of items. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__uiMENU_ga53d7e213800c01f21d16c63c48cf3d8f}{ui\+M\+E\+N\+U\+\_\+\+Ask}} (char $\ast$question)
+\begin{DoxyCompactList}\small\item\em Asks a binary answer question, returning the index of the selected answer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__uiMENU_gac2352234afe9507a7ecaf970f8173176}{ui\+M\+E\+N\+U\+\_\+\+Destroy}} (Menu\+\_\+t $\ast$menu)
+\begin{DoxyCompactList}\small\item\em Destroys a previously generated menu object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__uiMENU_ga4c5dbf99a4e71aeffbaecb871476e5ec}{ui\+E\+N\+C\+O\+D\+E\+R\+\_\+\+Handle}} (int $\ast$curr\+\_\+state, int state\+\_\+on\+\_\+left, int state\+\_\+on\+\_\+right, int state\+\_\+on\+\_\+click, int state\+\_\+on\+\_\+dclick)
+\begin{DoxyCompactList}\small\item\em Handles current state based on the encoder interaction with the user. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{group__uiMENU_ga09f14a9292efa8a87fb05c00546c9bcd}{ui\+M\+E\+N\+U\+\_\+\+Fill\+String}} (char $\ast$string\+\_\+to\+\_\+fill, int col\+\_\+number)
+\begin{DoxyCompactList}\small\item\em Fills a string with empty spaces to prevent junk data from being displayed. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{group__uiMENU_ga1a3286dc2264ee01fb6d474a2a486306}{ui\+M\+E\+N\+U\+\_\+\+Center\+String}} (char $\ast$string\+\_\+to\+\_\+center, int col\+\_\+number)
+\begin{DoxyCompactList}\small\item\em Centers and fills a string with empty spaces to prevent junk data from being displayed. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{group__uiMENU_gab41985bbdda4b597afddc5576f023fd1}{ui\+M\+E\+N\+U\+\_\+\+Itemize\+String}} (char $\ast$string\+\_\+to\+\_\+itemize, int col\+\_\+number)
+\begin{DoxyCompactList}\small\item\em Centers fills a string with empty spaces and places arrows in the first and last locations of the passed string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__uiMENU_gab2adaf3bdd09c0a34fbf7afa16041c5b}{ui\+M\+E\+N\+U\+\_\+\+Blink\+Str}} (char $\ast$str\+\_\+to\+\_\+blink, int line, int col, int length\+\_\+to\+\_\+blink, Tick\+Type\+\_\+t $\ast$start\+\_\+time, Tick\+Type\+\_\+t blink\+\_\+period)
+\begin{DoxyCompactList}\small\item\em Alternates between a string and empty spaces in the positions of the display, length and period given. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__uiMENU_ga01e52d1c116e2627c2ccfaeca8dbfcfa}{ui\+M\+E\+N\+U\+\_\+\+Blink\+Str\+Clear}} (char $\ast$str\+\_\+to\+\_\+blink, int line, int col, int length\+\_\+to\+\_\+blink)
+\begin{DoxyCompactList}\small\item\em Ensures the last string displayed is the string given rather than an empty one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This package provides the means to easily interface menus through an L\+CD and a rotary encoder. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__uiMENU_ga8ecc110f3ab00be83a13aa5019fdb838}\label{group__uiMENU_ga8ecc110f3ab00be83a13aa5019fdb838}} 
+\index{Menu interfacing@{Menu interfacing}!UI\_MENU\_BLINK\_PERIOD\_MS@{UI\_MENU\_BLINK\_PERIOD\_MS}}
+\index{UI\_MENU\_BLINK\_PERIOD\_MS@{UI\_MENU\_BLINK\_PERIOD\_MS}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{UI\_MENU\_BLINK\_PERIOD\_MS}{UI\_MENU\_BLINK\_PERIOD\_MS}}
+{\footnotesize\ttfamily \#define U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+B\+L\+I\+N\+K\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+MS~250}
+
+Blinking period for the menu items, in milliseconds. \mbox{\Hypertarget{group__uiMENU_ga3223478a587d3b08833a359b8d56f7bb}\label{group__uiMENU_ga3223478a587d3b08833a359b8d56f7bb}} 
+\index{Menu interfacing@{Menu interfacing}!UI\_MENU\_COLUMNS@{UI\_MENU\_COLUMNS}}
+\index{UI\_MENU\_COLUMNS@{UI\_MENU\_COLUMNS}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{UI\_MENU\_COLUMNS}{UI\_MENU\_COLUMNS}}
+{\footnotesize\ttfamily \#define U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+C\+O\+L\+U\+M\+NS~L\+C\+D\+Text\+\_\+\+C\+O\+L\+U\+M\+NS}
+
+Ammount of columns in the display used. \mbox{\Hypertarget{group__uiMENU_ga5660b0fefca8edb12557fe811127654b}\label{group__uiMENU_ga5660b0fefca8edb12557fe811127654b}} 
+\index{Menu interfacing@{Menu interfacing}!UI\_MENU\_ENCODER\_INVERT@{UI\_MENU\_ENCODER\_INVERT}}
+\index{UI\_MENU\_ENCODER\_INVERT@{UI\_MENU\_ENCODER\_INVERT}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{UI\_MENU\_ENCODER\_INVERT}{UI\_MENU\_ENCODER\_INVERT}}
+{\footnotesize\ttfamily \#define U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+E\+N\+C\+O\+D\+E\+R\+\_\+\+I\+N\+V\+E\+RT~true}
+
+Inverts the rotation values from the encoder, from left to right and vice-\/versa. \mbox{\Hypertarget{group__uiMENU_gabb12c17d9f98f6358a0602347d0c484e}\label{group__uiMENU_gabb12c17d9f98f6358a0602347d0c484e}} 
+\index{Menu interfacing@{Menu interfacing}!UI\_MENU\_FAIL\_MESSAGE@{UI\_MENU\_FAIL\_MESSAGE}}
+\index{UI\_MENU\_FAIL\_MESSAGE@{UI\_MENU\_FAIL\_MESSAGE}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{UI\_MENU\_FAIL\_MESSAGE}{UI\_MENU\_FAIL\_MESSAGE}}
+{\footnotesize\ttfamily \#define U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+GE~\char`\"{}failure\char`\"{}}
+
+Message displayed upon failed execution of a given command. \mbox{\Hypertarget{group__uiMENU_ga8b5358d4b9cef53537472ffe3992bf27}\label{group__uiMENU_ga8b5358d4b9cef53537472ffe3992bf27}} 
+\index{Menu interfacing@{Menu interfacing}!UI\_MENU\_LINES@{UI\_MENU\_LINES}}
+\index{UI\_MENU\_LINES@{UI\_MENU\_LINES}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{UI\_MENU\_LINES}{UI\_MENU\_LINES}}
+{\footnotesize\ttfamily \#define U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+L\+I\+N\+ES~L\+C\+D\+Text\+\_\+\+L\+I\+N\+ES}
+
+Ammount of lines in the display used. \mbox{\Hypertarget{group__uiMENU_ga191ba35e196af9f9f75370b7e01d2688}\label{group__uiMENU_ga191ba35e196af9f9f75370b7e01d2688}} 
+\index{Menu interfacing@{Menu interfacing}!UI\_MENU\_PROCESSING\_MESSAGE@{UI\_MENU\_PROCESSING\_MESSAGE}}
+\index{UI\_MENU\_PROCESSING\_MESSAGE@{UI\_MENU\_PROCESSING\_MESSAGE}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{UI\_MENU\_PROCESSING\_MESSAGE}{UI\_MENU\_PROCESSING\_MESSAGE}}
+{\footnotesize\ttfamily \#define U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+N\+G\+\_\+\+M\+E\+S\+S\+A\+GE~\char`\"{}processing...\char`\"{}}
+
+Message to display while awaiting execution of a given command. \mbox{\Hypertarget{group__uiMENU_ga5d39a3a7997ef53560bd3334bb8c009a}\label{group__uiMENU_ga5d39a3a7997ef53560bd3334bb8c009a}} 
+\index{Menu interfacing@{Menu interfacing}!UI\_MENU\_REFRESH\_PERIOD\_MS@{UI\_MENU\_REFRESH\_PERIOD\_MS}}
+\index{UI\_MENU\_REFRESH\_PERIOD\_MS@{UI\_MENU\_REFRESH\_PERIOD\_MS}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{UI\_MENU\_REFRESH\_PERIOD\_MS}{UI\_MENU\_REFRESH\_PERIOD\_MS}}
+{\footnotesize\ttfamily \#define U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+MS~33}
+
+Refresh period for the menus, in milliseconds. \mbox{\Hypertarget{group__uiMENU_gae3ce05410591d0f8232057583c700e9d}\label{group__uiMENU_gae3ce05410591d0f8232057583c700e9d}} 
+\index{Menu interfacing@{Menu interfacing}!UI\_MENU\_SUCCESS\_MESSAGE@{UI\_MENU\_SUCCESS\_MESSAGE}}
+\index{UI\_MENU\_SUCCESS\_MESSAGE@{UI\_MENU\_SUCCESS\_MESSAGE}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{UI\_MENU\_SUCCESS\_MESSAGE}{UI\_MENU\_SUCCESS\_MESSAGE}}
+{\footnotesize\ttfamily \#define U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+\+M\+E\+S\+S\+A\+GE~\char`\"{}success\char`\"{}}
+
+Message displayed upon successful execution of a given command. 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{group__uiMENU_gac445103bf1eff474cc32f652ab5ed822}\label{group__uiMENU_gac445103bf1eff474cc32f652ab5ed822}} 
+\index{Menu interfacing@{Menu interfacing}!CommandFunction\_t@{CommandFunction\_t}}
+\index{CommandFunction\_t@{CommandFunction\_t}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{CommandFunction\_t}{CommandFunction\_t}}
+{\footnotesize\ttfamily typedef bool($\ast$ Command\+Function\+\_\+t) (void $\ast$)}
+
+Handler function type to be used as a command. \mbox{\Hypertarget{group__uiMENU_ga4201ee12da7ce88b8d695fa8eceda4e4}\label{group__uiMENU_ga4201ee12da7ce88b8d695fa8eceda4e4}} 
+\index{Menu interfacing@{Menu interfacing}!ItemHandler\_t@{ItemHandler\_t}}
+\index{ItemHandler\_t@{ItemHandler\_t}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{ItemHandler\_t}{ItemHandler\_t}}
+{\footnotesize\ttfamily typedef void($\ast$ Item\+Handler\+\_\+t) (void $\ast$)}
+
+Handler function type to be used in a menu. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__uiMENU_ga4c5dbf99a4e71aeffbaecb871476e5ec}\label{group__uiMENU_ga4c5dbf99a4e71aeffbaecb871476e5ec}} 
+\index{Menu interfacing@{Menu interfacing}!uiENCODER\_Handle@{uiENCODER\_Handle}}
+\index{uiENCODER\_Handle@{uiENCODER\_Handle}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{uiENCODER\_Handle()}{uiENCODER\_Handle()}}
+{\footnotesize\ttfamily void ui\+E\+N\+C\+O\+D\+E\+R\+\_\+\+Handle (\begin{DoxyParamCaption}\item[{int $\ast$}]{curr\+\_\+state,  }\item[{int}]{state\+\_\+on\+\_\+left,  }\item[{int}]{state\+\_\+on\+\_\+right,  }\item[{int}]{state\+\_\+on\+\_\+click,  }\item[{int}]{state\+\_\+on\+\_\+dclick }\end{DoxyParamCaption})}
+
+
+
+Handles current state based on the encoder interaction with the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curr\+\_\+state} & Address of the current state. \\
+\hline
+{\em state\+\_\+on\+\_\+left} & State to be assigned to the current state upon left/counter-\/clockwise rotation of the encoder. \\
+\hline
+{\em state\+\_\+on\+\_\+right} & State to be assigned to the current state upon right/clockwise rotation of the encoder. \\
+\hline
+{\em state\+\_\+on\+\_\+click} & State to be assigned to the current state upon single button press of the encoder. \\
+\hline
+{\em state\+\_\+on\+\_\+dclick} & State to be assigned to the current state upon double rapid button press of the encoder. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__uiMENU_ga53d7e213800c01f21d16c63c48cf3d8f}\label{group__uiMENU_ga53d7e213800c01f21d16c63c48cf3d8f}} 
+\index{Menu interfacing@{Menu interfacing}!uiMENU\_Ask@{uiMENU\_Ask}}
+\index{uiMENU\_Ask@{uiMENU\_Ask}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{uiMENU\_Ask()}{uiMENU\_Ask()}}
+{\footnotesize\ttfamily bool ui\+M\+E\+N\+U\+\_\+\+Ask (\begin{DoxyParamCaption}\item[{char $\ast$}]{question }\end{DoxyParamCaption})}
+
+
+
+Asks a binary answer question, returning the index of the selected answer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em question} & Question to be asked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Index of the option answer selected. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__uiMENU_gab2adaf3bdd09c0a34fbf7afa16041c5b}\label{group__uiMENU_gab2adaf3bdd09c0a34fbf7afa16041c5b}} 
+\index{Menu interfacing@{Menu interfacing}!uiMENU\_BlinkStr@{uiMENU\_BlinkStr}}
+\index{uiMENU\_BlinkStr@{uiMENU\_BlinkStr}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{uiMENU\_BlinkStr()}{uiMENU\_BlinkStr()}}
+{\footnotesize\ttfamily void ui\+M\+E\+N\+U\+\_\+\+Blink\+Str (\begin{DoxyParamCaption}\item[{char $\ast$}]{str\+\_\+to\+\_\+blink,  }\item[{int}]{line,  }\item[{int}]{col,  }\item[{int}]{length\+\_\+to\+\_\+blink,  }\item[{Tick\+Type\+\_\+t $\ast$}]{start\+\_\+time,  }\item[{Tick\+Type\+\_\+t}]{blink\+\_\+period }\end{DoxyParamCaption})}
+
+
+
+Alternates between a string and empty spaces in the positions of the display, length and period given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+\_\+to\+\_\+blink} & String to be blinked. \\
+\hline
+{\em line} & Line position in the display of the string to be blinked. \\
+\hline
+{\em col} & Column position in the display of the string to be blinked. \\
+\hline
+{\em length\+\_\+to\+\_\+blink} & Length of the string to be blinked. \\
+\hline
+{\em start\+\_\+time} & Starting time of a blinking phase, in ticks. \\
+\hline
+{\em blink\+\_\+period} & Blinking period of the display. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__uiMENU_ga01e52d1c116e2627c2ccfaeca8dbfcfa}\label{group__uiMENU_ga01e52d1c116e2627c2ccfaeca8dbfcfa}} 
+\index{Menu interfacing@{Menu interfacing}!uiMENU\_BlinkStrClear@{uiMENU\_BlinkStrClear}}
+\index{uiMENU\_BlinkStrClear@{uiMENU\_BlinkStrClear}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{uiMENU\_BlinkStrClear()}{uiMENU\_BlinkStrClear()}}
+{\footnotesize\ttfamily void ui\+M\+E\+N\+U\+\_\+\+Blink\+Str\+Clear (\begin{DoxyParamCaption}\item[{char $\ast$}]{str\+\_\+to\+\_\+blink,  }\item[{int}]{line,  }\item[{int}]{col,  }\item[{int}]{length\+\_\+to\+\_\+blink }\end{DoxyParamCaption})}
+
+
+
+Ensures the last string displayed is the string given rather than an empty one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+\_\+to\+\_\+blink} & String to be displayed. \\
+\hline
+{\em line} & Line position in the display of the string. \\
+\hline
+{\em col} & Column position in the display of the string. \\
+\hline
+{\em length\+\_\+to\+\_\+blink} & Length of the string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__uiMENU_ga1a3286dc2264ee01fb6d474a2a486306}\label{group__uiMENU_ga1a3286dc2264ee01fb6d474a2a486306}} 
+\index{Menu interfacing@{Menu interfacing}!uiMENU\_CenterString@{uiMENU\_CenterString}}
+\index{uiMENU\_CenterString@{uiMENU\_CenterString}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{uiMENU\_CenterString()}{uiMENU\_CenterString()}}
+{\footnotesize\ttfamily char$\ast$ ui\+M\+E\+N\+U\+\_\+\+Center\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{string\+\_\+to\+\_\+center,  }\item[{int}]{col\+\_\+number }\end{DoxyParamCaption})}
+
+
+
+Centers and fills a string with empty spaces to prevent junk data from being displayed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+\_\+to\+\_\+center} & String to be filled. \\
+\hline
+{\em col\+\_\+number} & Number of collumns of the display being used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Generated string, dynamically allocated. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__uiMENU_gac2352234afe9507a7ecaf970f8173176}\label{group__uiMENU_gac2352234afe9507a7ecaf970f8173176}} 
+\index{Menu interfacing@{Menu interfacing}!uiMENU\_Destroy@{uiMENU\_Destroy}}
+\index{uiMENU\_Destroy@{uiMENU\_Destroy}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{uiMENU\_Destroy()}{uiMENU\_Destroy()}}
+{\footnotesize\ttfamily void ui\+M\+E\+N\+U\+\_\+\+Destroy (\begin{DoxyParamCaption}\item[{Menu\+\_\+t $\ast$}]{menu }\end{DoxyParamCaption})}
+
+
+
+Destroys a previously generated menu object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & Menu object to be destroyed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__uiMENU_gad0a44b237231f5f1e8cc2676226630e2}\label{group__uiMENU_gad0a44b237231f5f1e8cc2676226630e2}} 
+\index{Menu interfacing@{Menu interfacing}!uiMENU\_Execute@{uiMENU\_Execute}}
+\index{uiMENU\_Execute@{uiMENU\_Execute}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{uiMENU\_Execute()}{uiMENU\_Execute()}}
+{\footnotesize\ttfamily void ui\+M\+E\+N\+U\+\_\+\+Execute (\begin{DoxyParamCaption}\item[{Menu\+\_\+t $\ast$}]{menu }\end{DoxyParamCaption})}
+
+
+
+Executes a previously generated menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & Menu object to be executed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+ui\+M\+E\+N\+U\+\_\+\+Generate should be called prior to this function to in order to generate the menu object. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__uiMENU_ga39d93a7dcee1d9bd88abe57782bfd1f8}\label{group__uiMENU_ga39d93a7dcee1d9bd88abe57782bfd1f8}} 
+\index{Menu interfacing@{Menu interfacing}!uiMENU\_ExecuteCMD@{uiMENU\_ExecuteCMD}}
+\index{uiMENU\_ExecuteCMD@{uiMENU\_ExecuteCMD}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{uiMENU\_ExecuteCMD()}{uiMENU\_ExecuteCMD()}}
+{\footnotesize\ttfamily bool ui\+M\+E\+N\+U\+\_\+\+Execute\+C\+MD (\begin{DoxyParamCaption}\item[{char $\ast$}]{message\+\_\+title,  }\item[{\mbox{\hyperlink{group__uiMENU_gac445103bf1eff474cc32f652ab5ed822}{Command\+Function\+\_\+t}}}]{function,  }\item[{void $\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Executes a given function with bool return type and displays the status of its execution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+\_\+title} & Name of the command to be executed. \\
+\hline
+{\em function} & Handler function of the command to be executed. \\
+\hline
+{\em args} & Argument to the passed handler function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the command was executed successfully, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+ui\+M\+E\+N\+U\+\_\+\+Generate should be called prior to this function to in order to generate the menu object. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__uiMENU_ga09f14a9292efa8a87fb05c00546c9bcd}\label{group__uiMENU_ga09f14a9292efa8a87fb05c00546c9bcd}} 
+\index{Menu interfacing@{Menu interfacing}!uiMENU\_FillString@{uiMENU\_FillString}}
+\index{uiMENU\_FillString@{uiMENU\_FillString}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{uiMENU\_FillString()}{uiMENU\_FillString()}}
+{\footnotesize\ttfamily char$\ast$ ui\+M\+E\+N\+U\+\_\+\+Fill\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{string\+\_\+to\+\_\+fill,  }\item[{int}]{col\+\_\+number }\end{DoxyParamCaption})}
+
+
+
+Fills a string with empty spaces to prevent junk data from being displayed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+\_\+to\+\_\+fill} & String to be filled. \\
+\hline
+{\em col\+\_\+number} & Number of collumns of the display being used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Generated string, dynamically allocated. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__uiMENU_ga837465c2f1a04dbe4bb0cb2ea60f2646}\label{group__uiMENU_ga837465c2f1a04dbe4bb0cb2ea60f2646}} 
+\index{Menu interfacing@{Menu interfacing}!uiMENU\_Generate@{uiMENU\_Generate}}
+\index{uiMENU\_Generate@{uiMENU\_Generate}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{uiMENU\_Generate()}{uiMENU\_Generate()}}
+{\footnotesize\ttfamily Menu\+\_\+t$\ast$ ui\+M\+E\+N\+U\+\_\+\+Generate (\begin{DoxyParamCaption}\item[{char $\ast$}]{menu,  }\item[{char $\ast$$\ast$}]{item\+\_\+names,  }\item[{\mbox{\hyperlink{group__uiMENU_ga4201ee12da7ce88b8d695fa8eceda4e4}{Item\+Handler\+\_\+t}} $\ast$}]{handlers,  }\item[{void $\ast$$\ast$}]{args,  }\item[{int}]{nr\+\_\+items }\end{DoxyParamCaption})}
+
+
+
+Initializes a menu object with the given parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & Menu name to be displayed. \\
+\hline
+{\em item\+\_\+names} & Names of the items to be displayed. \\
+\hline
+{\em handlers} & Handler functions of the items. \\
+\hline
+{\em args} & Arguments to be sent to item handler functions. \\
+\hline
+{\em nr\+\_\+items} & Number of items of the menu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Menu object if successful, N\+U\+LL otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__uiMENU_ga5221644f719a817218ddc07691e54829}\label{group__uiMENU_ga5221644f719a817218ddc07691e54829}} 
+\index{Menu interfacing@{Menu interfacing}!uiMENU\_InputData@{uiMENU\_InputData}}
+\index{uiMENU\_InputData@{uiMENU\_InputData}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{uiMENU\_InputData()}{uiMENU\_InputData()}}
+{\footnotesize\ttfamily void ui\+M\+E\+N\+U\+\_\+\+Input\+Data (\begin{DoxyParamCaption}\item[{char $\ast$}]{message\+\_\+title,  }\item[{char $\ast$}]{input\+\_\+data,  }\item[{int}]{max\+\_\+chars,  }\item[{char $\ast$}]{char\+\_\+table,  }\item[{char $\ast$}]{output\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Allows the input of data through a rotary encoder. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+\_\+title} & Name of the input prompt. \\
+\hline
+{\em input\+\_\+data} & Input data to display initially, allowing it to be changed. N\+U\+LL should be passed to start with no data. \\
+\hline
+{\em max\+\_\+chars} & Maximum ammount of input characters. \\
+\hline
+{\em char\+\_\+table} & String containing the allowable characters to be changed. \\
+\hline
+{\em output\+\_\+data} & Modified data after the input prompt. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__uiMENU_gab41985bbdda4b597afddc5576f023fd1}\label{group__uiMENU_gab41985bbdda4b597afddc5576f023fd1}} 
+\index{Menu interfacing@{Menu interfacing}!uiMENU\_ItemizeString@{uiMENU\_ItemizeString}}
+\index{uiMENU\_ItemizeString@{uiMENU\_ItemizeString}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{uiMENU\_ItemizeString()}{uiMENU\_ItemizeString()}}
+{\footnotesize\ttfamily char$\ast$ ui\+M\+E\+N\+U\+\_\+\+Itemize\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{string\+\_\+to\+\_\+itemize,  }\item[{int}]{col\+\_\+number }\end{DoxyParamCaption})}
+
+
+
+Centers fills a string with empty spaces and places arrows in the first and last locations of the passed string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+\_\+to\+\_\+itemize} & String to be itemized. \\
+\hline
+{\em col\+\_\+number} & Number of collumns of the display being used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Generated string, dynamically allocated. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__uiMENU_ga0f011e520ae90ea7662b416fc4cd515b}\label{group__uiMENU_ga0f011e520ae90ea7662b416fc4cd515b}} 
+\index{Menu interfacing@{Menu interfacing}!uiMENU\_SelectOptions@{uiMENU\_SelectOptions}}
+\index{uiMENU\_SelectOptions@{uiMENU\_SelectOptions}!Menu interfacing@{Menu interfacing}}
+\doxysubsubsection{\texorpdfstring{uiMENU\_SelectOptions()}{uiMENU\_SelectOptions()}}
+{\footnotesize\ttfamily int ui\+M\+E\+N\+U\+\_\+\+Select\+Options (\begin{DoxyParamCaption}\item[{char $\ast$}]{menu\+\_\+name,  }\item[{char $\ast$$\ast$}]{options,  }\item[{int}]{nr\+\_\+options,  }\item[{bool}]{cancel }\end{DoxyParamCaption})}
+
+
+
+Allows the selection of a given ammount of items. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu\+\_\+name} & Name of selection menu. \\
+\hline
+{\em options} & Names of the items to be displayed. \\
+\hline
+{\em nr\+\_\+options} & Ammount of options to be given. \\
+\hline
+{\em cancel} & Allows the non selection of any of the given menus. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Index of the option selected, -\/1 if an enabled cancellation ocurred. 
+\end{DoxyReturn}

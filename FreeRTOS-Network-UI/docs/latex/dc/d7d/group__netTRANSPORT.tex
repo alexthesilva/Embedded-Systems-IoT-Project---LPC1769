@@ -1,0 +1,176 @@
+\hypertarget{group__netTRANSPORT}{}\doxysection{Transport layer related functions}
+\label{group__netTRANSPORT}\index{Transport layer related functions@{Transport layer related functions}}
+
+
+This package provides the ability to interact with remote servers through transport layer protocols such as T\+CP and U\+DP.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__netTRANSPORT_gac6ab27cee79cc460a5fb06e455fdbd67}{N\+E\+T\+W\+O\+R\+K\+\_\+\+U\+D\+P\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+T\+I\+M\+E\+O\+UT}}~10000
+\item 
+\#define \mbox{\hyperlink{group__netTRANSPORT_gaeac98d0cc45b39095a6478d615a8ad85}{N\+E\+T\+W\+O\+R\+K\+\_\+\+T\+C\+P\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+T\+I\+M\+E\+O\+UT}}~10000
+\item 
+\#define \mbox{\hyperlink{group__netTRANSPORT_ga1bc7c104e2bb5a9b56f9f048aca644e3}{N\+E\+T\+W\+O\+R\+K\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+T\+I\+M\+E\+O\+UT}}~20000
+\item 
+\#define \mbox{\hyperlink{group__netTRANSPORT_ga78bef0d1a059995cc25ebf02eb9399c8}{N\+E\+T\+W\+O\+R\+K\+\_\+\+S\+E\+N\+D\+\_\+\+T\+I\+M\+E\+O\+UT}}~20000
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{group__netTRANSPORT_ga16117d92c93c64c6f7cc33ae3fb923fe}{net\+U\+D\+P\+\_\+\+Start}} (const char $\ast$host, int port)
+\begin{DoxyCompactList}\small\item\em Estabilishes a U\+DP connection with a remote server. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__netTRANSPORT_gaacc7f9975e981efc7c2a39aa01838a7e}{net\+U\+D\+P\+\_\+\+Close}} ()
+\begin{DoxyCompactList}\small\item\em Closes an ongoing U\+DP connection. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__netTRANSPORT_gac13eccd647a55f35b2d35617b0356009}{net\+T\+C\+P\+\_\+\+Start}} (const char $\ast$host, const unsigned short int port, const unsigned short int keepalive)
+\begin{DoxyCompactList}\small\item\em Estabilishes a T\+CP connection with a remote server. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__netTRANSPORT_gac0284fc1c15db32ad5f381d8a90e10e2}{net\+T\+C\+P\+\_\+\+Close}} ()
+\begin{DoxyCompactList}\small\item\em Closes an ongoing T\+CP connection. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__netTRANSPORT_gaf4287af26e0fb6d282a97a2392c17046}{net\+T\+R\+A\+N\+S\+P\+O\+R\+T\+\_\+\+Send}} (unsigned char $\ast$address, unsigned int bytes)
+\begin{DoxyCompactList}\small\item\em Sends an ammount of data to the desired address through an ongoing transport layer connection. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__netTRANSPORT_ga93897a5584632460dfd6ca05a6513122}{net\+T\+R\+A\+N\+S\+P\+O\+R\+T\+\_\+\+Recv}} (unsigned char $\ast$address, unsigned int maxbytes)
+\begin{DoxyCompactList}\small\item\em Receives an ammount of data to the desired address through an ongoing transport layer connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This package provides the ability to interact with remote servers through transport layer protocols such as T\+CP and U\+DP. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__netTRANSPORT_ga1bc7c104e2bb5a9b56f9f048aca644e3}\label{group__netTRANSPORT_ga1bc7c104e2bb5a9b56f9f048aca644e3}} 
+\index{Transport layer related functions@{Transport layer related functions}!NETWORK\_RECEIVE\_TIMEOUT@{NETWORK\_RECEIVE\_TIMEOUT}}
+\index{NETWORK\_RECEIVE\_TIMEOUT@{NETWORK\_RECEIVE\_TIMEOUT}!Transport layer related functions@{Transport layer related functions}}
+\doxysubsubsection{\texorpdfstring{NETWORK\_RECEIVE\_TIMEOUT}{NETWORK\_RECEIVE\_TIMEOUT}}
+{\footnotesize\ttfamily \#define N\+E\+T\+W\+O\+R\+K\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+T\+I\+M\+E\+O\+UT~20000}
+
+Timeout to be used in the net\+T\+R\+A\+N\+S\+P\+O\+R\+T\+\_\+\+Recv function, in milliseconds. \mbox{\Hypertarget{group__netTRANSPORT_ga78bef0d1a059995cc25ebf02eb9399c8}\label{group__netTRANSPORT_ga78bef0d1a059995cc25ebf02eb9399c8}} 
+\index{Transport layer related functions@{Transport layer related functions}!NETWORK\_SEND\_TIMEOUT@{NETWORK\_SEND\_TIMEOUT}}
+\index{NETWORK\_SEND\_TIMEOUT@{NETWORK\_SEND\_TIMEOUT}!Transport layer related functions@{Transport layer related functions}}
+\doxysubsubsection{\texorpdfstring{NETWORK\_SEND\_TIMEOUT}{NETWORK\_SEND\_TIMEOUT}}
+{\footnotesize\ttfamily \#define N\+E\+T\+W\+O\+R\+K\+\_\+\+S\+E\+N\+D\+\_\+\+T\+I\+M\+E\+O\+UT~20000}
+
+Timeout to be used in the net\+T\+R\+A\+N\+S\+P\+O\+R\+T\+\_\+\+Send function, in milliseconds. \mbox{\Hypertarget{group__netTRANSPORT_gaeac98d0cc45b39095a6478d615a8ad85}\label{group__netTRANSPORT_gaeac98d0cc45b39095a6478d615a8ad85}} 
+\index{Transport layer related functions@{Transport layer related functions}!NETWORK\_TCP\_CONNECT\_TIMEOUT@{NETWORK\_TCP\_CONNECT\_TIMEOUT}}
+\index{NETWORK\_TCP\_CONNECT\_TIMEOUT@{NETWORK\_TCP\_CONNECT\_TIMEOUT}!Transport layer related functions@{Transport layer related functions}}
+\doxysubsubsection{\texorpdfstring{NETWORK\_TCP\_CONNECT\_TIMEOUT}{NETWORK\_TCP\_CONNECT\_TIMEOUT}}
+{\footnotesize\ttfamily \#define N\+E\+T\+W\+O\+R\+K\+\_\+\+T\+C\+P\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+T\+I\+M\+E\+O\+UT~10000}
+
+Timeout to be used in the net\+T\+C\+P\+\_\+\+Start function, in milliseconds. \mbox{\Hypertarget{group__netTRANSPORT_gac6ab27cee79cc460a5fb06e455fdbd67}\label{group__netTRANSPORT_gac6ab27cee79cc460a5fb06e455fdbd67}} 
+\index{Transport layer related functions@{Transport layer related functions}!NETWORK\_UDP\_CONNECT\_TIMEOUT@{NETWORK\_UDP\_CONNECT\_TIMEOUT}}
+\index{NETWORK\_UDP\_CONNECT\_TIMEOUT@{NETWORK\_UDP\_CONNECT\_TIMEOUT}!Transport layer related functions@{Transport layer related functions}}
+\doxysubsubsection{\texorpdfstring{NETWORK\_UDP\_CONNECT\_TIMEOUT}{NETWORK\_UDP\_CONNECT\_TIMEOUT}}
+{\footnotesize\ttfamily \#define N\+E\+T\+W\+O\+R\+K\+\_\+\+U\+D\+P\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+T\+I\+M\+E\+O\+UT~10000}
+
+Timeout to be used in the net\+U\+D\+P\+\_\+\+Start function, in milliseconds. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__netTRANSPORT_gac0284fc1c15db32ad5f381d8a90e10e2}\label{group__netTRANSPORT_gac0284fc1c15db32ad5f381d8a90e10e2}} 
+\index{Transport layer related functions@{Transport layer related functions}!netTCP\_Close@{netTCP\_Close}}
+\index{netTCP\_Close@{netTCP\_Close}!Transport layer related functions@{Transport layer related functions}}
+\doxysubsubsection{\texorpdfstring{netTCP\_Close()}{netTCP\_Close()}}
+{\footnotesize\ttfamily bool net\+T\+C\+P\+\_\+\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Closes an ongoing T\+CP connection. 
+
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__netTRANSPORT_gac13eccd647a55f35b2d35617b0356009}\label{group__netTRANSPORT_gac13eccd647a55f35b2d35617b0356009}} 
+\index{Transport layer related functions@{Transport layer related functions}!netTCP\_Start@{netTCP\_Start}}
+\index{netTCP\_Start@{netTCP\_Start}!Transport layer related functions@{Transport layer related functions}}
+\doxysubsubsection{\texorpdfstring{netTCP\_Start()}{netTCP\_Start()}}
+{\footnotesize\ttfamily bool net\+T\+C\+P\+\_\+\+Start (\begin{DoxyParamCaption}\item[{const char $\ast$}]{host,  }\item[{const unsigned short int}]{port,  }\item[{const unsigned short int}]{keepalive }\end{DoxyParamCaption})}
+
+
+
+Estabilishes a T\+CP connection with a remote server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & Host address for the connection. \\
+\hline
+{\em port} & Host port for the connection. \\
+\hline
+{\em keepalive} & Keepalive time, in seconds, to be used in the connection. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__netTRANSPORT_ga93897a5584632460dfd6ca05a6513122}\label{group__netTRANSPORT_ga93897a5584632460dfd6ca05a6513122}} 
+\index{Transport layer related functions@{Transport layer related functions}!netTRANSPORT\_Recv@{netTRANSPORT\_Recv}}
+\index{netTRANSPORT\_Recv@{netTRANSPORT\_Recv}!Transport layer related functions@{Transport layer related functions}}
+\doxysubsubsection{\texorpdfstring{netTRANSPORT\_Recv()}{netTRANSPORT\_Recv()}}
+{\footnotesize\ttfamily int net\+T\+R\+A\+N\+S\+P\+O\+R\+T\+\_\+\+Recv (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{address,  }\item[{unsigned int}]{maxbytes }\end{DoxyParamCaption})}
+
+
+
+Receives an ammount of data to the desired address through an ongoing transport layer connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & Host address to receive data from. \\
+\hline
+{\em maxbytes} & Maximum ammount of bytes to be received. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of bytes received if successful, -\/1 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__netTRANSPORT_gaf4287af26e0fb6d282a97a2392c17046}\label{group__netTRANSPORT_gaf4287af26e0fb6d282a97a2392c17046}} 
+\index{Transport layer related functions@{Transport layer related functions}!netTRANSPORT\_Send@{netTRANSPORT\_Send}}
+\index{netTRANSPORT\_Send@{netTRANSPORT\_Send}!Transport layer related functions@{Transport layer related functions}}
+\doxysubsubsection{\texorpdfstring{netTRANSPORT\_Send()}{netTRANSPORT\_Send()}}
+{\footnotesize\ttfamily int net\+T\+R\+A\+N\+S\+P\+O\+R\+T\+\_\+\+Send (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{address,  }\item[{unsigned int}]{bytes }\end{DoxyParamCaption})}
+
+
+
+Sends an ammount of data to the desired address through an ongoing transport layer connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & Host address to send data to. \\
+\hline
+{\em bytes} & Ammount of bytes to be sent. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of bytes sent if successful, -\/1 otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__netTRANSPORT_gaacc7f9975e981efc7c2a39aa01838a7e}\label{group__netTRANSPORT_gaacc7f9975e981efc7c2a39aa01838a7e}} 
+\index{Transport layer related functions@{Transport layer related functions}!netUDP\_Close@{netUDP\_Close}}
+\index{netUDP\_Close@{netUDP\_Close}!Transport layer related functions@{Transport layer related functions}}
+\doxysubsubsection{\texorpdfstring{netUDP\_Close()}{netUDP\_Close()}}
+{\footnotesize\ttfamily bool net\+U\+D\+P\+\_\+\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Closes an ongoing U\+DP connection. 
+
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__netTRANSPORT_ga16117d92c93c64c6f7cc33ae3fb923fe}\label{group__netTRANSPORT_ga16117d92c93c64c6f7cc33ae3fb923fe}} 
+\index{Transport layer related functions@{Transport layer related functions}!netUDP\_Start@{netUDP\_Start}}
+\index{netUDP\_Start@{netUDP\_Start}!Transport layer related functions@{Transport layer related functions}}
+\doxysubsubsection{\texorpdfstring{netUDP\_Start()}{netUDP\_Start()}}
+{\footnotesize\ttfamily bool net\+U\+D\+P\+\_\+\+Start (\begin{DoxyParamCaption}\item[{const char $\ast$}]{host,  }\item[{int}]{port }\end{DoxyParamCaption})}
+
+
+
+Estabilishes a U\+DP connection with a remote server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & Host address for the connection. \\
+\hline
+{\em port} & Host port for the connection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise. 
+\end{DoxyReturn}

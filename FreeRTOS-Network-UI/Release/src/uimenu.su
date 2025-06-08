@@ -1,0 +1,8 @@
+../src/uimenu.c:25:9:uiMENU_Generate	40	static
+../src/uimenu.c:41:6:uiMENU_Destroy	24	static
+../src/uimenu.c:54:6:uiMENU_Execute	56	static
+../src/uimenu.c:104:6:uiMENU_ExecuteCMD	56	static
+../src/uimenu.c:152:8:uiMENU_CenterString	40	static
+../src/uimenu.c:165:8:uiMENU_ItemizeString	16	static
+../src/uimenu.c:171:6:uiENCODER_HANDLE	32	static
+../src/uimenu.c:185:6:uiMENU_BlinkStr	56	dynamic

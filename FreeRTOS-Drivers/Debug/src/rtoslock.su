@@ -1,0 +1,4 @@
+../src/rtoslock.c:13:14:rtosLOCK_Init	16	static
+../src/rtoslock.c:24:6:rtosLOCK_Begin	16	static
+../src/rtoslock.c:32:6:rtosLOCK_End	16	static
+../src/rtoslock.c:41:6:rtosLOCK_Destroy	16	static

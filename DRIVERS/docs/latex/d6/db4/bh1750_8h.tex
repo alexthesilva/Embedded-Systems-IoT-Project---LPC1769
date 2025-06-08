@@ -1,0 +1,56 @@
+\hypertarget{bh1750_8h}{}\doxysection{C\+:/\+Users/alext/\+Desktop/\+S\+E/\+Workspace/\+D\+R\+I\+V\+E\+R\+S/inc/bh1750.h File Reference}
+\label{bh1750_8h}\index{C:/Users/alext/Desktop/SE/Workspace/DRIVERS/inc/bh1750.h@{C:/Users/alext/Desktop/SE/Workspace/DRIVERS/inc/bh1750.h}}
+
+
+Contains the B\+H1750 ambient light sensor A\+PI.  
+
+
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__BH1750_gafb7558d1ca82a044195e6e0b860e11e4}{B\+H1750\+Mode\+Enum}} \{ \newline
+\mbox{\hyperlink{group__BH1750_ggafb7558d1ca82a044195e6e0b860e11e4a171314596f51d2186dd63d33162e8c4b}{U\+N\+C\+O\+N\+F\+I\+G\+U\+R\+ED}} = 0, 
+\mbox{\hyperlink{group__BH1750_ggafb7558d1ca82a044195e6e0b860e11e4aa6514273040331c16b1c422704de78d6}{C\+O\+N\+T\+I\+N\+U\+O\+U\+S\+\_\+\+H\+I\+G\+H\+\_\+\+R\+E\+S\+\_\+\+M\+O\+DE}} = 0x10, 
+\mbox{\hyperlink{group__BH1750_ggafb7558d1ca82a044195e6e0b860e11e4a9128bffe62308f0dbc99fc65363bb17a}{C\+O\+N\+T\+I\+N\+U\+O\+U\+S\+\_\+\+H\+I\+G\+H\+\_\+\+R\+E\+S\+\_\+\+M\+O\+D\+E\+\_\+2}} = 0x11, 
+\mbox{\hyperlink{group__BH1750_ggafb7558d1ca82a044195e6e0b860e11e4a954661fd10c72e465894ccf4c8730fb4}{C\+O\+N\+T\+I\+N\+U\+O\+U\+S\+\_\+\+L\+O\+W\+\_\+\+R\+E\+S\+\_\+\+M\+O\+DE}} = 0x13, 
+\newline
+\mbox{\hyperlink{group__BH1750_ggafb7558d1ca82a044195e6e0b860e11e4a5abef79bc2e898418baf30fb0e3a5d9f}{O\+N\+E\+\_\+\+T\+I\+M\+E\+\_\+\+H\+I\+G\+H\+\_\+\+R\+E\+S\+\_\+\+M\+O\+DE}} = 0x20, 
+\mbox{\hyperlink{group__BH1750_ggafb7558d1ca82a044195e6e0b860e11e4adb6d69253788e53c41cd9c6a454b9351}{O\+N\+E\+\_\+\+T\+I\+M\+E\+\_\+\+H\+I\+G\+H\+\_\+\+R\+E\+S\+\_\+\+M\+O\+D\+E\+\_\+2}} = 0x21, 
+\mbox{\hyperlink{group__BH1750_ggafb7558d1ca82a044195e6e0b860e11e4a17fa53794bb3de712e0c6a6c92a13972}{O\+N\+E\+\_\+\+T\+I\+M\+E\+\_\+\+L\+O\+W\+\_\+\+R\+E\+S\+\_\+\+M\+O\+DE}} = 0x23
+ \}
+\item 
+enum \mbox{\hyperlink{group__BH1750_ga002cbdf35b74b6550a4fd86bbec77520}{B\+H1750\+Measurement\+Time\+Enum}} \{ \mbox{\hyperlink{group__BH1750_gga002cbdf35b74b6550a4fd86bbec77520aeba7d85ccf6c1f93479a7289a0e4f9e1}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+ME}} = 69, 
+\mbox{\hyperlink{group__BH1750_gga002cbdf35b74b6550a4fd86bbec77520a145c8212c2b4ba3ce986f211a60b5f6a}{M\+I\+N\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+ME}} = 31, 
+\mbox{\hyperlink{group__BH1750_gga002cbdf35b74b6550a4fd86bbec77520a77b5bcae8044ce334f0d21a8823aa4ad}{M\+A\+X\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+ME}} = 254
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__BH1750_ga291965414fd2a6eecb73f89de64b35de}{B\+H1750\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the B\+H1750 A\+PI. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__BH1750_ga281d2c62f2c7cd7e525978f3ff1b4238}{B\+H1750\+\_\+\+Configure\+Mode}} (B\+H1750\+\_\+\+Mode\+Type mode)
+\begin{DoxyCompactList}\small\item\em Configure the operation mode. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__BH1750_ga3c34b6832e6e5e077472472f41e2f42a}{B\+H1750\+\_\+\+Set\+Measurement\+Time}} (B\+H1750\+\_\+\+Measurement\+Time\+Type time)
+\begin{DoxyCompactList}\small\item\em Configure the measurement time. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__BH1750_ga85dcfc97532f6a4803195ea07bb481ca}{B\+H1750\+\_\+\+Ready}} (bool max\+Wait)
+\begin{DoxyCompactList}\small\item\em Verify if it is possible do a measures. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{group__BH1750_ga5594726e4dbcb78f6ce8702448b88a34}{B\+H1750\+\_\+\+Get\+Light}} ()
+\begin{DoxyCompactList}\small\item\em Read the ambient light. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the B\+H1750 ambient light sensor A\+PI. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+9 Out 2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+P\+Sampaio
+\end{DoxyAuthor}
+Copyright(\+C) 2015-\/2022, P\+Sampaio All rights reserved.
+
+Software that is described herein is for illustrative purposes only which provides customers with programming information regarding the products. This software is supplied \char`\"{}\+A\+S I\+S\char`\"{} without any warranties. 

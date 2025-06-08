@@ -1,0 +1,105 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Module Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Modules}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Module Documentation}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}M\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Q\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TT}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{5}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Macro Definition Documentation}{6}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}MQTT\_NETWORK\_CONNECT\_TIMEOUT}{6}{subsubsection.3.1.2.1}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}NETWORK\_MQTT\_ADDRESS\_LENGTH}{6}{subsubsection.3.1.2.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.3}NETWORK\_MQTT\_DEVICE\_TOKEN\_LENGTH}{6}{subsubsection.3.1.2.3}%
+\contentsline {subsubsection}{\numberline {3.1.2.4}NETWORK\_MQTT\_QUEUES\_SIZE}{6}{subsubsection.3.1.2.4}%
+\contentsline {subsubsection}{\numberline {3.1.2.5}NETWORK\_MQTT\_REFRESH\_PERIOD\_MS}{6}{subsubsection.3.1.2.5}%
+\contentsline {subsubsection}{\numberline {3.1.2.6}NETWORK\_MQTT\_TASK\_STACK\_SIZE}{6}{subsubsection.3.1.2.6}%
+\contentsline {subsection}{\numberline {3.1.3}Function Documentation}{6}{subsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.1}netMQTT\_Config()}{6}{subsubsection.3.1.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.3.2}netMQTT\_Init()}{7}{subsubsection.3.1.3.2}%
+\contentsline {subsubsection}{\numberline {3.1.3.3}netMQTT\_Publish()}{7}{subsubsection.3.1.3.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.4}netMQTT\_Ready()}{7}{subsubsection.3.1.3.4}%
+\contentsline {subsubsection}{\numberline {3.1.3.5}netMQTT\_Start()}{8}{subsubsection.3.1.3.5}%
+\contentsline {subsubsection}{\numberline {3.1.3.6}netMQTT\_Stop()}{8}{subsubsection.3.1.3.6}%
+\contentsline {section}{\numberline {3.2}N\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP}{9}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{9}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Macro Definition Documentation}{9}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}NETWORK\_NTP\_QUEUES\_SIZE}{9}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}NETWORK\_NTP\_TASK\_STACK\_SIZE}{9}{subsubsection.3.2.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Function Documentation}{9}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}netNTP\_GetTime()}{9}{subsubsection.3.2.3.1}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}netNTP\_Init()}{10}{subsubsection.3.2.3.2}%
+\contentsline {section}{\numberline {3.3}Transport layer related functions}{11}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{11}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Macro Definition Documentation}{11}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}NETWORK\_RECEIVE\_TIMEOUT}{11}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}NETWORK\_SEND\_TIMEOUT}{11}{subsubsection.3.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.3}NETWORK\_TCP\_CONNECT\_TIMEOUT}{12}{subsubsection.3.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.3.2.4}NETWORK\_UDP\_CONNECT\_TIMEOUT}{12}{subsubsection.3.3.2.4}%
+\contentsline {subsection}{\numberline {3.3.3}Function Documentation}{12}{subsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}netTCP\_Close()}{12}{subsubsection.3.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}netTCP\_Start()}{12}{subsubsection.3.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3.3}netTRANSPORT\_Recv()}{13}{subsubsection.3.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.4}netTRANSPORT\_Send()}{13}{subsubsection.3.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.3.5}netUDP\_Close()}{13}{subsubsection.3.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.3.6}netUDP\_Start()}{14}{subsubsection.3.3.3.6}%
+\contentsline {section}{\numberline {3.4}Wi\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Fi related functions}{15}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{15}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Macro Definition Documentation}{15}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}NETWORK\_CONNECT\_TIMEOUT}{15}{subsubsection.3.4.2.1}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}NETWORK\_MAC\_ADDRESS\_LENGTH}{16}{subsubsection.3.4.2.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.3}NETWORK\_MAX\_BSSID\_LENGTH}{16}{subsubsection.3.4.2.3}%
+\contentsline {subsubsection}{\numberline {3.4.2.4}NETWORK\_MAX\_PASSWORD\_LENGTH}{16}{subsubsection.3.4.2.4}%
+\contentsline {subsubsection}{\numberline {3.4.2.5}NETWORK\_MAX\_SSID\_LENGTH}{16}{subsubsection.3.4.2.5}%
+\contentsline {subsubsection}{\numberline {3.4.2.6}NETWORK\_REFRESH\_PERIOD\_MS}{16}{subsubsection.3.4.2.6}%
+\contentsline {subsubsection}{\numberline {3.4.2.7}NETWORK\_WIFI\_CHECK\_PERIOD}{16}{subsubsection.3.4.2.7}%
+\contentsline {subsubsection}{\numberline {3.4.2.8}NETWORK\_WIFI\_QUEUES\_SIZE}{16}{subsubsection.3.4.2.8}%
+\contentsline {subsubsection}{\numberline {3.4.2.9}NETWORK\_WIFI\_SCAN\_TIMEOUT}{16}{subsubsection.3.4.2.9}%
+\contentsline {subsubsection}{\numberline {3.4.2.10}NETWORK\_WIFI\_STACK\_SIZE}{17}{subsubsection.3.4.2.10}%
+\contentsline {subsection}{\numberline {3.4.3}Function Documentation}{17}{subsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.3.1}netWIFI\_Check()}{17}{subsubsection.3.4.3.1}%
+\contentsline {subsubsection}{\numberline {3.4.3.2}netWIFI\_Connect()}{17}{subsubsection.3.4.3.2}%
+\contentsline {subsubsection}{\numberline {3.4.3.3}netWIFI\_Disconnect()}{17}{subsubsection.3.4.3.3}%
+\contentsline {subsubsection}{\numberline {3.4.3.4}netWIFI\_Init()}{18}{subsubsection.3.4.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.3.5}netWIFI\_Scan()}{18}{subsubsection.3.4.3.5}%
+\contentsline {subsubsection}{\numberline {3.4.3.6}netWIFI\_ScannedSSID()}{18}{subsubsection.3.4.3.6}%
+\contentsline {section}{\numberline {3.5}Menu interfacing}{20}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Detailed Description}{21}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Macro Definition Documentation}{21}{subsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}UI\_MENU\_BLINK\_PERIOD\_MS}{21}{subsubsection.3.5.2.1}%
+\contentsline {subsubsection}{\numberline {3.5.2.2}UI\_MENU\_COLUMNS}{21}{subsubsection.3.5.2.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.3}UI\_MENU\_ENCODER\_INVERT}{21}{subsubsection.3.5.2.3}%
+\contentsline {subsubsection}{\numberline {3.5.2.4}UI\_MENU\_FAIL\_MESSAGE}{21}{subsubsection.3.5.2.4}%
+\contentsline {subsubsection}{\numberline {3.5.2.5}UI\_MENU\_LINES}{21}{subsubsection.3.5.2.5}%
+\contentsline {subsubsection}{\numberline {3.5.2.6}UI\_MENU\_PROCESSING\_MESSAGE}{21}{subsubsection.3.5.2.6}%
+\contentsline {subsubsection}{\numberline {3.5.2.7}UI\_MENU\_REFRESH\_PERIOD\_MS}{22}{subsubsection.3.5.2.7}%
+\contentsline {subsubsection}{\numberline {3.5.2.8}UI\_MENU\_SUCCESS\_MESSAGE}{22}{subsubsection.3.5.2.8}%
+\contentsline {subsection}{\numberline {3.5.3}Typedef Documentation}{22}{subsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.3.1}CommandFunction\_t}{22}{subsubsection.3.5.3.1}%
+\contentsline {subsubsection}{\numberline {3.5.3.2}ItemHandler\_t}{22}{subsubsection.3.5.3.2}%
+\contentsline {subsection}{\numberline {3.5.4}Function Documentation}{22}{subsection.3.5.4}%
+\contentsline {subsubsection}{\numberline {3.5.4.1}uiENCODER\_Handle()}{22}{subsubsection.3.5.4.1}%
+\contentsline {subsubsection}{\numberline {3.5.4.2}uiMENU\_Ask()}{23}{subsubsection.3.5.4.2}%
+\contentsline {subsubsection}{\numberline {3.5.4.3}uiMENU\_BlinkStr()}{23}{subsubsection.3.5.4.3}%
+\contentsline {subsubsection}{\numberline {3.5.4.4}uiMENU\_BlinkStrClear()}{24}{subsubsection.3.5.4.4}%
+\contentsline {subsubsection}{\numberline {3.5.4.5}uiMENU\_CenterString()}{24}{subsubsection.3.5.4.5}%
+\contentsline {subsubsection}{\numberline {3.5.4.6}uiMENU\_Destroy()}{24}{subsubsection.3.5.4.6}%
+\contentsline {subsubsection}{\numberline {3.5.4.7}uiMENU\_Execute()}{25}{subsubsection.3.5.4.7}%
+\contentsline {subsubsection}{\numberline {3.5.4.8}uiMENU\_ExecuteCMD()}{25}{subsubsection.3.5.4.8}%
+\contentsline {subsubsection}{\numberline {3.5.4.9}uiMENU\_FillString()}{26}{subsubsection.3.5.4.9}%
+\contentsline {subsubsection}{\numberline {3.5.4.10}uiMENU\_Generate()}{26}{subsubsection.3.5.4.10}%
+\contentsline {subsubsection}{\numberline {3.5.4.11}uiMENU\_InputData()}{27}{subsubsection.3.5.4.11}%
+\contentsline {subsubsection}{\numberline {3.5.4.12}uiMENU\_ItemizeString()}{27}{subsubsection.3.5.4.12}%
+\contentsline {subsubsection}{\numberline {3.5.4.13}uiMENU\_SelectOptions()}{28}{subsubsection.3.5.4.13}%
+\contentsline {section}{\numberline {3.6}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}UI}{29}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{29}{subsection.3.6.1}%
+\contentsline {chapter}{\numberline {4}File Documentation}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alext/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}U\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I/inc/netmqtt.h File Reference}{31}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{32}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alext/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}U\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I/inc/netntp.h File Reference}{32}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{33}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alext/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}U\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I/inc/nettransport.h File Reference}{33}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{34}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alext/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}U\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I/inc/netwifi.h File Reference}{34}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{35}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/alext/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desktop/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Workspace/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Free\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Network-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}U\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I/inc/uimenu.h File Reference}{35}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{37}{subsection.4.5.1}%

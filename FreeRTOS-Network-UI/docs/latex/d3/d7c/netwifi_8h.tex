@@ -1,0 +1,63 @@
+\hypertarget{netwifi_8h}{}\doxysection{C\+:/\+Users/alext/\+Desktop/\+S\+E/\+Workspace/\+Free\+R\+T\+O\+S-\/\+Network-\/\+U\+I/inc/netwifi.h File Reference}
+\label{netwifi_8h}\index{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Network-\/UI/inc/netwifi.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Network-\/UI/inc/netwifi.h}}
+
+
+Contains the net\+W\+I\+FI A\+PI.  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__netWIFI_ga522dc5819b668ec2e57e9ff24e516163}{N\+E\+T\+W\+O\+R\+K\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+MS}}~66
+\item 
+\#define \mbox{\hyperlink{group__netWIFI_gae4b74ca3feb7f4c69464d827270b58d5}{N\+E\+T\+W\+O\+R\+K\+\_\+\+W\+I\+F\+I\+\_\+\+Q\+U\+E\+U\+E\+S\+\_\+\+S\+I\+ZE}}~10
+\item 
+\#define \mbox{\hyperlink{group__netWIFI_ga4d04e90b41f1956ddf7cf8ee968436e3}{N\+E\+T\+W\+O\+R\+K\+\_\+\+W\+I\+F\+I\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}}~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE $\ast$ 9
+\item 
+\#define \mbox{\hyperlink{group__netWIFI_ga878647f126efd021babbde302b3f78f7}{N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+A\+X\+\_\+\+S\+S\+I\+D\+\_\+\+L\+E\+N\+G\+TH}}~32
+\item 
+\#define \mbox{\hyperlink{group__netWIFI_gae2f3454195ef0fcac4a3b670b4c2fc55}{N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+A\+X\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+L\+E\+N\+G\+TH}}~64
+\item 
+\#define \mbox{\hyperlink{group__netWIFI_ga372ab436dd87f21b94341a3fcf557cfc}{N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+A\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+L\+E\+N\+G\+TH}}~18
+\item 
+\#define \mbox{\hyperlink{group__netWIFI_ga5b3516ee73b8722a48b33850735bc92a}{N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+A\+X\+\_\+\+B\+S\+S\+I\+D\+\_\+\+L\+E\+N\+G\+TH}}~18
+\item 
+\#define \mbox{\hyperlink{group__netWIFI_ga41b699568a2e9f04784675d24ef071e6}{N\+E\+T\+W\+O\+R\+K\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+T\+I\+M\+E\+O\+UT}}~20000
+\item 
+\#define \mbox{\hyperlink{group__netWIFI_ga77398890fac364a395372ce63b91f67f}{N\+E\+T\+W\+O\+R\+K\+\_\+\+W\+I\+F\+I\+\_\+\+S\+C\+A\+N\+\_\+\+T\+I\+M\+E\+O\+UT}}~20000
+\item 
+\#define \mbox{\hyperlink{group__netWIFI_gaa5f329c19323d7dabb64e181deaa80b7}{N\+E\+T\+W\+O\+R\+K\+\_\+\+W\+I\+F\+I\+\_\+\+C\+H\+E\+C\+K\+\_\+\+P\+E\+R\+I\+OD}}~5000
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{group__netWIFI_ga440a1dfa4a7fbd932fda0c92763b9f34}{net\+W\+I\+F\+I\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the net\+W\+I\+FI A\+PI. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__netWIFI_ga6484a40a72d03b807f85f506e1a6c9f6}{net\+W\+I\+F\+I\+\_\+\+Connect}} (char $\ast$ssid, char $\ast$pass, bool makedefault)
+\begin{DoxyCompactList}\small\item\em Estabilishes a Wi\+Fi connection with an access point. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__netWIFI_ga04bdee4ab52c8b2631778e4734e28c40}{net\+W\+I\+F\+I\+\_\+\+Disconnect}} ()
+\begin{DoxyCompactList}\small\item\em Disconnects from a previously connected access point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__netWIFI_ga2533f4176dc781e82c203babfe1ee217}{net\+W\+I\+F\+I\+\_\+\+Check}} (bool $\ast$result)
+\begin{DoxyCompactList}\small\item\em Checks whether a usable Wi\+Fi connection is estabilished. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__netWIFI_gac282cdfdd44826fc3dcdb88e380af492}{net\+W\+I\+F\+I\+\_\+\+Scan}} (int max\+\_\+ap, int $\ast$nets\+\_\+scanned)
+\begin{DoxyCompactList}\small\item\em Scans the available access points and stores the list in memory. \end{DoxyCompactList}\item 
+Network\+\_\+t $\ast$ \mbox{\hyperlink{group__netWIFI_ga4cc826ad25e915f92a1877d37e9b4623}{net\+W\+I\+F\+I\+\_\+\+Scanned\+S\+S\+ID}} (int index)
+\begin{DoxyCompactList}\small\item\em Retrieves a scanned available access point previously stored in memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the net\+W\+I\+FI A\+PI. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 jul 2023 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Alexandre Silva
+\end{DoxyAuthor}
+Copyright(\+C) 2023, Alexandre Silva All rights reserved.
+
+Software that is described herein is for illustrative purposes only which provides customers with programming information regarding the products. This software is supplied \char`\"{}\+A\+S I\+S\char`\"{} without any warranties. 

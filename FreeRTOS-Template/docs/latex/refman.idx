@@ -1,0 +1,55 @@
+\indexentry{Main application functions.@{Main application functions.}|hyperpage}{5}
+\indexentry{Main application functions.@{Main application functions.}!DEFAULT\_CONNECTION\_KEEPALIVE\_S@{DEFAULT\_CONNECTION\_KEEPALIVE\_S}|hyperpage}{6}
+\indexentry{DEFAULT\_CONNECTION\_KEEPALIVE\_S@{DEFAULT\_CONNECTION\_KEEPALIVE\_S}!Main application functions.@{Main application functions.}|hyperpage}{6}
+\indexentry{Main application functions.@{Main application functions.}!DEFAULT\_MQTT\_ADDRESS@{DEFAULT\_MQTT\_ADDRESS}|hyperpage}{6}
+\indexentry{DEFAULT\_MQTT\_ADDRESS@{DEFAULT\_MQTT\_ADDRESS}!Main application functions.@{Main application functions.}|hyperpage}{6}
+\indexentry{Main application functions.@{Main application functions.}!DEFAULT\_MQTT\_DEVICE\_TOKEN@{DEFAULT\_MQTT\_DEVICE\_TOKEN}|hyperpage}{6}
+\indexentry{DEFAULT\_MQTT\_DEVICE\_TOKEN@{DEFAULT\_MQTT\_DEVICE\_TOKEN}!Main application functions.@{Main application functions.}|hyperpage}{6}
+\indexentry{Main application functions.@{Main application functions.}!DEFAULT\_MQTT\_PORT@{DEFAULT\_MQTT\_PORT}|hyperpage}{6}
+\indexentry{DEFAULT\_MQTT\_PORT@{DEFAULT\_MQTT\_PORT}!Main application functions.@{Main application functions.}|hyperpage}{6}
+\indexentry{Main application functions.@{Main application functions.}!DEFAULT\_PASS@{DEFAULT\_PASS}|hyperpage}{6}
+\indexentry{DEFAULT\_PASS@{DEFAULT\_PASS}!Main application functions.@{Main application functions.}|hyperpage}{6}
+\indexentry{Main application functions.@{Main application functions.}!DEFAULT\_SSID@{DEFAULT\_SSID}|hyperpage}{6}
+\indexentry{DEFAULT\_SSID@{DEFAULT\_SSID}!Main application functions.@{Main application functions.}|hyperpage}{6}
+\indexentry{Main application functions.@{Main application functions.}!DEFAULT\_WIFI\_CONNECT@{DEFAULT\_WIFI\_CONNECT}|hyperpage}{6}
+\indexentry{DEFAULT\_WIFI\_CONNECT@{DEFAULT\_WIFI\_CONNECT}!Main application functions.@{Main application functions.}|hyperpage}{6}
+\indexentry{Main application functions.@{Main application functions.}!MQTT\_PUBLISH\_INTERVAL\_S@{MQTT\_PUBLISH\_INTERVAL\_S}|hyperpage}{7}
+\indexentry{MQTT\_PUBLISH\_INTERVAL\_S@{MQTT\_PUBLISH\_INTERVAL\_S}!Main application functions.@{Main application functions.}|hyperpage}{7}
+\indexentry{Main application functions.@{Main application functions.}!APPLICATION\_Init@{APPLICATION\_Init}|hyperpage}{7}
+\indexentry{APPLICATION\_Init@{APPLICATION\_Init}!Main application functions.@{Main application functions.}|hyperpage}{7}
+\indexentry{Main application functions.@{Main application functions.}!appMENU\_MaintenanceMode@{appMENU\_MaintenanceMode}|hyperpage}{7}
+\indexentry{appMENU\_MaintenanceMode@{appMENU\_MaintenanceMode}!Main application functions.@{Main application functions.}|hyperpage}{7}
+\indexentry{Main application functions.@{Main application functions.}!appMENU\_NormalAffixHandler@{appMENU\_NormalAffixHandler}|hyperpage}{7}
+\indexentry{appMENU\_NormalAffixHandler@{appMENU\_NormalAffixHandler}!Main application functions.@{Main application functions.}|hyperpage}{7}
+\indexentry{Main application functions.@{Main application functions.}!appMENU\_NormalManageLightISR@{appMENU\_NormalManageLightISR}|hyperpage}{8}
+\indexentry{appMENU\_NormalManageLightISR@{appMENU\_NormalManageLightISR}!Main application functions.@{Main application functions.}|hyperpage}{8}
+\indexentry{Main application functions.@{Main application functions.}!appMENU\_NormalMode@{appMENU\_NormalMode}|hyperpage}{8}
+\indexentry{appMENU\_NormalMode@{appMENU\_NormalMode}!Main application functions.@{Main application functions.}|hyperpage}{8}
+\indexentry{Main application functions.@{Main application functions.}!appMENU\_NormalPublishISR@{appMENU\_NormalPublishISR}|hyperpage}{9}
+\indexentry{appMENU\_NormalPublishISR@{appMENU\_NormalPublishISR}!Main application functions.@{Main application functions.}|hyperpage}{9}
+\indexentry{Main application functions.@{Main application functions.}!NETWORK\_Init@{NETWORK\_Init}|hyperpage}{9}
+\indexentry{NETWORK\_Init@{NETWORK\_Init}!Main application functions.@{Main application functions.}|hyperpage}{9}
+\indexentry{Main application functions.@{Main application functions.}!RTOS\_Init@{RTOS\_Init}|hyperpage}{9}
+\indexentry{RTOS\_Init@{RTOS\_Init}!Main application functions.@{Main application functions.}|hyperpage}{9}
+\indexentry{Menus to be interfaced in the application.@{Menus to be interfaced in the application.}|hyperpage}{10}
+\indexentry{Menus to be interfaced in the application.@{Menus to be interfaced in the application.}!DEFAULT\_UTC\_ADJUST@{DEFAULT\_UTC\_ADJUST}|hyperpage}{10}
+\indexentry{DEFAULT\_UTC\_ADJUST@{DEFAULT\_UTC\_ADJUST}!Menus to be interfaced in the application.@{Menus to be interfaced in the application.}|hyperpage}{10}
+\indexentry{Menus to be interfaced in the application.@{Menus to be interfaced in the application.}!MAX\_AP\_SCAN@{MAX\_AP\_SCAN}|hyperpage}{10}
+\indexentry{MAX\_AP\_SCAN@{MAX\_AP\_SCAN}!Menus to be interfaced in the application.@{Menus to be interfaced in the application.}|hyperpage}{10}
+\indexentry{Menus to be interfaced in the application.@{Menus to be interfaced in the application.}!appMAINTENANCE\_SetDateHandler@{appMAINTENANCE\_SetDateHandler}|hyperpage}{11}
+\indexentry{appMAINTENANCE\_SetDateHandler@{appMAINTENANCE\_SetDateHandler}!Menus to be interfaced in the application.@{Menus to be interfaced in the application.}|hyperpage}{11}
+\indexentry{Menus to be interfaced in the application.@{Menus to be interfaced in the application.}!appMAINTENANCE\_SetLightHandler@{appMAINTENANCE\_SetLightHandler}|hyperpage}{11}
+\indexentry{appMAINTENANCE\_SetLightHandler@{appMAINTENANCE\_SetLightHandler}!Menus to be interfaced in the application.@{Menus to be interfaced in the application.}|hyperpage}{11}
+\indexentry{Menus to be interfaced in the application.@{Menus to be interfaced in the application.}!appMAINTENANCE\_SetMQTTHandler@{appMAINTENANCE\_SetMQTTHandler}|hyperpage}{11}
+\indexentry{appMAINTENANCE\_SetMQTTHandler@{appMAINTENANCE\_SetMQTTHandler}!Menus to be interfaced in the application.@{Menus to be interfaced in the application.}|hyperpage}{11}
+\indexentry{Menus to be interfaced in the application.@{Menus to be interfaced in the application.}!appMAINTENANCE\_SetTimeHandler@{appMAINTENANCE\_SetTimeHandler}|hyperpage}{12}
+\indexentry{appMAINTENANCE\_SetTimeHandler@{appMAINTENANCE\_SetTimeHandler}!Menus to be interfaced in the application.@{Menus to be interfaced in the application.}|hyperpage}{12}
+\indexentry{Menus to be interfaced in the application.@{Menus to be interfaced in the application.}!appMAINTENANCE\_SetWifiHandler@{appMAINTENANCE\_SetWifiHandler}|hyperpage}{12}
+\indexentry{appMAINTENANCE\_SetWifiHandler@{appMAINTENANCE\_SetWifiHandler}!Menus to be interfaced in the application.@{Menus to be interfaced in the application.}|hyperpage}{12}
+\indexentry{Menus to be interfaced in the application.@{Menus to be interfaced in the application.}!appMAINTENANCE\_SyncTimeHandler@{appMAINTENANCE\_SyncTimeHandler}|hyperpage}{12}
+\indexentry{appMAINTENANCE\_SyncTimeHandler@{appMAINTENANCE\_SyncTimeHandler}!Menus to be interfaced in the application.@{Menus to be interfaced in the application.}|hyperpage}{12}
+\indexentry{Menus to be interfaced in the application.@{Menus to be interfaced in the application.}!appMENU\_GetWeekDay@{appMENU\_GetWeekDay}|hyperpage}{13}
+\indexentry{appMENU\_GetWeekDay@{appMENU\_GetWeekDay}!Menus to be interfaced in the application.@{Menus to be interfaced in the application.}|hyperpage}{13}
+\indexentry{FreeRTOS-\/Application@{FreeRTOS-\/Application}|hyperpage}{14}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Template/inc/main.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Template/inc/main.h}|hyperpage}{15}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Template/inc/menus.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Template/inc/menus.h}|hyperpage}{16}

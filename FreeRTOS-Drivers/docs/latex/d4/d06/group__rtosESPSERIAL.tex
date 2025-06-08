@@ -1,0 +1,478 @@
+\hypertarget{group__rtosESPSERIAL}{}\doxysection{E\+S\+P8266 serial interface}
+\label{group__rtosESPSERIAL}\index{ESP8266 serial interface@{ESP8266 serial interface}}
+
+
+This package provides the interface for the E\+S\+P8266 with serial interface in a multi-\/threaded manner, along with AT command related functions.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_ga73544c56f82e853378e3572613956ac5}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+P\+R\+I\+N\+T\+F\+\_\+\+D\+E\+B\+UG}}~false
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_gae8f5fd779339c23c216be892e511ff94}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+E\+T\+UP}}~true
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_ga51ecba21a5adb3d79229f62f17791b69}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+R\+E\+S\+T\+O\+R\+E\+\_\+\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+E\+T\+UP}}~false
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_ga480ffcb3f59db55f52cc2c52b108c85e}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+S\+E\+T\+U\+P\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}}~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE $\ast$ 3
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_gaf6a743b70bed6ec5b9be0e94af85274a}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Q\+U\+E\+U\+E\+S\+\_\+\+S\+I\+ZE}}~10
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_ga9be215ee9363fadabcb2d58a14111f43}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}~512
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_gad503fcc75e7eefb0bdca3c9dc3b04530}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+MS}}~66
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_gaa88af32e4ec8215b148dca5d3b6e876c}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+B\+U\+F\+F\+E\+R\+R\+E\+F\+R\+E\+S\+H\+\_\+\+T\+I\+M\+E\+O\+UT}}~500
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_gae8e5dff6f02a91153b41810e3dcea8fa}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+S\+H\+O\+R\+T\+\_\+\+P\+A\+U\+SE}}~2000
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_ga1561dd8c18b5af85775cb6572e66c17b}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+L\+O\+N\+G\+\_\+\+P\+A\+U\+SE}}~10000
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_ga44f69e931d2130da76a7402bb511593e}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+S\+E\+T\+U\+P\+\_\+\+T\+I\+M\+E\+O\+UT}}~15000
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__rtosESPSERIAL_gae631f2b79bf0c5cc744c816ac207073b}{E\+S\+P\+State\+\_\+t}} \{ \newline
+\mbox{\hyperlink{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073ba13d000b4d7dc70d90239b7430d1eb6b2}{S\+T\+A\+RT}}, 
+\mbox{\hyperlink{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073ba15daaafacaefff3b690c1c2669ef0caa}{Q\+U\+E\+UE}}, 
+\mbox{\hyperlink{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073ba79a322ccb4b29b85b3cab52dbccefd17}{W\+A\+IT}}, 
+\mbox{\hyperlink{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073ba936c4a5547a9360243178f726f6b2715}{F\+A\+IL}}, 
+\newline
+\mbox{\hyperlink{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073bac7f69f7c9e5aea9b8f54cf02870e2bf8}{S\+U\+C\+C\+E\+SS}}
+ \}
+\begin{DoxyCompactList}\small\item\em E\+S\+P8266 current state structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{group__rtosESPSERIAL_gac84bfef4e844142defd193d67a5336b5}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Init}} (int baudrate)
+\begin{DoxyCompactList}\small\item\em Initializes the rtos\+E\+S\+P\+S\+E\+R\+I\+AL A\+PI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_ga74e30aa4cb6f425d2957b9fdb16751b8}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Lock\+Begin}} ()
+\begin{DoxyCompactList}\small\item\em Locks the E\+S\+P8266 device without any further action. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_gad18fe164c18a727a7e3f150fccde7031}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Lock\+End}} ()
+\begin{DoxyCompactList}\small\item\em Unlocks the E\+S\+P8266 device without any further action. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_gafceb07296ade2d5a39bd09f1d6bc3f8a}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Refresh}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock)
+\begin{DoxyCompactList}\small\item\em Refreshes the buffer containing read data with any new incoming data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_ga52d73c58de13b48804bb3aae24560f6a}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Clear}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock)
+\begin{DoxyCompactList}\small\item\em Clears the buffer containing read data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_ga5fa76b22f35bc7b0d6345feb8d23d37c}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Send}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, void $\ast$command, int size, int $\ast$bytes\+\_\+sent)
+\begin{DoxyCompactList}\small\item\em Writes data to the E\+S\+P8266 device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_gadc5784036d725724ae5749b726390092}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Recv}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, uint8\+\_\+t $\ast$dst\+\_\+buffer, int max\+\_\+bytes, int $\ast$bytes\+\_\+read)
+\begin{DoxyCompactList}\small\item\em Reads data from the E\+S\+P8266 device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_gab12467c84ba3ea2a353e8168c87fcb0d}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Recv\+Byte}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, uint8\+\_\+t $\ast$dst\+\_\+buffer, int $\ast$bytes\+\_\+read)
+\begin{DoxyCompactList}\small\item\em Reads a byte of data from the E\+S\+P8266 device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_gae1ec873708075ca88ae7dcfaabdb8cbf}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Find\+Str}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, char $\ast$str, char $\ast$$\ast$found\+\_\+str)
+\begin{DoxyCompactList}\small\item\em Finds a desired string in the buffer containing read data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_gabe4c3a5f74c3c8ab8636d94fd6b5ed71}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Read\+Line}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, char $\ast$$\ast$found\+\_\+line)
+\begin{DoxyCompactList}\small\item\em Reads a C\+R-\/\+LF terminated string from the E\+S\+P8266 device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_ga9e84d5facd308089731662723d0527b5}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Wait\+Str}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, char $\ast$expected\+\_\+str, char $\ast$$\ast$str\+\_\+obtained, int timeout\+\_\+ms, \mbox{\hyperlink{group__rtosESPSERIAL_gae631f2b79bf0c5cc744c816ac207073b}{E\+S\+P\+State\+\_\+t}} $\ast$espstate)
+\begin{DoxyCompactList}\small\item\em Waits for a desired string to be transmitted by the E\+S\+P8266 device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_ga0549c542ef521bd8a9c44047ed30b6a1}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Wait\+Resp}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, char $\ast$expected\+\_\+resp, char $\ast$$\ast$resp\+\_\+obtained, int timeout\+\_\+ms, \mbox{\hyperlink{group__rtosESPSERIAL_gae631f2b79bf0c5cc744c816ac207073b}{E\+S\+P\+State\+\_\+t}} $\ast$espstate)
+\begin{DoxyCompactList}\small\item\em Waits for a desired response to be transmitted by the E\+S\+P8266 device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_gab91d6d2a61925355f10397f5afd4b4b2}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Send\+AT}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, char $\ast$command, char $\ast$expected\+\_\+resp, int timeout\+\_\+ms, \mbox{\hyperlink{group__rtosESPSERIAL_gae631f2b79bf0c5cc744c816ac207073b}{E\+S\+P\+State\+\_\+t}} $\ast$espstate)
+\begin{DoxyCompactList}\small\item\em Sends an AT command to the E\+S\+P8266 device. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__rtosESPSERIAL_ga7a93a37bf820cbfe4d978f85ef5e7ffa}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Setup}} (bool restore)
+\begin{DoxyCompactList}\small\item\em Sets up the E\+S\+P8266 device with R\+S\+T/\+R\+E\+S\+T\+O\+RE, A\+TE=0, A\+T+\+C\+W\+M\+O\+DE=1, A\+T+\+C\+W\+L\+A\+P\+O\+PT=1,127 and C\+I\+P\+M\+UX=0 commands. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This package provides the interface for the E\+S\+P8266 with serial interface in a multi-\/threaded manner, along with AT command related functions. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__rtosESPSERIAL_ga9be215ee9363fadabcb2d58a14111f43}\label{group__rtosESPSERIAL_ga9be215ee9363fadabcb2d58a14111f43}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_BUFFER\_SIZE@{RTOS\_ESPSERIAL\_BUFFER\_SIZE}}
+\index{RTOS\_ESPSERIAL\_BUFFER\_SIZE@{RTOS\_ESPSERIAL\_BUFFER\_SIZE}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{RTOS\_ESPSERIAL\_BUFFER\_SIZE}{RTOS\_ESPSERIAL\_BUFFER\_SIZE}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE~512}
+
+Buffer size incoming data transmitted by the E\+S\+P8266 device. \mbox{\Hypertarget{group__rtosESPSERIAL_gaa88af32e4ec8215b148dca5d3b6e876c}\label{group__rtosESPSERIAL_gaa88af32e4ec8215b148dca5d3b6e876c}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_BUFFERREFRESH\_TIMEOUT@{RTOS\_ESPSERIAL\_BUFFERREFRESH\_TIMEOUT}}
+\index{RTOS\_ESPSERIAL\_BUFFERREFRESH\_TIMEOUT@{RTOS\_ESPSERIAL\_BUFFERREFRESH\_TIMEOUT}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{RTOS\_ESPSERIAL\_BUFFERREFRESH\_TIMEOUT}{RTOS\_ESPSERIAL\_BUFFERREFRESH\_TIMEOUT}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+B\+U\+F\+F\+E\+R\+R\+E\+F\+R\+E\+S\+H\+\_\+\+T\+I\+M\+E\+O\+UT~500}
+
+Period for the refresh function to wait for incoming data from the E\+S\+P8266 device. \mbox{\Hypertarget{group__rtosESPSERIAL_gae8f5fd779339c23c216be892e511ff94}\label{group__rtosESPSERIAL_gae8f5fd779339c23c216be892e511ff94}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_DEFAULT\_SETUP@{RTOS\_ESPSERIAL\_DEFAULT\_SETUP}}
+\index{RTOS\_ESPSERIAL\_DEFAULT\_SETUP@{RTOS\_ESPSERIAL\_DEFAULT\_SETUP}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{RTOS\_ESPSERIAL\_DEFAULT\_SETUP}{RTOS\_ESPSERIAL\_DEFAULT\_SETUP}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+E\+T\+UP~true}
+
+Calls a task to execute the setup function \mbox{\Hypertarget{group__rtosESPSERIAL_ga1561dd8c18b5af85775cb6572e66c17b}\label{group__rtosESPSERIAL_ga1561dd8c18b5af85775cb6572e66c17b}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_LONG\_PAUSE@{RTOS\_ESPSERIAL\_LONG\_PAUSE}}
+\index{RTOS\_ESPSERIAL\_LONG\_PAUSE@{RTOS\_ESPSERIAL\_LONG\_PAUSE}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{RTOS\_ESPSERIAL\_LONG\_PAUSE}{RTOS\_ESPSERIAL\_LONG\_PAUSE}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+L\+O\+N\+G\+\_\+\+P\+A\+U\+SE~10000}
+
+Maximum timeout in milliseconds for a long pause. \mbox{\Hypertarget{group__rtosESPSERIAL_ga73544c56f82e853378e3572613956ac5}\label{group__rtosESPSERIAL_ga73544c56f82e853378e3572613956ac5}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_PRINTF\_DEBUG@{RTOS\_ESPSERIAL\_PRINTF\_DEBUG}}
+\index{RTOS\_ESPSERIAL\_PRINTF\_DEBUG@{RTOS\_ESPSERIAL\_PRINTF\_DEBUG}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{RTOS\_ESPSERIAL\_PRINTF\_DEBUG}{RTOS\_ESPSERIAL\_PRINTF\_DEBUG}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+P\+R\+I\+N\+T\+F\+\_\+\+D\+E\+B\+UG~false}
+
+Allows sent and received commands to be printed to console when set true \mbox{\Hypertarget{group__rtosESPSERIAL_gaf6a743b70bed6ec5b9be0e94af85274a}\label{group__rtosESPSERIAL_gaf6a743b70bed6ec5b9be0e94af85274a}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_QUEUES\_SIZE@{RTOS\_ESPSERIAL\_QUEUES\_SIZE}}
+\index{RTOS\_ESPSERIAL\_QUEUES\_SIZE@{RTOS\_ESPSERIAL\_QUEUES\_SIZE}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{RTOS\_ESPSERIAL\_QUEUES\_SIZE}{RTOS\_ESPSERIAL\_QUEUES\_SIZE}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Q\+U\+E\+U\+E\+S\+\_\+\+S\+I\+ZE~10}
+
+Queue size for the E\+S\+P8266 queues. \mbox{\Hypertarget{group__rtosESPSERIAL_gad503fcc75e7eefb0bdca3c9dc3b04530}\label{group__rtosESPSERIAL_gad503fcc75e7eefb0bdca3c9dc3b04530}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_REFRESH\_PERIOD\_MS@{RTOS\_ESPSERIAL\_REFRESH\_PERIOD\_MS}}
+\index{RTOS\_ESPSERIAL\_REFRESH\_PERIOD\_MS@{RTOS\_ESPSERIAL\_REFRESH\_PERIOD\_MS}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{RTOS\_ESPSERIAL\_REFRESH\_PERIOD\_MS}{RTOS\_ESPSERIAL\_REFRESH\_PERIOD\_MS}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+MS~66}
+
+Execution period for rtos\+E\+S\+P\+S\+E\+R\+I\+AL waiting functions. \mbox{\Hypertarget{group__rtosESPSERIAL_ga51ecba21a5adb3d79229f62f17791b69}\label{group__rtosESPSERIAL_ga51ecba21a5adb3d79229f62f17791b69}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_RESTORE\_ON\_DEFAULT\_SETUP@{RTOS\_ESPSERIAL\_RESTORE\_ON\_DEFAULT\_SETUP}}
+\index{RTOS\_ESPSERIAL\_RESTORE\_ON\_DEFAULT\_SETUP@{RTOS\_ESPSERIAL\_RESTORE\_ON\_DEFAULT\_SETUP}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{RTOS\_ESPSERIAL\_RESTORE\_ON\_DEFAULT\_SETUP}{RTOS\_ESPSERIAL\_RESTORE\_ON\_DEFAULT\_SETUP}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+R\+E\+S\+T\+O\+R\+E\+\_\+\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+E\+T\+UP~false}
+
+Restores the E\+S\+P8266 restore command in the setup function \mbox{\Hypertarget{group__rtosESPSERIAL_ga480ffcb3f59db55f52cc2c52b108c85e}\label{group__rtosESPSERIAL_ga480ffcb3f59db55f52cc2c52b108c85e}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_SETUP\_TASK\_STACK\_SIZE@{RTOS\_ESPSERIAL\_SETUP\_TASK\_STACK\_SIZE}}
+\index{RTOS\_ESPSERIAL\_SETUP\_TASK\_STACK\_SIZE@{RTOS\_ESPSERIAL\_SETUP\_TASK\_STACK\_SIZE}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{RTOS\_ESPSERIAL\_SETUP\_TASK\_STACK\_SIZE}{RTOS\_ESPSERIAL\_SETUP\_TASK\_STACK\_SIZE}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+S\+E\+T\+U\+P\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE $\ast$ 3}
+
+Minimum stack size for the E\+S\+P8266 managing task. \mbox{\Hypertarget{group__rtosESPSERIAL_ga44f69e931d2130da76a7402bb511593e}\label{group__rtosESPSERIAL_ga44f69e931d2130da76a7402bb511593e}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_SETUP\_TIMEOUT@{RTOS\_ESPSERIAL\_SETUP\_TIMEOUT}}
+\index{RTOS\_ESPSERIAL\_SETUP\_TIMEOUT@{RTOS\_ESPSERIAL\_SETUP\_TIMEOUT}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{RTOS\_ESPSERIAL\_SETUP\_TIMEOUT}{RTOS\_ESPSERIAL\_SETUP\_TIMEOUT}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+S\+E\+T\+U\+P\+\_\+\+T\+I\+M\+E\+O\+UT~15000}
+
+Maximum timeout in milliseconds for the setup function. \mbox{\Hypertarget{group__rtosESPSERIAL_gae8e5dff6f02a91153b41810e3dcea8fa}\label{group__rtosESPSERIAL_gae8e5dff6f02a91153b41810e3dcea8fa}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_SHORT\_PAUSE@{RTOS\_ESPSERIAL\_SHORT\_PAUSE}}
+\index{RTOS\_ESPSERIAL\_SHORT\_PAUSE@{RTOS\_ESPSERIAL\_SHORT\_PAUSE}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{RTOS\_ESPSERIAL\_SHORT\_PAUSE}{RTOS\_ESPSERIAL\_SHORT\_PAUSE}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+S\+H\+O\+R\+T\+\_\+\+P\+A\+U\+SE~2000}
+
+Maximum timeout in milliseconds for a short pause. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__rtosESPSERIAL_gae631f2b79bf0c5cc744c816ac207073b}\label{group__rtosESPSERIAL_gae631f2b79bf0c5cc744c816ac207073b}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!ESPState\_t@{ESPState\_t}}
+\index{ESPState\_t@{ESPState\_t}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{ESPState\_t}{ESPState\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__rtosESPSERIAL_gae631f2b79bf0c5cc744c816ac207073b}{E\+S\+P\+State\+\_\+t}}}
+
+
+
+E\+S\+P8266 current state structure definition. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{START@{START}!ESP8266 serial interface@{ESP8266 serial interface}}\index{ESP8266 serial interface@{ESP8266 serial interface}!START@{START}}}\mbox{\Hypertarget{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073ba13d000b4d7dc70d90239b7430d1eb6b2}\label{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073ba13d000b4d7dc70d90239b7430d1eb6b2}} 
+S\+T\+A\+RT&Starts waiting for a desired outcome. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{QUEUE@{QUEUE}!ESP8266 serial interface@{ESP8266 serial interface}}\index{ESP8266 serial interface@{ESP8266 serial interface}!QUEUE@{QUEUE}}}\mbox{\Hypertarget{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073ba15daaafacaefff3b690c1c2669ef0caa}\label{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073ba15daaafacaefff3b690c1c2669ef0caa}} 
+Q\+U\+E\+UE&Execution state reached the implemented queue. Only used internally \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WAIT@{WAIT}!ESP8266 serial interface@{ESP8266 serial interface}}\index{ESP8266 serial interface@{ESP8266 serial interface}!WAIT@{WAIT}}}\mbox{\Hypertarget{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073ba79a322ccb4b29b85b3cab52dbccefd17}\label{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073ba79a322ccb4b29b85b3cab52dbccefd17}} 
+W\+A\+IT&Waiting for a desired outcome. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FAIL@{FAIL}!ESP8266 serial interface@{ESP8266 serial interface}}\index{ESP8266 serial interface@{ESP8266 serial interface}!FAIL@{FAIL}}}\mbox{\Hypertarget{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073ba936c4a5547a9360243178f726f6b2715}\label{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073ba936c4a5547a9360243178f726f6b2715}} 
+F\+A\+IL&Desired outcome has not been achieved. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SUCCESS@{SUCCESS}!ESP8266 serial interface@{ESP8266 serial interface}}\index{ESP8266 serial interface@{ESP8266 serial interface}!SUCCESS@{SUCCESS}}}\mbox{\Hypertarget{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073bac7f69f7c9e5aea9b8f54cf02870e2bf8}\label{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073bac7f69f7c9e5aea9b8f54cf02870e2bf8}} 
+S\+U\+C\+C\+E\+SS&Desired outcome has been achieved. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__rtosESPSERIAL_ga52d73c58de13b48804bb3aae24560f6a}\label{group__rtosESPSERIAL_ga52d73c58de13b48804bb3aae24560f6a}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_Clear@{rtosESPSERIAL\_Clear}}
+\index{rtosESPSERIAL\_Clear@{rtosESPSERIAL\_Clear}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{rtosESPSERIAL\_Clear()}{rtosESPSERIAL\_Clear()}}
+{\footnotesize\ttfamily void rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock }\end{DoxyParamCaption})}
+
+
+
+Clears the buffer containing read data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the E\+S\+P8266 device from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function must be called prior to any other rtos\+E\+S\+P\+S\+E\+R\+I\+AL data-\/receiving functions. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__rtosESPSERIAL_gae1ec873708075ca88ae7dcfaabdb8cbf}\label{group__rtosESPSERIAL_gae1ec873708075ca88ae7dcfaabdb8cbf}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_FindStr@{rtosESPSERIAL\_FindStr}}
+\index{rtosESPSERIAL\_FindStr@{rtosESPSERIAL\_FindStr}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{rtosESPSERIAL\_FindStr()}{rtosESPSERIAL\_FindStr()}}
+{\footnotesize\ttfamily void rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Find\+Str (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock,  }\item[{char $\ast$}]{str,  }\item[{char $\ast$$\ast$}]{found\+\_\+str }\end{DoxyParamCaption})}
+
+
+
+Finds a desired string in the buffer containing read data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the E\+S\+P8266 device from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+{\em str} & Desired string to be found. \\
+\hline
+{\em found\+\_\+str} & Address of the pointer where the desired string will be saved to; assigned N\+U\+LL when the desired line is not found. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__rtosESPSERIAL_gac84bfef4e844142defd193d67a5336b5}\label{group__rtosESPSERIAL_gac84bfef4e844142defd193d67a5336b5}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_Init@{rtosESPSERIAL\_Init}}
+\index{rtosESPSERIAL\_Init@{rtosESPSERIAL\_Init}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{rtosESPSERIAL\_Init()}{rtosESPSERIAL\_Init()}}
+{\footnotesize\ttfamily bool rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Init (\begin{DoxyParamCaption}\item[{int}]{baudrate }\end{DoxyParamCaption})}
+
+
+
+Initializes the rtos\+E\+S\+P\+S\+E\+R\+I\+AL A\+PI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em baudrate} & Set baudrate of the device. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function must be called prior to any other rtos\+E\+S\+P\+S\+E\+R\+I\+AL functions. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__rtosESPSERIAL_ga74e30aa4cb6f425d2957b9fdb16751b8}\label{group__rtosESPSERIAL_ga74e30aa4cb6f425d2957b9fdb16751b8}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_LockBegin@{rtosESPSERIAL\_LockBegin}}
+\index{rtosESPSERIAL\_LockBegin@{rtosESPSERIAL\_LockBegin}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{rtosESPSERIAL\_LockBegin()}{rtosESPSERIAL\_LockBegin()}}
+{\footnotesize\ttfamily void rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Lock\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Locks the E\+S\+P8266 device without any further action. 
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosESPSERIAL_gad18fe164c18a727a7e3f150fccde7031}\label{group__rtosESPSERIAL_gad18fe164c18a727a7e3f150fccde7031}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_LockEnd@{rtosESPSERIAL\_LockEnd}}
+\index{rtosESPSERIAL\_LockEnd@{rtosESPSERIAL\_LockEnd}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{rtosESPSERIAL\_LockEnd()}{rtosESPSERIAL\_LockEnd()}}
+{\footnotesize\ttfamily void rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Lock\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unlocks the E\+S\+P8266 device without any further action. 
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosESPSERIAL_gabe4c3a5f74c3c8ab8636d94fd6b5ed71}\label{group__rtosESPSERIAL_gabe4c3a5f74c3c8ab8636d94fd6b5ed71}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_ReadLine@{rtosESPSERIAL\_ReadLine}}
+\index{rtosESPSERIAL\_ReadLine@{rtosESPSERIAL\_ReadLine}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{rtosESPSERIAL\_ReadLine()}{rtosESPSERIAL\_ReadLine()}}
+{\footnotesize\ttfamily void rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Read\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock,  }\item[{char $\ast$$\ast$}]{found\+\_\+line }\end{DoxyParamCaption})}
+
+
+
+Reads a C\+R-\/\+LF terminated string from the E\+S\+P8266 device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the E\+S\+P8266 device from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+{\em found\+\_\+line} & Address of the pointer where the read line saved to; assigned N\+U\+LL when the desired line is not found. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosESPSERIAL_gadc5784036d725724ae5749b726390092}\label{group__rtosESPSERIAL_gadc5784036d725724ae5749b726390092}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_Recv@{rtosESPSERIAL\_Recv}}
+\index{rtosESPSERIAL\_Recv@{rtosESPSERIAL\_Recv}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{rtosESPSERIAL\_Recv()}{rtosESPSERIAL\_Recv()}}
+{\footnotesize\ttfamily void rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Recv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock,  }\item[{uint8\+\_\+t $\ast$}]{dst\+\_\+buffer,  }\item[{int}]{max\+\_\+bytes,  }\item[{int $\ast$}]{bytes\+\_\+read }\end{DoxyParamCaption})}
+
+
+
+Reads data from the E\+S\+P8266 device. 
+
+\DoxyHorRuler
+ 
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the E\+S\+P8266 device from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+{\em dst\+\_\+buffer} & Destination buffer for all data to be read into. \\
+\hline
+{\em max\+\_\+bytes} & Maximum expected length for the destination buffer. \\
+\hline
+{\em bytes\+\_\+read} & Address where the number of total bytes read will be saved to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosESPSERIAL_gab12467c84ba3ea2a353e8168c87fcb0d}\label{group__rtosESPSERIAL_gab12467c84ba3ea2a353e8168c87fcb0d}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_RecvByte@{rtosESPSERIAL\_RecvByte}}
+\index{rtosESPSERIAL\_RecvByte@{rtosESPSERIAL\_RecvByte}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{rtosESPSERIAL\_RecvByte()}{rtosESPSERIAL\_RecvByte()}}
+{\footnotesize\ttfamily void rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Recv\+Byte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock,  }\item[{uint8\+\_\+t $\ast$}]{dst\+\_\+buffer,  }\item[{int $\ast$}]{bytes\+\_\+read }\end{DoxyParamCaption})}
+
+
+
+Reads a byte of data from the E\+S\+P8266 device. 
+
+\DoxyHorRuler
+ 
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the E\+S\+P8266 device from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+{\em dst\+\_\+buffer} & Destination for the read byte. \\
+\hline
+{\em bytes\+\_\+read} & Address where the number of total bytes read will be saved to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosESPSERIAL_gafceb07296ade2d5a39bd09f1d6bc3f8a}\label{group__rtosESPSERIAL_gafceb07296ade2d5a39bd09f1d6bc3f8a}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_Refresh@{rtosESPSERIAL\_Refresh}}
+\index{rtosESPSERIAL\_Refresh@{rtosESPSERIAL\_Refresh}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{rtosESPSERIAL\_Refresh()}{rtosESPSERIAL\_Refresh()}}
+{\footnotesize\ttfamily void rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Refresh (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock }\end{DoxyParamCaption})}
+
+
+
+Refreshes the buffer containing read data with any new incoming data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the E\+S\+P8266 device from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function must be called prior to any other rtos\+E\+S\+P\+S\+E\+R\+I\+AL data-\/receiving functions. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__rtosESPSERIAL_ga5fa76b22f35bc7b0d6345feb8d23d37c}\label{group__rtosESPSERIAL_ga5fa76b22f35bc7b0d6345feb8d23d37c}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_Send@{rtosESPSERIAL\_Send}}
+\index{rtosESPSERIAL\_Send@{rtosESPSERIAL\_Send}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{rtosESPSERIAL\_Send()}{rtosESPSERIAL\_Send()}}
+{\footnotesize\ttfamily void rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock,  }\item[{void $\ast$}]{command,  }\item[{int}]{size,  }\item[{int $\ast$}]{bytes\+\_\+sent }\end{DoxyParamCaption})}
+
+
+
+Writes data to the E\+S\+P8266 device. 
+
+\DoxyHorRuler
+ 
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the E\+S\+P8266 device from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+{\em command} & Buffer data. \\
+\hline
+{\em size} & Length of the buffer. \\
+\hline
+{\em bytes\+\_\+sent} & Address where the number of total bytes written will be saved to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosESPSERIAL_gab91d6d2a61925355f10397f5afd4b4b2}\label{group__rtosESPSERIAL_gab91d6d2a61925355f10397f5afd4b4b2}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_SendAT@{rtosESPSERIAL\_SendAT}}
+\index{rtosESPSERIAL\_SendAT@{rtosESPSERIAL\_SendAT}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{rtosESPSERIAL\_SendAT()}{rtosESPSERIAL\_SendAT()}}
+{\footnotesize\ttfamily void rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Send\+AT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock,  }\item[{char $\ast$}]{command,  }\item[{char $\ast$}]{expected\+\_\+resp,  }\item[{int}]{timeout\+\_\+ms,  }\item[{\mbox{\hyperlink{group__rtosESPSERIAL_gae631f2b79bf0c5cc744c816ac207073b}{E\+S\+P\+State\+\_\+t}} $\ast$}]{espstate }\end{DoxyParamCaption})}
+
+
+
+Sends an AT command to the E\+S\+P8266 device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the E\+S\+P8266 device from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+{\em command} & Command to be sent; C\+R-\/\+LF is already appended to the given command by the function. \\
+\hline
+{\em expected\+\_\+resp} & Expected response to be sent by the E\+S\+P8266 device. \\
+\hline
+{\em timeout\+\_\+ms} & Maximum execution time for the function, in milliseconds. \\
+\hline
+{\em espstate} & Address where the current state of the E\+S\+P8266 device will be saved to. (see \mbox{\hyperlink{group__rtosESPSERIAL_gae631f2b79bf0c5cc744c816ac207073b}{E\+S\+P\+State\+\_\+t}}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosESPSERIAL_ga7a93a37bf820cbfe4d978f85ef5e7ffa}\label{group__rtosESPSERIAL_ga7a93a37bf820cbfe4d978f85ef5e7ffa}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_Setup@{rtosESPSERIAL\_Setup}}
+\index{rtosESPSERIAL\_Setup@{rtosESPSERIAL\_Setup}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{rtosESPSERIAL\_Setup()}{rtosESPSERIAL\_Setup()}}
+{\footnotesize\ttfamily bool rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Setup (\begin{DoxyParamCaption}\item[{bool}]{restore }\end{DoxyParamCaption})}
+
+
+
+Sets up the E\+S\+P8266 device with R\+S\+T/\+R\+E\+S\+T\+O\+RE, A\+TE=0, A\+T+\+C\+W\+M\+O\+DE=1, A\+T+\+C\+W\+L\+A\+P\+O\+PT=1,127 and C\+I\+P\+M\+UX=0 commands. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em restore} & R\+E\+S\+T\+O\+RE command will be executed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosESPSERIAL_ga0549c542ef521bd8a9c44047ed30b6a1}\label{group__rtosESPSERIAL_ga0549c542ef521bd8a9c44047ed30b6a1}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_WaitResp@{rtosESPSERIAL\_WaitResp}}
+\index{rtosESPSERIAL\_WaitResp@{rtosESPSERIAL\_WaitResp}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{rtosESPSERIAL\_WaitResp()}{rtosESPSERIAL\_WaitResp()}}
+{\footnotesize\ttfamily void rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Wait\+Resp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock,  }\item[{char $\ast$}]{expected\+\_\+resp,  }\item[{char $\ast$$\ast$}]{resp\+\_\+obtained,  }\item[{int}]{timeout\+\_\+ms,  }\item[{\mbox{\hyperlink{group__rtosESPSERIAL_gae631f2b79bf0c5cc744c816ac207073b}{E\+S\+P\+State\+\_\+t}} $\ast$}]{espstate }\end{DoxyParamCaption})}
+
+
+
+Waits for a desired response to be transmitted by the E\+S\+P8266 device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the E\+S\+P8266 device from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+{\em expected\+\_\+resp} & Expected response to be transmitted by the E\+S\+P8266 device. \\
+\hline
+{\em resp\+\_\+obtained} & Address to the pointer to which the read line will be assigned. \\
+\hline
+{\em timeout\+\_\+ms} & Maximum execution time for the function, in milliseconds. \\
+\hline
+{\em espstate} & Address where the current state of the E\+S\+P8266 device will be saved to. (see \mbox{\hyperlink{group__rtosESPSERIAL_gae631f2b79bf0c5cc744c816ac207073b}{E\+S\+P\+State\+\_\+t}}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosESPSERIAL_ga9e84d5facd308089731662723d0527b5}\label{group__rtosESPSERIAL_ga9e84d5facd308089731662723d0527b5}} 
+\index{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_WaitStr@{rtosESPSERIAL\_WaitStr}}
+\index{rtosESPSERIAL\_WaitStr@{rtosESPSERIAL\_WaitStr}!ESP8266 serial interface@{ESP8266 serial interface}}
+\doxysubsubsection{\texorpdfstring{rtosESPSERIAL\_WaitStr()}{rtosESPSERIAL\_WaitStr()}}
+{\footnotesize\ttfamily void rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Wait\+Str (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock,  }\item[{char $\ast$}]{expected\+\_\+str,  }\item[{char $\ast$$\ast$}]{str\+\_\+obtained,  }\item[{int}]{timeout\+\_\+ms,  }\item[{\mbox{\hyperlink{group__rtosESPSERIAL_gae631f2b79bf0c5cc744c816ac207073b}{E\+S\+P\+State\+\_\+t}} $\ast$}]{espstate }\end{DoxyParamCaption})}
+
+
+
+Waits for a desired string to be transmitted by the E\+S\+P8266 device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the E\+S\+P8266 device from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+{\em expected\+\_\+str} & Expected string to be transmitted by the E\+S\+P8266 device. \\
+\hline
+{\em str\+\_\+obtained} & Address to the pointer to which the read string will be assigned. \\
+\hline
+{\em timeout\+\_\+ms} & Maximum execution time for the function, in milliseconds. \\
+\hline
+{\em espstate} & Address where the current state of the E\+S\+P8266 device will be saved to. (see \mbox{\hyperlink{group__rtosESPSERIAL_gae631f2b79bf0c5cc744c816ac207073b}{E\+S\+P\+State\+\_\+t}}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}

@@ -1,0 +1,51 @@
+\hypertarget{nettransport_8h}{}\doxysection{C\+:/\+Users/alext/\+Desktop/\+S\+E/\+Workspace/\+Free\+R\+T\+O\+S-\/\+Network-\/\+U\+I/inc/nettransport.h File Reference}
+\label{nettransport_8h}\index{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Network-\/UI/inc/nettransport.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Network-\/UI/inc/nettransport.h}}
+
+
+Contains the net\+T\+R\+A\+N\+S\+P\+O\+RT A\+PI.  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__netTRANSPORT_gac6ab27cee79cc460a5fb06e455fdbd67}{N\+E\+T\+W\+O\+R\+K\+\_\+\+U\+D\+P\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+T\+I\+M\+E\+O\+UT}}~10000
+\item 
+\#define \mbox{\hyperlink{group__netTRANSPORT_gaeac98d0cc45b39095a6478d615a8ad85}{N\+E\+T\+W\+O\+R\+K\+\_\+\+T\+C\+P\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+T\+I\+M\+E\+O\+UT}}~10000
+\item 
+\#define \mbox{\hyperlink{group__netTRANSPORT_ga1bc7c104e2bb5a9b56f9f048aca644e3}{N\+E\+T\+W\+O\+R\+K\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+T\+I\+M\+E\+O\+UT}}~20000
+\item 
+\#define \mbox{\hyperlink{group__netTRANSPORT_ga78bef0d1a059995cc25ebf02eb9399c8}{N\+E\+T\+W\+O\+R\+K\+\_\+\+S\+E\+N\+D\+\_\+\+T\+I\+M\+E\+O\+UT}}~20000
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{group__netTRANSPORT_ga16117d92c93c64c6f7cc33ae3fb923fe}{net\+U\+D\+P\+\_\+\+Start}} (const char $\ast$host, int port)
+\begin{DoxyCompactList}\small\item\em Estabilishes a U\+DP connection with a remote server. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__netTRANSPORT_gaacc7f9975e981efc7c2a39aa01838a7e}{net\+U\+D\+P\+\_\+\+Close}} ()
+\begin{DoxyCompactList}\small\item\em Closes an ongoing U\+DP connection. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__netTRANSPORT_gac13eccd647a55f35b2d35617b0356009}{net\+T\+C\+P\+\_\+\+Start}} (const char $\ast$host, const unsigned short int port, const unsigned short int keepalive)
+\begin{DoxyCompactList}\small\item\em Estabilishes a T\+CP connection with a remote server. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__netTRANSPORT_gac0284fc1c15db32ad5f381d8a90e10e2}{net\+T\+C\+P\+\_\+\+Close}} ()
+\begin{DoxyCompactList}\small\item\em Closes an ongoing T\+CP connection. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__netTRANSPORT_gaf4287af26e0fb6d282a97a2392c17046}{net\+T\+R\+A\+N\+S\+P\+O\+R\+T\+\_\+\+Send}} (unsigned char $\ast$address, unsigned int bytes)
+\begin{DoxyCompactList}\small\item\em Sends an ammount of data to the desired address through an ongoing transport layer connection. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__netTRANSPORT_ga93897a5584632460dfd6ca05a6513122}{net\+T\+R\+A\+N\+S\+P\+O\+R\+T\+\_\+\+Recv}} (unsigned char $\ast$address, unsigned int maxbytes)
+\begin{DoxyCompactList}\small\item\em Receives an ammount of data to the desired address through an ongoing transport layer connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the net\+T\+R\+A\+N\+S\+P\+O\+RT A\+PI. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 jul 2023 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Alexandre Silva
+\end{DoxyAuthor}
+Copyright(\+C) 2023, Alexandre Silva All rights reserved.
+
+Software that is described herein is for illustrative purposes only which provides customers with programming information regarding the products. This software is supplied \char`\"{}\+A\+S I\+S\char`\"{} without any warranties. 

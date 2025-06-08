@@ -1,0 +1,5 @@
+../src/netwifi.c:16:6:netWIFI_Connect	40	static
+../src/netwifi.c:35:6:netWIFI_Disconnect	24	static
+../src/netwifi.c:110:6:netWIFI_Check	56	static
+../src/netwifi.c:153:6:netWIFI_Scan	112	static
+../src/netwifi.c:246:12:netWIFI_ScannedSSID	16	static

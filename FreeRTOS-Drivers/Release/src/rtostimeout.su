@@ -1,0 +1,2 @@
+../src/rtostimeout.c:3:12:rtosTIMEOUT_Start	8	static
+../src/rtostimeout.c:7:6:rtosTIMEOUT_Expired	16	static

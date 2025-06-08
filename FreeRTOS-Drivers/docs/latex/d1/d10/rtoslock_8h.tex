@@ -1,0 +1,56 @@
+\hypertarget{rtoslock_8h}{}\doxysection{C\+:/\+Users/alext/\+Desktop/\+S\+E/\+Workspace/\+Free\+R\+T\+O\+S-\/\+Drivers/inc/rtoslock.h File Reference}
+\label{rtoslock_8h}\index{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtoslock.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtoslock.h}}
+
+
+Contains the rtos\+L\+O\+CK A\+PI.  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$Free\+R\+T\+O\+S.\+h$>$}\newline
+{\ttfamily \#include $<$task.\+h$>$}\newline
+{\ttfamily \#include $<$semphr.\+h$>$}\newline
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct Lock\+Struct $\ast$ \mbox{\hyperlink{group__rtosLOCK_ga24abce6e8dec4332236eb7328639d176}{Lock\+Handle\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Lock handle structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} \{ \newline
+\mbox{\hyperlink{group__rtosLOCK_ggad29b16c57fd6f40710b91236a5b3b94ca07056e203845d37e6f751aa8b6a4071c}{L\+O\+C\+K\+\_\+\+N\+O\+NE}}, 
+\mbox{\hyperlink{group__rtosLOCK_ggad29b16c57fd6f40710b91236a5b3b94ca6ebd98e19a656025f52e96348b3c5653}{L\+O\+C\+K\+\_\+\+B\+E\+G\+IN}}, 
+\mbox{\hyperlink{group__rtosLOCK_ggad29b16c57fd6f40710b91236a5b3b94ca6fae38a22846e809f1c6c0cd72d43954}{L\+O\+C\+K\+\_\+\+C\+O\+N\+T\+I\+N\+UE}}, 
+\mbox{\hyperlink{group__rtosLOCK_ggad29b16c57fd6f40710b91236a5b3b94caa6cd24760d038b452dc6278f5386d647}{L\+O\+C\+K\+\_\+\+E\+ND}}, 
+\newline
+\mbox{\hyperlink{group__rtosLOCK_ggad29b16c57fd6f40710b91236a5b3b94cae9abd5971d2bfdd2f574b53eaeb88cf6}{L\+O\+C\+K\+\_\+\+S\+I\+N\+G\+LE}}
+ \}
+\begin{DoxyCompactList}\small\item\em Lock state definition. L\+O\+C\+K\+\_\+\+N\+O\+NE or L\+O\+C\+K\+\_\+\+S\+I\+N\+G\+LE can be executed independently. L\+O\+C\+K\+\_\+\+B\+E\+G\+IN and L\+O\+C\+K\+\_\+\+E\+ND should be called in the beginning and end, respectively, of a code section to be locked, with L\+O\+C\+K\+\_\+\+C\+O\+N\+T\+I\+N\+UE being used in between the last two, if needed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__rtosLOCK_ga24abce6e8dec4332236eb7328639d176}{Lock\+Handle\+\_\+t}} \mbox{\hyperlink{group__rtosLOCK_ga67c89b79a83b942a4a7d7c65fac2ec2d}{rtos\+L\+O\+C\+K\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the rtos\+L\+O\+CK A\+PI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosLOCK_ga9d47aa893c45ef394abc85690fcc1331}{rtos\+L\+O\+C\+K\+\_\+\+Begin}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, \mbox{\hyperlink{group__rtosLOCK_ga24abce6e8dec4332236eb7328639d176}{Lock\+Handle\+\_\+t}} handle)
+\begin{DoxyCompactList}\small\item\em Allows the beginning of a code section lock for an initialized lock handle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosLOCK_ga2fdda2312a6ba11ba470bd5ddbb531e7}{rtos\+L\+O\+C\+K\+\_\+\+End}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, \mbox{\hyperlink{group__rtosLOCK_ga24abce6e8dec4332236eb7328639d176}{Lock\+Handle\+\_\+t}} handle)
+\begin{DoxyCompactList}\small\item\em Allows the end of a code section lock for an initialized lock handle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosLOCK_gac75c86e9dd7dfe94970462c1ab8ce9fa}{rtos\+L\+O\+C\+K\+\_\+\+Destroy}} (\mbox{\hyperlink{group__rtosLOCK_ga24abce6e8dec4332236eb7328639d176}{Lock\+Handle\+\_\+t}} handle)
+\begin{DoxyCompactList}\small\item\em Destroys an initialized lock handle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the rtos\+L\+O\+CK A\+PI. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+17 jun 2023 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Alexandre Silva
+\end{DoxyAuthor}
+Copyright(\+C) 2023, Alexandre Silva All rights reserved.
+
+Software that is described herein is for illustrative purposes only which provides customers with programming information regarding the products. This software is supplied \char`\"{}\+A\+S I\+S\char`\"{} without any warranties. 

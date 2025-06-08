@@ -1,0 +1,63 @@
+\hypertarget{main_8h}{}\doxysection{C\+:/\+Users/alext/\+Desktop/\+S\+E/\+Workspace/\+Free\+R\+T\+O\+S-\/\+Template/inc/main.h File Reference}
+\label{main_8h}\index{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Template/inc/main.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Template/inc/main.h}}
+
+
+Contains the functions to be used in the main application.  
+
+
+{\ttfamily \#include $<$timers.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__appMAIN_ga495fea6c0bbfe2c018480ae2d51880ac}{D\+E\+F\+A\+U\+L\+T\+\_\+\+W\+I\+F\+I\+\_\+\+C\+O\+N\+N\+E\+CT}}~false
+\item 
+\#define \mbox{\hyperlink{group__appMAIN_ga50ecef7521f23d7c3bd38bd244f09aa7}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+S\+ID}}~\char`\"{}\char`\"{}
+\item 
+\#define \mbox{\hyperlink{group__appMAIN_gab6ccc7f54e6ef3f170e9afbf4f2a21d8}{D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+A\+SS}}~\char`\"{}\char`\"{}
+\item 
+\#define \mbox{\hyperlink{group__appMAIN_ga1b4ed831250544ffcabf0a98c84446af}{M\+Q\+T\+T\+\_\+\+P\+U\+B\+L\+I\+S\+H\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L\+\_\+S}}~30
+\item 
+\#define \mbox{\hyperlink{group__appMAIN_gab484a7f673b8d914176cdcba22184b5e}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+K\+E\+E\+P\+A\+L\+I\+V\+E\+\_\+S}}~60\+UL
+\item 
+\#define \mbox{\hyperlink{group__appMAIN_gacc7170f27dae6f8fb1897bcb98d0962b}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+Q\+T\+T\+\_\+\+A\+D\+D\+R\+E\+SS}}~\char`\"{}iot-\/ps.\+ddns.\+net\char`\"{}
+\item 
+\#define \mbox{\hyperlink{group__appMAIN_ga01342056d524ed0b20f9e0ccc800d1db}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+Q\+T\+T\+\_\+\+P\+O\+RT}}~1883
+\item 
+\#define \mbox{\hyperlink{group__appMAIN_ga1200bc2d8558c631d491f5802a702ea1}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+Q\+T\+T\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+O\+K\+EN}}~\char`\"{}G2-\/S\+E\+IoT\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__appMAIN_ga1d4fe220241e3c1262a46670a499a833}{R\+T\+O\+S\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Asserts correct initialization of every Free\+R\+T\+O\+S-\/\+Drivers A\+PI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__appMAIN_gafc539987e56540799aa09049611e6a74}{N\+E\+T\+W\+O\+R\+K\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Asserts correct initialization of every Free\+R\+T\+O\+S-\/\+Drivers A\+PI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__appMAIN_ga030b4cb15977d1c497466d1079f34846}{A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Asserts correct initialization of every Application layer task. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__appMAIN_ga92513baeaf16c498055e00588b63819a}{app\+M\+E\+N\+U\+\_\+\+Normal\+Affix\+Handler}} (void $\ast$a)
+\begin{DoxyCompactList}\small\item\em Handler for the display affixing option in normal mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__appMAIN_ga8e50aec85312696c72b9c34e22c79252}{app\+M\+E\+N\+U\+\_\+\+Normal\+Manage\+Light\+I\+SR}} (Timer\+Handle\+\_\+t x\+Timer)
+\begin{DoxyCompactList}\small\item\em Light managing I\+SR. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__appMAIN_ga3ac313b44a89c6123be960d4ab11558a}{app\+M\+E\+N\+U\+\_\+\+Normal\+Publish\+I\+SR}} (Timer\+Handle\+\_\+t x\+Timer)
+\begin{DoxyCompactList}\small\item\em M\+Q\+TT data publishing I\+SR. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__appMAIN_ga87ea7be2238fe45d1e0385696b1604db}{app\+M\+E\+N\+U\+\_\+\+Normal\+Mode}} (void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em Normal mode task. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__appMAIN_ga5149db67f1f04e67debb2088f4ea5dad}{app\+M\+E\+N\+U\+\_\+\+Maintenance\+Mode}} (void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em Maintenance mode task. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the functions to be used in the main application. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 jul 2023 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Alexandre Silva
+\end{DoxyAuthor}
+Copyright(\+C) 2023, Alexandre Silva All rights reserved.
+
+Software that is described herein is for illustrative purposes only which provides customers with programming information regarding the products. This software is supplied \char`\"{}\+A\+S I\+S\char`\"{} without any warranties. 

@@ -1,0 +1,56 @@
+\hypertarget{netmqtt_8h}{}\doxysection{C\+:/\+Users/alext/\+Desktop/\+S\+E/\+Workspace/\+Free\+R\+T\+O\+S-\/\+Network-\/\+U\+I/inc/netmqtt.h File Reference}
+\label{netmqtt_8h}\index{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Network-\/UI/inc/netmqtt.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Network-\/UI/inc/netmqtt.h}}
+
+
+Contains the net\+M\+Q\+TT A\+PI.  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__netMQTT_ga701eefa2c49f91a4a4e15ca3a50a8388}{N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+Q\+T\+T\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+MS}}~66
+\item 
+\#define \mbox{\hyperlink{group__netMQTT_ga60d9dd8631376b5e42299e14c5fbabde}{N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+Q\+T\+T\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}}~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE $\ast$ 9
+\item 
+\#define \mbox{\hyperlink{group__netMQTT_ga97a7f5e47e48e0e86467e9f27bd20e1e}{N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+Q\+T\+T\+\_\+\+Q\+U\+E\+U\+E\+S\+\_\+\+S\+I\+ZE}}~10
+\item 
+\#define \mbox{\hyperlink{group__netMQTT_ga5a51767065f6f8e82c7d3b12c804b3ce}{N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+Q\+T\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+L\+E\+N\+G\+TH}}~64
+\item 
+\#define \mbox{\hyperlink{group__netMQTT_ga55e1bc36a5758bdb6969d9e4c76cc81c}{N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+Q\+T\+T\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+O\+K\+E\+N\+\_\+\+L\+E\+N\+G\+TH}}~64
+\item 
+\#define \mbox{\hyperlink{group__netMQTT_gabac011a51259e7f9286be30ebd6272c7}{M\+Q\+T\+T\+\_\+\+N\+E\+T\+W\+O\+R\+K\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+T\+I\+M\+E\+O\+UT}}~7000
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{group__netMQTT_ga14db8677fc69c33468fdd569254e5189}{net\+M\+Q\+T\+T\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the net\+M\+Q\+TT A\+PI. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__netMQTT_ga90972025151beaaa2ec9995a730f3dce}{net\+M\+Q\+T\+T\+\_\+\+Ready}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the M\+Q\+TT service is connected to the server and ready to be used. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__netMQTT_ga121599152cfe4ef9ccf4b197566020de}{net\+M\+Q\+T\+T\+\_\+\+Config}} (char $\ast$address, char $\ast$token, unsigned long port, unsigned long keepalive)
+\begin{DoxyCompactList}\small\item\em Configures the credentials to be used in the M\+Q\+TT protocol. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__netMQTT_ga9570650f7d7dd174fb6a6349573026c6}{net\+M\+Q\+T\+T\+\_\+\+Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the M\+Q\+TT task. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__netMQTT_ga70afb41479dde4f22cfb75c000463d19}{net\+M\+Q\+T\+T\+\_\+\+Stop}} ()
+\begin{DoxyCompactList}\small\item\em Stops the M\+Q\+TT task. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__netMQTT_gac08b5f8696b96f5067e82fd9e694e374}{net\+M\+Q\+T\+T\+\_\+\+Publish}} (char $\ast$key, char $\ast$value)
+\begin{DoxyCompactList}\small\item\em Publishes data to the previously configured M\+Q\+TT server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the net\+M\+Q\+TT A\+PI. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 jul 2023 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Alexandre Silva
+\end{DoxyAuthor}
+Copyright(\+C) 2023, Alexandre Silva All rights reserved.
+
+Software that is described herein is for illustrative purposes only which provides customers with programming information regarding the products. This software is supplied \char`\"{}\+A\+S I\+S\char`\"{} without any warranties. 

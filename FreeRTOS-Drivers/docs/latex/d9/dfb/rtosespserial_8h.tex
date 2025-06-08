@@ -1,0 +1,96 @@
+\hypertarget{rtosespserial_8h}{}\doxysection{C\+:/\+Users/alext/\+Desktop/\+S\+E/\+Workspace/\+Free\+R\+T\+O\+S-\/\+Drivers/inc/rtosespserial.h File Reference}
+\label{rtosespserial_8h}\index{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtosespserial.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtosespserial.h}}
+
+
+Contains the rtos\+E\+N\+C\+O\+D\+ER A\+PI.  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$freertos.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}rtoslock.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_ga73544c56f82e853378e3572613956ac5}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+P\+R\+I\+N\+T\+F\+\_\+\+D\+E\+B\+UG}}~false
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_gae8f5fd779339c23c216be892e511ff94}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+E\+T\+UP}}~true
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_ga51ecba21a5adb3d79229f62f17791b69}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+R\+E\+S\+T\+O\+R\+E\+\_\+\+O\+N\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+E\+T\+UP}}~false
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_ga480ffcb3f59db55f52cc2c52b108c85e}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+S\+E\+T\+U\+P\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}}~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE $\ast$ 3
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_gaf6a743b70bed6ec5b9be0e94af85274a}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Q\+U\+E\+U\+E\+S\+\_\+\+S\+I\+ZE}}~10
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_ga9be215ee9363fadabcb2d58a14111f43}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}~512
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_gad503fcc75e7eefb0bdca3c9dc3b04530}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+MS}}~66
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_gaa88af32e4ec8215b148dca5d3b6e876c}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+B\+U\+F\+F\+E\+R\+R\+E\+F\+R\+E\+S\+H\+\_\+\+T\+I\+M\+E\+O\+UT}}~500
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_gae8e5dff6f02a91153b41810e3dcea8fa}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+S\+H\+O\+R\+T\+\_\+\+P\+A\+U\+SE}}~2000
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_ga1561dd8c18b5af85775cb6572e66c17b}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+L\+O\+N\+G\+\_\+\+P\+A\+U\+SE}}~10000
+\item 
+\#define \mbox{\hyperlink{group__rtosESPSERIAL_ga44f69e931d2130da76a7402bb511593e}{R\+T\+O\+S\+\_\+\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+S\+E\+T\+U\+P\+\_\+\+T\+I\+M\+E\+O\+UT}}~15000
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__rtosESPSERIAL_gae631f2b79bf0c5cc744c816ac207073b}{E\+S\+P\+State\+\_\+t}} \{ \newline
+\mbox{\hyperlink{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073ba13d000b4d7dc70d90239b7430d1eb6b2}{S\+T\+A\+RT}}, 
+\mbox{\hyperlink{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073ba15daaafacaefff3b690c1c2669ef0caa}{Q\+U\+E\+UE}}, 
+\mbox{\hyperlink{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073ba79a322ccb4b29b85b3cab52dbccefd17}{W\+A\+IT}}, 
+\mbox{\hyperlink{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073ba936c4a5547a9360243178f726f6b2715}{F\+A\+IL}}, 
+\newline
+\mbox{\hyperlink{group__rtosESPSERIAL_ggae631f2b79bf0c5cc744c816ac207073bac7f69f7c9e5aea9b8f54cf02870e2bf8}{S\+U\+C\+C\+E\+SS}}
+ \}
+\begin{DoxyCompactList}\small\item\em E\+S\+P8266 current state structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{group__rtosESPSERIAL_gac84bfef4e844142defd193d67a5336b5}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Init}} (int baudrate)
+\begin{DoxyCompactList}\small\item\em Initializes the rtos\+E\+S\+P\+S\+E\+R\+I\+AL A\+PI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_ga74e30aa4cb6f425d2957b9fdb16751b8}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Lock\+Begin}} ()
+\begin{DoxyCompactList}\small\item\em Locks the E\+S\+P8266 device without any further action. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_gad18fe164c18a727a7e3f150fccde7031}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Lock\+End}} ()
+\begin{DoxyCompactList}\small\item\em Unlocks the E\+S\+P8266 device without any further action. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_gafceb07296ade2d5a39bd09f1d6bc3f8a}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Refresh}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock)
+\begin{DoxyCompactList}\small\item\em Refreshes the buffer containing read data with any new incoming data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_ga52d73c58de13b48804bb3aae24560f6a}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Clear}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock)
+\begin{DoxyCompactList}\small\item\em Clears the buffer containing read data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_ga5fa76b22f35bc7b0d6345feb8d23d37c}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Send}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, void $\ast$command, int size, int $\ast$bytes\+\_\+sent)
+\begin{DoxyCompactList}\small\item\em Writes data to the E\+S\+P8266 device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_gadc5784036d725724ae5749b726390092}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Recv}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, uint8\+\_\+t $\ast$dst\+\_\+buffer, int max\+\_\+bytes, int $\ast$bytes\+\_\+read)
+\begin{DoxyCompactList}\small\item\em Reads data from the E\+S\+P8266 device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_gab12467c84ba3ea2a353e8168c87fcb0d}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Recv\+Byte}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, uint8\+\_\+t $\ast$dst\+\_\+buffer, int $\ast$bytes\+\_\+read)
+\begin{DoxyCompactList}\small\item\em Reads a byte of data from the E\+S\+P8266 device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_gae1ec873708075ca88ae7dcfaabdb8cbf}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Find\+Str}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, char $\ast$str, char $\ast$$\ast$found\+\_\+str)
+\begin{DoxyCompactList}\small\item\em Finds a desired string in the buffer containing read data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_gabe4c3a5f74c3c8ab8636d94fd6b5ed71}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Read\+Line}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, char $\ast$$\ast$found\+\_\+line)
+\begin{DoxyCompactList}\small\item\em Reads a C\+R-\/\+LF terminated string from the E\+S\+P8266 device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_ga9e84d5facd308089731662723d0527b5}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Wait\+Str}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, char $\ast$expected\+\_\+str, char $\ast$$\ast$str\+\_\+obtained, int timeout\+\_\+ms, \mbox{\hyperlink{group__rtosESPSERIAL_gae631f2b79bf0c5cc744c816ac207073b}{E\+S\+P\+State\+\_\+t}} $\ast$espstate)
+\begin{DoxyCompactList}\small\item\em Waits for a desired string to be transmitted by the E\+S\+P8266 device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_ga0549c542ef521bd8a9c44047ed30b6a1}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Wait\+Resp}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, char $\ast$expected\+\_\+resp, char $\ast$$\ast$resp\+\_\+obtained, int timeout\+\_\+ms, \mbox{\hyperlink{group__rtosESPSERIAL_gae631f2b79bf0c5cc744c816ac207073b}{E\+S\+P\+State\+\_\+t}} $\ast$espstate)
+\begin{DoxyCompactList}\small\item\em Waits for a desired response to be transmitted by the E\+S\+P8266 device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtosESPSERIAL_gab91d6d2a61925355f10397f5afd4b4b2}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Send\+AT}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, char $\ast$command, char $\ast$expected\+\_\+resp, int timeout\+\_\+ms, \mbox{\hyperlink{group__rtosESPSERIAL_gae631f2b79bf0c5cc744c816ac207073b}{E\+S\+P\+State\+\_\+t}} $\ast$espstate)
+\begin{DoxyCompactList}\small\item\em Sends an AT command to the E\+S\+P8266 device. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__rtosESPSERIAL_ga7a93a37bf820cbfe4d978f85ef5e7ffa}{rtos\+E\+S\+P\+S\+E\+R\+I\+A\+L\+\_\+\+Setup}} (bool restore)
+\begin{DoxyCompactList}\small\item\em Sets up the E\+S\+P8266 device with R\+S\+T/\+R\+E\+S\+T\+O\+RE, A\+TE=0, A\+T+\+C\+W\+M\+O\+DE=1, A\+T+\+C\+W\+L\+A\+P\+O\+PT=1,127 and C\+I\+P\+M\+UX=0 commands. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the rtos\+E\+N\+C\+O\+D\+ER A\+PI. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+17 jun 2023 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Alexandre Silva
+\end{DoxyAuthor}
+Copyright(\+C) 2023, Alexandre Silva All rights reserved.
+
+Software that is described herein is for illustrative purposes only which provides customers with programming information regarding the products. This software is supplied \char`\"{}\+A\+S I\+S\char`\"{} without any warranties. 

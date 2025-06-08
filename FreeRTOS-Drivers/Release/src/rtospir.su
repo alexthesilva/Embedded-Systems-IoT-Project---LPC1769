@@ -1,0 +1,3 @@
+../src/rtospir.c:22:6:rtosPIR_TMR	16	static
+../src/rtospir.c:31:6:rtosPIR_Init	32	static
+../src/rtospir.c:50:6:rtosPIR_GetValue	4	static

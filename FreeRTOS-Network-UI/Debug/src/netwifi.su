@@ -1,0 +1,13 @@
+../src/netwifi.c:75:6:netWIFI_Init	16	static
+../src/netwifi.c:93:6:netWIFI_Connect	40	static
+../src/netwifi.c:112:6:netWIFI_Disconnect	24	static
+../src/netwifi.c:129:12:netWIFI_CurrentConn	24	static
+../src/netwifi.c:147:6:netWIFI_Check	24	static
+../src/netwifi.c:163:6:netWIFI_Scan	24	static
+../src/netwifi.c:179:12:netWIFI_ScannedSSID	32	static
+../src/netwifi.c:197:6:netWIFI_xConnect	40	static
+../src/netwifi.c:216:6:netWIFI_xDisconnect	24	static
+../src/netwifi.c:231:6:netWIFI_xCheck	56	static
+../src/netwifi.c:274:6:netWIFI_xScan	112	static
+../src/netwifi.c:369:12:netWIFI_xScannedSSID	16	static
+../src/netwifi.c:376:6:netWIFI_Task	40	static

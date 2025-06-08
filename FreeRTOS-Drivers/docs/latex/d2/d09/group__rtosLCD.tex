@@ -1,0 +1,322 @@
+\hypertarget{group__rtosLCD}{}\doxysection{Text L\+CD}
+\label{group__rtosLCD}\index{Text LCD@{Text LCD}}
+
+
+This package provides the interface for driving 4-\/bit H\+D44780-\/based L\+C\+Ds used in an L\+P\+C\+Xpresso development board based on L\+P\+C1769 from N\+XP in a multithreaded manner.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__rtosLCD_gadd727dddc29a757f507f30ee355ccba0}{L\+C\+D\+Text\+\_\+\+L\+I\+N\+ES}}~L\+C\+D\+Text\+\_\+\+L\+I\+N\+ES
+\item 
+\#define \mbox{\hyperlink{group__rtosLCD_gae0304a744b55bbfc24a672fcf4a5d4d6}{L\+C\+D\+Text\+\_\+\+C\+O\+L\+U\+M\+NS}}~\mbox{\hyperlink{group__rtosLCD_gadd727dddc29a757f507f30ee355ccba0}{L\+C\+D\+Text\+\_\+\+L\+I\+N\+ES}}
+\item 
+\#define \mbox{\hyperlink{group__rtosLCD_ga3a2d9bcb6d67197781bb7db28930b18a}{R\+T\+O\+S\+\_\+\+L\+C\+D\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+S\+I\+ZE}}~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE $\ast$ 2
+\item 
+\#define \mbox{\hyperlink{group__rtosLCD_ga9f9709c0df0d8ad70d7989bfdc12d0a5}{R\+T\+O\+S\+\_\+\+L\+C\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+I\+ZE}}~10
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{group__rtosLCD_ga8677110746311b7ba2bb1a09ed5fb3e2}{rtos\+L\+C\+D\+Text\+\_\+\+Init}} ()
+\item 
+void \mbox{\hyperlink{group__rtosLCD_ga1cd8d1288bb7c2add970df582216628a}{rtos\+L\+C\+D\+Text\+\_\+\+Write\+Char}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, char c)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_ga87e13380e72769805da1c2eb8d6e9063}{rtos\+L\+C\+D\+Text\+\_\+\+Write\+String}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, const char $\ast$str)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_gadef3c25d048eb2eea8f556fc2684c6b4}{rtos\+L\+C\+D\+Text\+\_\+\+Write\+Line}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, const char $\ast$first\+Line, const char $\ast$second\+Line)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_ga471547c19b9f553f0f116c70e7ac9c7a}{rtos\+L\+C\+D\+Text\+\_\+\+Clear}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_ga63ac943ab6e9546579ab2ffba445a0d9}{rtos\+L\+C\+D\+Text\+\_\+\+Locate}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, int line, int column)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_ga7cdf977867e83cf34f8842bf683a45d4}{rtos\+L\+C\+D\+Text\+\_\+\+Cursor\+On}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_gad49f15324378c8cb707dc055dfab7231}{rtos\+L\+C\+D\+Text\+\_\+\+Cursor\+Off}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_gaacea072681567380f5c688a3ac484f33}{rtos\+L\+C\+D\+Text\+\_\+\+Create\+Char}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, unsigned char location, unsigned char charmap\mbox{[}$\,$\mbox{]}, int size)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_gadf7beff584c4450ebdd8f13344ddbebc}{rtos\+L\+C\+D\+Text\+\_\+\+On}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_gafdf1c1d6397373e9446235bbc028ad0d}{rtos\+L\+C\+D\+Text\+\_\+\+Off}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_gacd53d65f54df3b656384530eb83efe30}{rtos\+L\+C\+D\+Text\+\_\+\+Printf}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, const char $\ast$fmt,...)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_gaaf4bd9b04cd6646710f40fdcbc4c2ba0}{rtos\+L\+C\+D\+Text\+\_\+\+Lock\+Begin}} ()
+\item 
+void \mbox{\hyperlink{group__rtosLCD_gadb9d3069fb4881f73cc90f4151793676}{rtos\+L\+C\+D\+Text\+\_\+\+Lock\+End}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This package provides the interface for driving 4-\/bit H\+D44780-\/based L\+C\+Ds used in an L\+P\+C\+Xpresso development board based on L\+P\+C1769 from N\+XP in a multithreaded manner. 
+
+The L\+CD data bits are connected to the microcontroller L\+P\+C1769 as shown in the following table\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ L\+CD  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ L\+P\+C1769   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ L\+CD  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ L\+P\+C1769   }\\\cline{1-2}
+\endhead
+\PBS\centering D0 .. D3  &\PBS\centering Not connected   \\\cline{1-2}
+\PBS\centering D4 .. D7  &\PBS\centering P2.\+0 .. P2.\+3   \\\cline{1-2}
+\PBS\centering EN  &\PBS\centering P0.\+10   \\\cline{1-2}
+\PBS\centering RS  &\PBS\centering P0.\+11   \\\cline{1-2}
+\PBS\centering WR  &\PBS\centering G\+ND   \\\cline{1-2}
+\end{longtabu}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__rtosLCD_gae0304a744b55bbfc24a672fcf4a5d4d6}\label{group__rtosLCD_gae0304a744b55bbfc24a672fcf4a5d4d6}} 
+\index{Text LCD@{Text LCD}!LCDText\_COLUMNS@{LCDText\_COLUMNS}}
+\index{LCDText\_COLUMNS@{LCDText\_COLUMNS}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{LCDText\_COLUMNS}{LCDText\_COLUMNS}}
+{\footnotesize\ttfamily \#define L\+C\+D\+Text\+\_\+\+C\+O\+L\+U\+M\+NS~\mbox{\hyperlink{group__rtosLCD_gadd727dddc29a757f507f30ee355ccba0}{L\+C\+D\+Text\+\_\+\+L\+I\+N\+ES}}}
+
+L\+CD number of columns \mbox{\Hypertarget{group__rtosLCD_gadd727dddc29a757f507f30ee355ccba0}\label{group__rtosLCD_gadd727dddc29a757f507f30ee355ccba0}} 
+\index{Text LCD@{Text LCD}!LCDText\_LINES@{LCDText\_LINES}}
+\index{LCDText\_LINES@{LCDText\_LINES}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{LCDText\_LINES}{LCDText\_LINES}}
+{\footnotesize\ttfamily \#define L\+C\+D\+Text\+\_\+\+L\+I\+N\+ES~L\+C\+D\+Text\+\_\+\+L\+I\+N\+ES}
+
+L\+CD number of lines ~\newline
+ \mbox{\Hypertarget{group__rtosLCD_ga9f9709c0df0d8ad70d7989bfdc12d0a5}\label{group__rtosLCD_ga9f9709c0df0d8ad70d7989bfdc12d0a5}} 
+\index{Text LCD@{Text LCD}!RTOS\_LCD\_QUEUE\_SIZE@{RTOS\_LCD\_QUEUE\_SIZE}}
+\index{RTOS\_LCD\_QUEUE\_SIZE@{RTOS\_LCD\_QUEUE\_SIZE}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{RTOS\_LCD\_QUEUE\_SIZE}{RTOS\_LCD\_QUEUE\_SIZE}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+L\+C\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+I\+ZE~10}
+
+Queue size for the rtos\+L\+CD queue. \mbox{\Hypertarget{group__rtosLCD_ga3a2d9bcb6d67197781bb7db28930b18a}\label{group__rtosLCD_ga3a2d9bcb6d67197781bb7db28930b18a}} 
+\index{Text LCD@{Text LCD}!RTOS\_LCD\_TASK\_STACKSIZE@{RTOS\_LCD\_TASK\_STACKSIZE}}
+\index{RTOS\_LCD\_TASK\_STACKSIZE@{RTOS\_LCD\_TASK\_STACKSIZE}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{RTOS\_LCD\_TASK\_STACKSIZE}{RTOS\_LCD\_TASK\_STACKSIZE}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+L\+C\+D\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+S\+I\+ZE~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE $\ast$ 2}
+
+Minimum stack size for the L\+CD managing task. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__rtosLCD_ga471547c19b9f553f0f116c70e7ac9c7a}\label{group__rtosLCD_ga471547c19b9f553f0f116c70e7ac9c7a}} 
+\index{Text LCD@{Text LCD}!rtosLCDText\_Clear@{rtosLCDText\_Clear}}
+\index{rtosLCDText\_Clear@{rtosLCDText\_Clear}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{rtosLCDText\_Clear()}{rtosLCDText\_Clear()}}
+{\footnotesize\ttfamily void rtos\+L\+C\+D\+Text\+\_\+\+Clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock }\end{DoxyParamCaption})}
+
+Clears the screen and locate cursor to home position (0,0)
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the display from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}})\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosLCD_gaacea072681567380f5c688a3ac484f33}\label{group__rtosLCD_gaacea072681567380f5c688a3ac484f33}} 
+\index{Text LCD@{Text LCD}!rtosLCDText\_CreateChar@{rtosLCDText\_CreateChar}}
+\index{rtosLCDText\_CreateChar@{rtosLCDText\_CreateChar}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{rtosLCDText\_CreateChar()}{rtosLCDText\_CreateChar()}}
+{\footnotesize\ttfamily void rtos\+L\+C\+D\+Text\+\_\+\+Create\+Char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock,  }\item[{unsigned char}]{location,  }\item[{unsigned char}]{charmap\mbox{[}$\,$\mbox{]},  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+User defined character.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the display from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+{\em location} & The new character position, \\
+\hline
+{\em charmap} & The user defined character values. \\
+\hline
+{\em size} & The size of the used defined character values buffer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosLCD_gad49f15324378c8cb707dc055dfab7231}\label{group__rtosLCD_gad49f15324378c8cb707dc055dfab7231}} 
+\index{Text LCD@{Text LCD}!rtosLCDText\_CursorOff@{rtosLCDText\_CursorOff}}
+\index{rtosLCDText\_CursorOff@{rtosLCDText\_CursorOff}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{rtosLCDText\_CursorOff()}{rtosLCDText\_CursorOff()}}
+{\footnotesize\ttfamily void rtos\+L\+C\+D\+Text\+\_\+\+Cursor\+Off (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock }\end{DoxyParamCaption})}
+
+Turns cursor off.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the display from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosLCD_ga7cdf977867e83cf34f8842bf683a45d4}\label{group__rtosLCD_ga7cdf977867e83cf34f8842bf683a45d4}} 
+\index{Text LCD@{Text LCD}!rtosLCDText\_CursorOn@{rtosLCDText\_CursorOn}}
+\index{rtosLCDText\_CursorOn@{rtosLCDText\_CursorOn}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{rtosLCDText\_CursorOn()}{rtosLCDText\_CursorOn()}}
+{\footnotesize\ttfamily void rtos\+L\+C\+D\+Text\+\_\+\+Cursor\+On (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock }\end{DoxyParamCaption})}
+
+Turns the cursor on.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the display from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosLCD_ga8677110746311b7ba2bb1a09ed5fb3e2}\label{group__rtosLCD_ga8677110746311b7ba2bb1a09ed5fb3e2}} 
+\index{Text LCD@{Text LCD}!rtosLCDText\_Init@{rtosLCDText\_Init}}
+\index{rtosLCDText\_Init@{rtosLCDText\_Init}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{rtosLCDText\_Init()}{rtosLCDText\_Init()}}
+{\footnotesize\ttfamily bool rtos\+L\+C\+D\+Text\+\_\+\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initializes the rtos\+L\+CD A\+PI.
+
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function must be called prior to any other rtos\+L\+C\+D\+Text functions. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__rtosLCD_ga63ac943ab6e9546579ab2ffba445a0d9}\label{group__rtosLCD_ga63ac943ab6e9546579ab2ffba445a0d9}} 
+\index{Text LCD@{Text LCD}!rtosLCDText\_Locate@{rtosLCDText\_Locate}}
+\index{rtosLCDText\_Locate@{rtosLCDText\_Locate}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{rtosLCDText\_Locate()}{rtosLCDText\_Locate()}}
+{\footnotesize\ttfamily void rtos\+L\+C\+D\+Text\+\_\+\+Locate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock,  }\item[{int}]{line,  }\item[{int}]{column }\end{DoxyParamCaption})}
+
+Locates the cursor to a screen line and column
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the display from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+{\em line} & The vertical position from the top, indexed from 0 \\
+\hline
+{\em column} & The horizontal position from the left, indexed from 0\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosLCD_gaaf4bd9b04cd6646710f40fdcbc4c2ba0}\label{group__rtosLCD_gaaf4bd9b04cd6646710f40fdcbc4c2ba0}} 
+\index{Text LCD@{Text LCD}!rtosLCDText\_LockBegin@{rtosLCDText\_LockBegin}}
+\index{rtosLCDText\_LockBegin@{rtosLCDText\_LockBegin}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{rtosLCDText\_LockBegin()}{rtosLCDText\_LockBegin()}}
+{\footnotesize\ttfamily void rtos\+L\+C\+D\+Text\+\_\+\+Lock\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Locks the display without any other action. Particularly useful in situations where the last rtos\+E\+S\+P\+S\+E\+R\+I\+AL function call can vary depending on external factors (i.\+e. state-\/machines)
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosLCD_gadb9d3069fb4881f73cc90f4151793676}\label{group__rtosLCD_gadb9d3069fb4881f73cc90f4151793676}} 
+\index{Text LCD@{Text LCD}!rtosLCDText\_LockEnd@{rtosLCDText\_LockEnd}}
+\index{rtosLCDText\_LockEnd@{rtosLCDText\_LockEnd}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{rtosLCDText\_LockEnd()}{rtosLCDText\_LockEnd()}}
+{\footnotesize\ttfamily void rtos\+L\+C\+D\+Text\+\_\+\+Lock\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Unlocks the display without any other action. Particularly useful in situations where the last rtos\+E\+S\+P\+S\+E\+R\+I\+AL function call can vary depending on external factors (i.\+e. state-\/machines)
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosLCD_gafdf1c1d6397373e9446235bbc028ad0d}\label{group__rtosLCD_gafdf1c1d6397373e9446235bbc028ad0d}} 
+\index{Text LCD@{Text LCD}!rtosLCDText\_Off@{rtosLCDText\_Off}}
+\index{rtosLCDText\_Off@{rtosLCDText\_Off}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{rtosLCDText\_Off()}{rtosLCDText\_Off()}}
+{\footnotesize\ttfamily void rtos\+L\+C\+D\+Text\+\_\+\+Off (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock }\end{DoxyParamCaption})}
+
+Turns the display off.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the display from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}})\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosLCD_gadf7beff584c4450ebdd8f13344ddbebc}\label{group__rtosLCD_gadf7beff584c4450ebdd8f13344ddbebc}} 
+\index{Text LCD@{Text LCD}!rtosLCDText\_On@{rtosLCDText\_On}}
+\index{rtosLCDText\_On@{rtosLCDText\_On}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{rtosLCDText\_On()}{rtosLCDText\_On()}}
+{\footnotesize\ttfamily void rtos\+L\+C\+D\+Text\+\_\+\+On (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock }\end{DoxyParamCaption})}
+
+Turns the display on.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the display from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosLCD_gacd53d65f54df3b656384530eb83efe30}\label{group__rtosLCD_gacd53d65f54df3b656384530eb83efe30}} 
+\index{Text LCD@{Text LCD}!rtosLCDText\_Printf@{rtosLCDText\_Printf}}
+\index{rtosLCDText\_Printf@{rtosLCDText\_Printf}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{rtosLCDText\_Printf()}{rtosLCDText\_Printf()}}
+{\footnotesize\ttfamily void rtos\+L\+C\+D\+Text\+\_\+\+Printf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock,  }\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+Writes a formated string to the L\+CD
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the display from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+{\em fmt} & A printf-\/style format string, followed by the variables to use in formating the string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__rtosLCD_ga1cd8d1288bb7c2add970df582216628a}\label{group__rtosLCD_ga1cd8d1288bb7c2add970df582216628a}} 
+\index{Text LCD@{Text LCD}!rtosLCDText\_WriteChar@{rtosLCDText\_WriteChar}}
+\index{rtosLCDText\_WriteChar@{rtosLCDText\_WriteChar}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{rtosLCDText\_WriteChar()}{rtosLCDText\_WriteChar()}}
+{\footnotesize\ttfamily void rtos\+L\+C\+D\+Text\+\_\+\+Write\+Char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock,  }\item[{char}]{c }\end{DoxyParamCaption})}
+
+Writes a character to the L\+CD 
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the display from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+{\em c} & The character to write to the display \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__rtosLCD_gadef3c25d048eb2eea8f556fc2684c6b4}\label{group__rtosLCD_gadef3c25d048eb2eea8f556fc2684c6b4}} 
+\index{Text LCD@{Text LCD}!rtosLCDText\_WriteLine@{rtosLCDText\_WriteLine}}
+\index{rtosLCDText\_WriteLine@{rtosLCDText\_WriteLine}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{rtosLCDText\_WriteLine()}{rtosLCDText\_WriteLine()}}
+{\footnotesize\ttfamily void rtos\+L\+C\+D\+Text\+\_\+\+Write\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock,  }\item[{const char $\ast$}]{first\+Line,  }\item[{const char $\ast$}]{second\+Line }\end{DoxyParamCaption})}
+
+Writes a C-\/string to specified line of the L\+CD
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the display from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+{\em first\+Line} & The C-\/string to write to the first of display. If N\+U\+LL nothing is write. \\
+\hline
+{\em second\+Line} & The C-\/string to write to the second of display. If N\+U\+LL nothing is write.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosLCD_ga87e13380e72769805da1c2eb8d6e9063}\label{group__rtosLCD_ga87e13380e72769805da1c2eb8d6e9063}} 
+\index{Text LCD@{Text LCD}!rtosLCDText\_WriteString@{rtosLCDText\_WriteString}}
+\index{rtosLCDText\_WriteString@{rtosLCDText\_WriteString}!Text LCD@{Text LCD}}
+\doxysubsubsection{\texorpdfstring{rtosLCDText\_WriteString()}{rtosLCDText\_WriteString()}}
+{\footnotesize\ttfamily void rtos\+L\+C\+D\+Text\+\_\+\+Write\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}}]{lock,  }\item[{const char $\ast$}]{str }\end{DoxyParamCaption})}
+
+Writes a C-\/string to the L\+CD
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock} & Provides the ability to lock access to the display from other tasks(see \mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}}) \\
+\hline
+{\em str} & The C-\/string to write to the display \\
+\hline
+\end{DoxyParams}

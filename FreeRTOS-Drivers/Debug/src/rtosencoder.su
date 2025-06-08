@@ -1,0 +1,4 @@
+../src/rtosencoder.c:21:6:rtosENCODER_Task	24	static
+../src/rtosencoder.c:42:6:rtosENCODER_Init	16	static
+../src/rtosencoder.c:60:25:rtosENCODER_GetButton	24	static
+../src/rtosencoder.c:77:27:rtosENCODER_GetValue	24	static

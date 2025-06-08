@@ -1,0 +1,82 @@
+\hypertarget{uimenu_8h}{}\doxysection{C\+:/\+Users/alext/\+Desktop/\+S\+E/\+Workspace/\+Free\+R\+T\+O\+S-\/\+Network-\/\+U\+I/inc/uimenu.h File Reference}
+\label{uimenu_8h}\index{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Network-\/UI/inc/uimenu.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Network-\/UI/inc/uimenu.h}}
+
+
+Contains the ui\+M\+E\+NU A\+PI.  
+
+
+{\ttfamily \#include $<$Free\+R\+T\+O\+S.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$rtoslcd.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__uiMENU_ga5660b0fefca8edb12557fe811127654b}{U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+E\+N\+C\+O\+D\+E\+R\+\_\+\+I\+N\+V\+E\+RT}}~true
+\item 
+\#define \mbox{\hyperlink{group__uiMENU_ga5d39a3a7997ef53560bd3334bb8c009a}{U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+MS}}~33
+\item 
+\#define \mbox{\hyperlink{group__uiMENU_ga8ecc110f3ab00be83a13aa5019fdb838}{U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+B\+L\+I\+N\+K\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+MS}}~250
+\item 
+\#define \mbox{\hyperlink{group__uiMENU_ga8b5358d4b9cef53537472ffe3992bf27}{U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+L\+I\+N\+ES}}~L\+C\+D\+Text\+\_\+\+L\+I\+N\+ES
+\item 
+\#define \mbox{\hyperlink{group__uiMENU_ga3223478a587d3b08833a359b8d56f7bb}{U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+C\+O\+L\+U\+M\+NS}}~L\+C\+D\+Text\+\_\+\+C\+O\+L\+U\+M\+NS
+\item 
+\#define \mbox{\hyperlink{group__uiMENU_gae3ce05410591d0f8232057583c700e9d}{U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+\+M\+E\+S\+S\+A\+GE}}~\char`\"{}success\char`\"{}
+\item 
+\#define \mbox{\hyperlink{group__uiMENU_gabb12c17d9f98f6358a0602347d0c484e}{U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+F\+A\+I\+L\+\_\+\+M\+E\+S\+S\+A\+GE}}~\char`\"{}failure\char`\"{}
+\item 
+\#define \mbox{\hyperlink{group__uiMENU_ga191ba35e196af9f9f75370b7e01d2688}{U\+I\+\_\+\+M\+E\+N\+U\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+N\+G\+\_\+\+M\+E\+S\+S\+A\+GE}}~\char`\"{}processing...\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{group__uiMENU_ga4201ee12da7ce88b8d695fa8eceda4e4}{Item\+Handler\+\_\+t}}) (void $\ast$)
+\item 
+typedef bool($\ast$ \mbox{\hyperlink{group__uiMENU_gac445103bf1eff474cc32f652ab5ed822}{Command\+Function\+\_\+t}}) (void $\ast$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Menu\+\_\+t $\ast$ \mbox{\hyperlink{group__uiMENU_ga837465c2f1a04dbe4bb0cb2ea60f2646}{ui\+M\+E\+N\+U\+\_\+\+Generate}} (char $\ast$menu, char $\ast$$\ast$item\+\_\+names, \mbox{\hyperlink{group__uiMENU_ga4201ee12da7ce88b8d695fa8eceda4e4}{Item\+Handler\+\_\+t}} $\ast$handlers, void $\ast$$\ast$args, int nr\+\_\+items)
+\begin{DoxyCompactList}\small\item\em Initializes a menu object with the given parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__uiMENU_gad0a44b237231f5f1e8cc2676226630e2}{ui\+M\+E\+N\+U\+\_\+\+Execute}} (Menu\+\_\+t $\ast$menu)
+\begin{DoxyCompactList}\small\item\em Executes a previously generated menu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__uiMENU_ga39d93a7dcee1d9bd88abe57782bfd1f8}{ui\+M\+E\+N\+U\+\_\+\+Execute\+C\+MD}} (char $\ast$message\+\_\+title, \mbox{\hyperlink{group__uiMENU_gac445103bf1eff474cc32f652ab5ed822}{Command\+Function\+\_\+t}} function, void $\ast$args)
+\begin{DoxyCompactList}\small\item\em Executes a given function with bool return type and displays the status of its execution. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__uiMENU_ga5221644f719a817218ddc07691e54829}{ui\+M\+E\+N\+U\+\_\+\+Input\+Data}} (char $\ast$message\+\_\+title, char $\ast$input\+\_\+data, int max\+\_\+chars, char $\ast$char\+\_\+table, char $\ast$output\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Allows the input of data through a rotary encoder. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__uiMENU_ga0f011e520ae90ea7662b416fc4cd515b}{ui\+M\+E\+N\+U\+\_\+\+Select\+Options}} (char $\ast$menu\+\_\+name, char $\ast$$\ast$options, int nr\+\_\+options, bool cancel)
+\begin{DoxyCompactList}\small\item\em Allows the selection of a given ammount of items. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__uiMENU_ga53d7e213800c01f21d16c63c48cf3d8f}{ui\+M\+E\+N\+U\+\_\+\+Ask}} (char $\ast$question)
+\begin{DoxyCompactList}\small\item\em Asks a binary answer question, returning the index of the selected answer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__uiMENU_gac2352234afe9507a7ecaf970f8173176}{ui\+M\+E\+N\+U\+\_\+\+Destroy}} (Menu\+\_\+t $\ast$menu)
+\begin{DoxyCompactList}\small\item\em Destroys a previously generated menu object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__uiMENU_ga4c5dbf99a4e71aeffbaecb871476e5ec}{ui\+E\+N\+C\+O\+D\+E\+R\+\_\+\+Handle}} (int $\ast$curr\+\_\+state, int state\+\_\+on\+\_\+left, int state\+\_\+on\+\_\+right, int state\+\_\+on\+\_\+click, int state\+\_\+on\+\_\+dclick)
+\begin{DoxyCompactList}\small\item\em Handles current state based on the encoder interaction with the user. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{group__uiMENU_ga09f14a9292efa8a87fb05c00546c9bcd}{ui\+M\+E\+N\+U\+\_\+\+Fill\+String}} (char $\ast$string\+\_\+to\+\_\+fill, int col\+\_\+number)
+\begin{DoxyCompactList}\small\item\em Fills a string with empty spaces to prevent junk data from being displayed. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{group__uiMENU_ga1a3286dc2264ee01fb6d474a2a486306}{ui\+M\+E\+N\+U\+\_\+\+Center\+String}} (char $\ast$string\+\_\+to\+\_\+center, int col\+\_\+number)
+\begin{DoxyCompactList}\small\item\em Centers and fills a string with empty spaces to prevent junk data from being displayed. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{group__uiMENU_gab41985bbdda4b597afddc5576f023fd1}{ui\+M\+E\+N\+U\+\_\+\+Itemize\+String}} (char $\ast$string\+\_\+to\+\_\+itemize, int col\+\_\+number)
+\begin{DoxyCompactList}\small\item\em Centers fills a string with empty spaces and places arrows in the first and last locations of the passed string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__uiMENU_gab2adaf3bdd09c0a34fbf7afa16041c5b}{ui\+M\+E\+N\+U\+\_\+\+Blink\+Str}} (char $\ast$str\+\_\+to\+\_\+blink, int line, int col, int length\+\_\+to\+\_\+blink, Tick\+Type\+\_\+t $\ast$start\+\_\+time, Tick\+Type\+\_\+t blink\+\_\+period)
+\begin{DoxyCompactList}\small\item\em Alternates between a string and empty spaces in the positions of the display, length and period given. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__uiMENU_ga01e52d1c116e2627c2ccfaeca8dbfcfa}{ui\+M\+E\+N\+U\+\_\+\+Blink\+Str\+Clear}} (char $\ast$str\+\_\+to\+\_\+blink, int line, int col, int length\+\_\+to\+\_\+blink)
+\begin{DoxyCompactList}\small\item\em Ensures the last string displayed is the string given rather than an empty one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the ui\+M\+E\+NU A\+PI. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 jul 2023 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Alexandre Silva
+\end{DoxyAuthor}
+Copyright(\+C) 2023, Alexandre Silva All rights reserved.
+
+Software that is described herein is for illustrative purposes only which provides customers with programming information regarding the products. This software is supplied \char`\"{}\+A\+S I\+S\char`\"{} without any warranties. 

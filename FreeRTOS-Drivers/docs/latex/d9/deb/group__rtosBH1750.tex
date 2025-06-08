@@ -1,0 +1,250 @@
+\hypertarget{group__rtosBH1750}{}\doxysection{B\+H1750}
+\label{group__rtosBH1750}\index{BH1750@{BH1750}}
+
+
+This package provides the capabilities to interact with the ambient light sensor B\+H1750 in a multithreaded manner.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__rtosBH1750_gac6b4e0e918f1c242fc5cd2430b24c6cf}{R\+T\+O\+S\+\_\+\+B\+H1750\+\_\+\+Q\+U\+E\+U\+E\+S\+\_\+\+S\+I\+ZE}}~5
+\item 
+\#define \mbox{\hyperlink{group__rtosBH1750_ga193c2dcfa7477b1edbb2b11fcf7e9230}{R\+T\+O\+S\+\_\+\+B\+H1750\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}}~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__rtosBH1750_gab1c60de5a8bc8d8b259816a22bb4822a}\label{group__rtosBH1750_gab1c60de5a8bc8d8b259816a22bb4822a}} 
+typedef enum \mbox{\hyperlink{group__rtosBH1750_gafb7558d1ca82a044195e6e0b860e11e4}{B\+H1750\+Mode\+Enum}} \mbox{\hyperlink{group__rtosBH1750_gab1c60de5a8bc8d8b259816a22bb4822a}{B\+H1750\+\_\+\+Mode\+Type}}
+\begin{DoxyCompactList}\small\item\em B\+H1750 modes definition. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__rtosBH1750_gabbdb325a7f94da1d0f8e8cd88a4907ef}\label{group__rtosBH1750_gabbdb325a7f94da1d0f8e8cd88a4907ef}} 
+typedef enum \mbox{\hyperlink{group__rtosBH1750_ga002cbdf35b74b6550a4fd86bbec77520}{B\+H1750\+Measurement\+Time\+Enum}} \mbox{\hyperlink{group__rtosBH1750_gabbdb325a7f94da1d0f8e8cd88a4907ef}{B\+H1750\+\_\+\+Measurement\+Time\+Type}}
+\begin{DoxyCompactList}\small\item\em B\+H1750 measurement times definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__rtosBH1750_gafb7558d1ca82a044195e6e0b860e11e4}{B\+H1750\+Mode\+Enum}} \{ \newline
+\mbox{\hyperlink{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4a171314596f51d2186dd63d33162e8c4b}{U\+N\+C\+O\+N\+F\+I\+G\+U\+R\+ED}} = U\+N\+C\+O\+N\+F\+I\+G\+U\+R\+ED, 
+\mbox{\hyperlink{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4aa6514273040331c16b1c422704de78d6}{C\+O\+N\+T\+I\+N\+U\+O\+U\+S\+\_\+\+H\+I\+G\+H\+\_\+\+R\+E\+S\+\_\+\+M\+O\+DE}} = C\+O\+N\+T\+I\+N\+U\+O\+U\+S\+\_\+\+H\+I\+G\+H\+\_\+\+R\+E\+S\+\_\+\+M\+O\+DE, 
+\mbox{\hyperlink{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4a9128bffe62308f0dbc99fc65363bb17a}{C\+O\+N\+T\+I\+N\+U\+O\+U\+S\+\_\+\+H\+I\+G\+H\+\_\+\+R\+E\+S\+\_\+\+M\+O\+D\+E\+\_\+2}} = C\+O\+N\+T\+I\+N\+U\+O\+U\+S\+\_\+\+H\+I\+G\+H\+\_\+\+R\+E\+S\+\_\+\+M\+O\+D\+E\+\_\+2, 
+\mbox{\hyperlink{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4a954661fd10c72e465894ccf4c8730fb4}{C\+O\+N\+T\+I\+N\+U\+O\+U\+S\+\_\+\+L\+O\+W\+\_\+\+R\+E\+S\+\_\+\+M\+O\+DE}} = C\+O\+N\+T\+I\+N\+U\+O\+U\+S\+\_\+\+L\+O\+W\+\_\+\+R\+E\+S\+\_\+\+M\+O\+DE, 
+\newline
+\mbox{\hyperlink{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4a5abef79bc2e898418baf30fb0e3a5d9f}{O\+N\+E\+\_\+\+T\+I\+M\+E\+\_\+\+H\+I\+G\+H\+\_\+\+R\+E\+S\+\_\+\+M\+O\+DE}} = O\+N\+E\+\_\+\+T\+I\+M\+E\+\_\+\+H\+I\+G\+H\+\_\+\+R\+E\+S\+\_\+\+M\+O\+DE, 
+\mbox{\hyperlink{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4adb6d69253788e53c41cd9c6a454b9351}{O\+N\+E\+\_\+\+T\+I\+M\+E\+\_\+\+H\+I\+G\+H\+\_\+\+R\+E\+S\+\_\+\+M\+O\+D\+E\+\_\+2}} = O\+N\+E\+\_\+\+T\+I\+M\+E\+\_\+\+H\+I\+G\+H\+\_\+\+R\+E\+S\+\_\+\+M\+O\+D\+E\+\_\+2, 
+\mbox{\hyperlink{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4a17fa53794bb3de712e0c6a6c92a13972}{O\+N\+E\+\_\+\+T\+I\+M\+E\+\_\+\+L\+O\+W\+\_\+\+R\+E\+S\+\_\+\+M\+O\+DE}} = O\+N\+E\+\_\+\+T\+I\+M\+E\+\_\+\+L\+O\+W\+\_\+\+R\+E\+S\+\_\+\+M\+O\+DE
+ \}
+\begin{DoxyCompactList}\small\item\em B\+H1750 modes definition. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__rtosBH1750_ga002cbdf35b74b6550a4fd86bbec77520}{B\+H1750\+Measurement\+Time\+Enum}} \{ \mbox{\hyperlink{group__rtosBH1750_gga002cbdf35b74b6550a4fd86bbec77520aeba7d85ccf6c1f93479a7289a0e4f9e1}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+ME}} = D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+ME, 
+\mbox{\hyperlink{group__rtosBH1750_gga002cbdf35b74b6550a4fd86bbec77520a145c8212c2b4ba3ce986f211a60b5f6a}{M\+I\+N\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+ME}} = M\+I\+N\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+ME, 
+\mbox{\hyperlink{group__rtosBH1750_gga002cbdf35b74b6550a4fd86bbec77520a77b5bcae8044ce334f0d21a8823aa4ad}{M\+A\+X\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+ME}} = M\+A\+X\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+ME
+ \}
+\begin{DoxyCompactList}\small\item\em B\+H1750 measurement times definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{group__rtosBH1750_ga53e38c9faa42295db5f2a2a29792088e}{rtos\+B\+H1750\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the rtos\+B\+H1750 A\+PI. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__rtosBH1750_ga5be80b2072bdf4a7bd82a65009b37959}{rtos\+B\+H1750\+\_\+\+Configure\+Mode}} (\mbox{\hyperlink{group__rtosBH1750_gab1c60de5a8bc8d8b259816a22bb4822a}{B\+H1750\+\_\+\+Mode\+Type}} mode)
+\begin{DoxyCompactList}\small\item\em Configures the operation mode. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__rtosBH1750_ga5187c2095eb2fcb1c4854ab5cb1350c7}{rtos\+B\+H1750\+\_\+\+Set\+Measurement\+Time}} (\mbox{\hyperlink{group__rtosBH1750_gabbdb325a7f94da1d0f8e8cd88a4907ef}{B\+H1750\+\_\+\+Measurement\+Time\+Type}} time)
+\begin{DoxyCompactList}\small\item\em Configures the measurement time. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__rtosBH1750_gaedaddeac19a550f021256adb7709275c}{rtos\+B\+H1750\+\_\+\+Ready}} (bool max\+Wait)
+\begin{DoxyCompactList}\small\item\em Verifies if it is possible to take measurements. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{group__rtosBH1750_ga06b6d92c9a0b6c4f4bc67a81f35b82a6}{rtos\+B\+H1750\+\_\+\+Get\+Light}} ()
+\begin{DoxyCompactList}\small\item\em Reads the ambient light. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This package provides the capabilities to interact with the ambient light sensor B\+H1750 in a multithreaded manner. 
+
+The sensor is connected to the microcontroller L\+P\+C1769 as shown in the follow table\+: \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ B\+H1750  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ L\+P\+C1769   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ B\+H1750  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ L\+P\+C1769   }\\\cline{1-2}
+\endhead
+\PBS\centering S\+CL  &\PBS\centering P0.\+28   \\\cline{1-2}
+\PBS\centering S\+DA  &\PBS\centering P0.\+27   \\\cline{1-2}
+\PBS\centering A\+D\+DR  &\PBS\centering G\+ND   \\\cline{1-2}
+\end{longtabu}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__rtosBH1750_gac6b4e0e918f1c242fc5cd2430b24c6cf}\label{group__rtosBH1750_gac6b4e0e918f1c242fc5cd2430b24c6cf}} 
+\index{BH1750@{BH1750}!RTOS\_BH1750\_QUEUES\_SIZE@{RTOS\_BH1750\_QUEUES\_SIZE}}
+\index{RTOS\_BH1750\_QUEUES\_SIZE@{RTOS\_BH1750\_QUEUES\_SIZE}!BH1750@{BH1750}}
+\doxysubsubsection{\texorpdfstring{RTOS\_BH1750\_QUEUES\_SIZE}{RTOS\_BH1750\_QUEUES\_SIZE}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+B\+H1750\+\_\+\+Q\+U\+E\+U\+E\+S\+\_\+\+S\+I\+ZE~5}
+
+Queue size for the rtos\+B\+H1750 queues. \mbox{\Hypertarget{group__rtosBH1750_ga193c2dcfa7477b1edbb2b11fcf7e9230}\label{group__rtosBH1750_ga193c2dcfa7477b1edbb2b11fcf7e9230}} 
+\index{BH1750@{BH1750}!RTOS\_BH1750\_TASK\_STACK\_SIZE@{RTOS\_BH1750\_TASK\_STACK\_SIZE}}
+\index{RTOS\_BH1750\_TASK\_STACK\_SIZE@{RTOS\_BH1750\_TASK\_STACK\_SIZE}!BH1750@{BH1750}}
+\doxysubsubsection{\texorpdfstring{RTOS\_BH1750\_TASK\_STACK\_SIZE}{RTOS\_BH1750\_TASK\_STACK\_SIZE}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+B\+H1750\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}
+
+Minimum stack size for the B\+H1750 managing task. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__rtosBH1750_ga002cbdf35b74b6550a4fd86bbec77520}\label{group__rtosBH1750_ga002cbdf35b74b6550a4fd86bbec77520}} 
+\index{BH1750@{BH1750}!BH1750MeasurementTimeEnum@{BH1750MeasurementTimeEnum}}
+\index{BH1750MeasurementTimeEnum@{BH1750MeasurementTimeEnum}!BH1750@{BH1750}}
+\doxysubsubsection{\texorpdfstring{BH1750MeasurementTimeEnum}{BH1750MeasurementTimeEnum}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__rtosBH1750_ga002cbdf35b74b6550a4fd86bbec77520}{B\+H1750\+Measurement\+Time\+Enum}}}
+
+
+
+B\+H1750 measurement times definition. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEFAULT\_MEASUREMENT\_TIME@{DEFAULT\_MEASUREMENT\_TIME}!BH1750@{BH1750}}\index{BH1750@{BH1750}!DEFAULT\_MEASUREMENT\_TIME@{DEFAULT\_MEASUREMENT\_TIME}}}\mbox{\Hypertarget{group__rtosBH1750_gga002cbdf35b74b6550a4fd86bbec77520aeba7d85ccf6c1f93479a7289a0e4f9e1}\label{group__rtosBH1750_gga002cbdf35b74b6550a4fd86bbec77520aeba7d85ccf6c1f93479a7289a0e4f9e1}} 
+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+ME&Default measurement time. ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MIN\_MEASUREMENT\_TIME@{MIN\_MEASUREMENT\_TIME}!BH1750@{BH1750}}\index{BH1750@{BH1750}!MIN\_MEASUREMENT\_TIME@{MIN\_MEASUREMENT\_TIME}}}\mbox{\Hypertarget{group__rtosBH1750_gga002cbdf35b74b6550a4fd86bbec77520a145c8212c2b4ba3ce986f211a60b5f6a}\label{group__rtosBH1750_gga002cbdf35b74b6550a4fd86bbec77520a145c8212c2b4ba3ce986f211a60b5f6a}} 
+M\+I\+N\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+ME&Minimum measurement time. ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAX\_MEASUREMENT\_TIME@{MAX\_MEASUREMENT\_TIME}!BH1750@{BH1750}}\index{BH1750@{BH1750}!MAX\_MEASUREMENT\_TIME@{MAX\_MEASUREMENT\_TIME}}}\mbox{\Hypertarget{group__rtosBH1750_gga002cbdf35b74b6550a4fd86bbec77520a77b5bcae8044ce334f0d21a8823aa4ad}\label{group__rtosBH1750_gga002cbdf35b74b6550a4fd86bbec77520a77b5bcae8044ce334f0d21a8823aa4ad}} 
+M\+A\+X\+\_\+\+M\+E\+A\+S\+U\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+ME&Maximum measurement time. ~\newline
+ \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__rtosBH1750_gafb7558d1ca82a044195e6e0b860e11e4}\label{group__rtosBH1750_gafb7558d1ca82a044195e6e0b860e11e4}} 
+\index{BH1750@{BH1750}!BH1750ModeEnum@{BH1750ModeEnum}}
+\index{BH1750ModeEnum@{BH1750ModeEnum}!BH1750@{BH1750}}
+\doxysubsubsection{\texorpdfstring{BH1750ModeEnum}{BH1750ModeEnum}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__rtosBH1750_gafb7558d1ca82a044195e6e0b860e11e4}{B\+H1750\+Mode\+Enum}}}
+
+
+
+B\+H1750 modes definition. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNCONFIGURED@{UNCONFIGURED}!BH1750@{BH1750}}\index{BH1750@{BH1750}!UNCONFIGURED@{UNCONFIGURED}}}\mbox{\Hypertarget{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4a171314596f51d2186dd63d33162e8c4b}\label{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4a171314596f51d2186dd63d33162e8c4b}} 
+U\+N\+C\+O\+N\+F\+I\+G\+U\+R\+ED&Same as Power Down Mode ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONTINUOUS\_HIGH\_RES\_MODE@{CONTINUOUS\_HIGH\_RES\_MODE}!BH1750@{BH1750}}\index{BH1750@{BH1750}!CONTINUOUS\_HIGH\_RES\_MODE@{CONTINUOUS\_HIGH\_RES\_MODE}}}\mbox{\Hypertarget{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4aa6514273040331c16b1c422704de78d6}\label{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4aa6514273040331c16b1c422704de78d6}} 
+C\+O\+N\+T\+I\+N\+U\+O\+U\+S\+\_\+\+H\+I\+G\+H\+\_\+\+R\+E\+S\+\_\+\+M\+O\+DE&Measurement at 1 lux resolution. Measurement time is approx 120ms. ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONTINUOUS\_HIGH\_RES\_MODE\_2@{CONTINUOUS\_HIGH\_RES\_MODE\_2}!BH1750@{BH1750}}\index{BH1750@{BH1750}!CONTINUOUS\_HIGH\_RES\_MODE\_2@{CONTINUOUS\_HIGH\_RES\_MODE\_2}}}\mbox{\Hypertarget{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4a9128bffe62308f0dbc99fc65363bb17a}\label{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4a9128bffe62308f0dbc99fc65363bb17a}} 
+C\+O\+N\+T\+I\+N\+U\+O\+U\+S\+\_\+\+H\+I\+G\+H\+\_\+\+R\+E\+S\+\_\+\+M\+O\+D\+E\+\_\+2&Measurement at 0.\+5 lux resolution. Measurement time is approx 120ms. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONTINUOUS\_LOW\_RES\_MODE@{CONTINUOUS\_LOW\_RES\_MODE}!BH1750@{BH1750}}\index{BH1750@{BH1750}!CONTINUOUS\_LOW\_RES\_MODE@{CONTINUOUS\_LOW\_RES\_MODE}}}\mbox{\Hypertarget{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4a954661fd10c72e465894ccf4c8730fb4}\label{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4a954661fd10c72e465894ccf4c8730fb4}} 
+C\+O\+N\+T\+I\+N\+U\+O\+U\+S\+\_\+\+L\+O\+W\+\_\+\+R\+E\+S\+\_\+\+M\+O\+DE&Measurement at 4 lux resolution. Measurement time is approx 16ms. ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ONE\_TIME\_HIGH\_RES\_MODE@{ONE\_TIME\_HIGH\_RES\_MODE}!BH1750@{BH1750}}\index{BH1750@{BH1750}!ONE\_TIME\_HIGH\_RES\_MODE@{ONE\_TIME\_HIGH\_RES\_MODE}}}\mbox{\Hypertarget{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4a5abef79bc2e898418baf30fb0e3a5d9f}\label{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4a5abef79bc2e898418baf30fb0e3a5d9f}} 
+O\+N\+E\+\_\+\+T\+I\+M\+E\+\_\+\+H\+I\+G\+H\+\_\+\+R\+E\+S\+\_\+\+M\+O\+DE&Measurement at 1 lux resolution. Measurement time is approx 120ms. ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ONE\_TIME\_HIGH\_RES\_MODE\_2@{ONE\_TIME\_HIGH\_RES\_MODE\_2}!BH1750@{BH1750}}\index{BH1750@{BH1750}!ONE\_TIME\_HIGH\_RES\_MODE\_2@{ONE\_TIME\_HIGH\_RES\_MODE\_2}}}\mbox{\Hypertarget{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4adb6d69253788e53c41cd9c6a454b9351}\label{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4adb6d69253788e53c41cd9c6a454b9351}} 
+O\+N\+E\+\_\+\+T\+I\+M\+E\+\_\+\+H\+I\+G\+H\+\_\+\+R\+E\+S\+\_\+\+M\+O\+D\+E\+\_\+2&Measurement at 0.\+5 lux resolution. Measurement time is approx 120ms. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ONE\_TIME\_LOW\_RES\_MODE@{ONE\_TIME\_LOW\_RES\_MODE}!BH1750@{BH1750}}\index{BH1750@{BH1750}!ONE\_TIME\_LOW\_RES\_MODE@{ONE\_TIME\_LOW\_RES\_MODE}}}\mbox{\Hypertarget{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4a17fa53794bb3de712e0c6a6c92a13972}\label{group__rtosBH1750_ggafb7558d1ca82a044195e6e0b860e11e4a17fa53794bb3de712e0c6a6c92a13972}} 
+O\+N\+E\+\_\+\+T\+I\+M\+E\+\_\+\+L\+O\+W\+\_\+\+R\+E\+S\+\_\+\+M\+O\+DE&Measurement at 4 lux resolution. Measurement time is approx 16ms. ~\newline
+ \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__rtosBH1750_ga5be80b2072bdf4a7bd82a65009b37959}\label{group__rtosBH1750_ga5be80b2072bdf4a7bd82a65009b37959}} 
+\index{BH1750@{BH1750}!rtosBH1750\_ConfigureMode@{rtosBH1750\_ConfigureMode}}
+\index{rtosBH1750\_ConfigureMode@{rtosBH1750\_ConfigureMode}!BH1750@{BH1750}}
+\doxysubsubsection{\texorpdfstring{rtosBH1750\_ConfigureMode()}{rtosBH1750\_ConfigureMode()}}
+{\footnotesize\ttfamily bool rtos\+B\+H1750\+\_\+\+Configure\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosBH1750_gab1c60de5a8bc8d8b259816a22bb4822a}{B\+H1750\+\_\+\+Mode\+Type}}}]{mode }\end{DoxyParamCaption})}
+
+
+
+Configures the operation mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & indicate the mode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosBH1750_ga06b6d92c9a0b6c4f4bc67a81f35b82a6}\label{group__rtosBH1750_ga06b6d92c9a0b6c4f4bc67a81f35b82a6}} 
+\index{BH1750@{BH1750}!rtosBH1750\_GetLight@{rtosBH1750\_GetLight}}
+\index{rtosBH1750\_GetLight@{rtosBH1750\_GetLight}!BH1750@{BH1750}}
+\doxysubsubsection{\texorpdfstring{rtosBH1750\_GetLight()}{rtosBH1750\_GetLight()}}
+{\footnotesize\ttfamily float rtos\+B\+H1750\+\_\+\+Get\+Light (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads the ambient light. 
+
+\begin{DoxyReturn}{Returns}
+Ambient light in lux. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosBH1750_ga53e38c9faa42295db5f2a2a29792088e}\label{group__rtosBH1750_ga53e38c9faa42295db5f2a2a29792088e}} 
+\index{BH1750@{BH1750}!rtosBH1750\_Init@{rtosBH1750\_Init}}
+\index{rtosBH1750\_Init@{rtosBH1750\_Init}!BH1750@{BH1750}}
+\doxysubsubsection{\texorpdfstring{rtosBH1750\_Init()}{rtosBH1750\_Init()}}
+{\footnotesize\ttfamily bool rtos\+B\+H1750\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the rtos\+B\+H1750 A\+PI. 
+
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function must be called prior to any other rtos\+B\+H1750 functions. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__rtosBH1750_gaedaddeac19a550f021256adb7709275c}\label{group__rtosBH1750_gaedaddeac19a550f021256adb7709275c}} 
+\index{BH1750@{BH1750}!rtosBH1750\_Ready@{rtosBH1750\_Ready}}
+\index{rtosBH1750\_Ready@{rtosBH1750\_Ready}!BH1750@{BH1750}}
+\doxysubsubsection{\texorpdfstring{rtosBH1750\_Ready()}{rtosBH1750\_Ready()}}
+{\footnotesize\ttfamily bool rtos\+B\+H1750\+\_\+\+Ready (\begin{DoxyParamCaption}\item[{bool}]{max\+Wait }\end{DoxyParamCaption})}
+
+
+
+Verifies if it is possible to take measurements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Wait} & indicates the measurement time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it is possible take measurements, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtosBH1750_ga5187c2095eb2fcb1c4854ab5cb1350c7}\label{group__rtosBH1750_ga5187c2095eb2fcb1c4854ab5cb1350c7}} 
+\index{BH1750@{BH1750}!rtosBH1750\_SetMeasurementTime@{rtosBH1750\_SetMeasurementTime}}
+\index{rtosBH1750\_SetMeasurementTime@{rtosBH1750\_SetMeasurementTime}!BH1750@{BH1750}}
+\doxysubsubsection{\texorpdfstring{rtosBH1750\_SetMeasurementTime()}{rtosBH1750\_SetMeasurementTime()}}
+{\footnotesize\ttfamily bool rtos\+B\+H1750\+\_\+\+Set\+Measurement\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__rtosBH1750_gabbdb325a7f94da1d0f8e8cd88a4907ef}{B\+H1750\+\_\+\+Measurement\+Time\+Type}}}]{time }\end{DoxyParamCaption})}
+
+
+
+Configures the measurement time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & indicates the measurement time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful, false otherwise. 
+\end{DoxyReturn}

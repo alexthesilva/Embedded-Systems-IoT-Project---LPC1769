@@ -1,0 +1,176 @@
+\hypertarget{group__netMQTT}{}\doxysection{M\+Q\+TT}
+\label{group__netMQTT}\index{MQTT@{MQTT}}
+
+
+This package provides the ability to interact with remote servers through the M\+Q\+TT protocol.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__netMQTT_ga701eefa2c49f91a4a4e15ca3a50a8388}{N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+Q\+T\+T\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+MS}}~66
+\item 
+\#define \mbox{\hyperlink{group__netMQTT_ga60d9dd8631376b5e42299e14c5fbabde}{N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+Q\+T\+T\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}}~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE $\ast$ 9
+\item 
+\#define \mbox{\hyperlink{group__netMQTT_ga97a7f5e47e48e0e86467e9f27bd20e1e}{N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+Q\+T\+T\+\_\+\+Q\+U\+E\+U\+E\+S\+\_\+\+S\+I\+ZE}}~10
+\item 
+\#define \mbox{\hyperlink{group__netMQTT_ga5a51767065f6f8e82c7d3b12c804b3ce}{N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+Q\+T\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+L\+E\+N\+G\+TH}}~64
+\item 
+\#define \mbox{\hyperlink{group__netMQTT_ga55e1bc36a5758bdb6969d9e4c76cc81c}{N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+Q\+T\+T\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+O\+K\+E\+N\+\_\+\+L\+E\+N\+G\+TH}}~64
+\item 
+\#define \mbox{\hyperlink{group__netMQTT_gabac011a51259e7f9286be30ebd6272c7}{M\+Q\+T\+T\+\_\+\+N\+E\+T\+W\+O\+R\+K\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+T\+I\+M\+E\+O\+UT}}~7000
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{group__netMQTT_ga14db8677fc69c33468fdd569254e5189}{net\+M\+Q\+T\+T\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the net\+M\+Q\+TT A\+PI. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__netMQTT_ga90972025151beaaa2ec9995a730f3dce}{net\+M\+Q\+T\+T\+\_\+\+Ready}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the M\+Q\+TT service is connected to the server and ready to be used. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__netMQTT_ga121599152cfe4ef9ccf4b197566020de}{net\+M\+Q\+T\+T\+\_\+\+Config}} (char $\ast$address, char $\ast$token, unsigned long port, unsigned long keepalive)
+\begin{DoxyCompactList}\small\item\em Configures the credentials to be used in the M\+Q\+TT protocol. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__netMQTT_ga9570650f7d7dd174fb6a6349573026c6}{net\+M\+Q\+T\+T\+\_\+\+Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the M\+Q\+TT task. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__netMQTT_ga70afb41479dde4f22cfb75c000463d19}{net\+M\+Q\+T\+T\+\_\+\+Stop}} ()
+\begin{DoxyCompactList}\small\item\em Stops the M\+Q\+TT task. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__netMQTT_gac08b5f8696b96f5067e82fd9e694e374}{net\+M\+Q\+T\+T\+\_\+\+Publish}} (char $\ast$key, char $\ast$value)
+\begin{DoxyCompactList}\small\item\em Publishes data to the previously configured M\+Q\+TT server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This package provides the ability to interact with remote servers through the M\+Q\+TT protocol. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__netMQTT_gabac011a51259e7f9286be30ebd6272c7}\label{group__netMQTT_gabac011a51259e7f9286be30ebd6272c7}} 
+\index{MQTT@{MQTT}!MQTT\_NETWORK\_CONNECT\_TIMEOUT@{MQTT\_NETWORK\_CONNECT\_TIMEOUT}}
+\index{MQTT\_NETWORK\_CONNECT\_TIMEOUT@{MQTT\_NETWORK\_CONNECT\_TIMEOUT}!MQTT@{MQTT}}
+\doxysubsubsection{\texorpdfstring{MQTT\_NETWORK\_CONNECT\_TIMEOUT}{MQTT\_NETWORK\_CONNECT\_TIMEOUT}}
+{\footnotesize\ttfamily \#define M\+Q\+T\+T\+\_\+\+N\+E\+T\+W\+O\+R\+K\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+T\+I\+M\+E\+O\+UT~7000}
+
+Maximum delay to wait at boot, in milliseconds, for Wi\+Fi connection to be estabilished. \mbox{\Hypertarget{group__netMQTT_ga5a51767065f6f8e82c7d3b12c804b3ce}\label{group__netMQTT_ga5a51767065f6f8e82c7d3b12c804b3ce}} 
+\index{MQTT@{MQTT}!NETWORK\_MQTT\_ADDRESS\_LENGTH@{NETWORK\_MQTT\_ADDRESS\_LENGTH}}
+\index{NETWORK\_MQTT\_ADDRESS\_LENGTH@{NETWORK\_MQTT\_ADDRESS\_LENGTH}!MQTT@{MQTT}}
+\doxysubsubsection{\texorpdfstring{NETWORK\_MQTT\_ADDRESS\_LENGTH}{NETWORK\_MQTT\_ADDRESS\_LENGTH}}
+{\footnotesize\ttfamily \#define N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+Q\+T\+T\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+L\+E\+N\+G\+TH~64}
+
+Maximum length for the M\+Q\+TT address length. \mbox{\Hypertarget{group__netMQTT_ga55e1bc36a5758bdb6969d9e4c76cc81c}\label{group__netMQTT_ga55e1bc36a5758bdb6969d9e4c76cc81c}} 
+\index{MQTT@{MQTT}!NETWORK\_MQTT\_DEVICE\_TOKEN\_LENGTH@{NETWORK\_MQTT\_DEVICE\_TOKEN\_LENGTH}}
+\index{NETWORK\_MQTT\_DEVICE\_TOKEN\_LENGTH@{NETWORK\_MQTT\_DEVICE\_TOKEN\_LENGTH}!MQTT@{MQTT}}
+\doxysubsubsection{\texorpdfstring{NETWORK\_MQTT\_DEVICE\_TOKEN\_LENGTH}{NETWORK\_MQTT\_DEVICE\_TOKEN\_LENGTH}}
+{\footnotesize\ttfamily \#define N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+Q\+T\+T\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+O\+K\+E\+N\+\_\+\+L\+E\+N\+G\+TH~64}
+
+Maximum length for the M\+Q\+TT address length. \mbox{\Hypertarget{group__netMQTT_ga97a7f5e47e48e0e86467e9f27bd20e1e}\label{group__netMQTT_ga97a7f5e47e48e0e86467e9f27bd20e1e}} 
+\index{MQTT@{MQTT}!NETWORK\_MQTT\_QUEUES\_SIZE@{NETWORK\_MQTT\_QUEUES\_SIZE}}
+\index{NETWORK\_MQTT\_QUEUES\_SIZE@{NETWORK\_MQTT\_QUEUES\_SIZE}!MQTT@{MQTT}}
+\doxysubsubsection{\texorpdfstring{NETWORK\_MQTT\_QUEUES\_SIZE}{NETWORK\_MQTT\_QUEUES\_SIZE}}
+{\footnotesize\ttfamily \#define N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+Q\+T\+T\+\_\+\+Q\+U\+E\+U\+E\+S\+\_\+\+S\+I\+ZE~10}
+
+Size for the M\+Q\+TT queues. \mbox{\Hypertarget{group__netMQTT_ga701eefa2c49f91a4a4e15ca3a50a8388}\label{group__netMQTT_ga701eefa2c49f91a4a4e15ca3a50a8388}} 
+\index{MQTT@{MQTT}!NETWORK\_MQTT\_REFRESH\_PERIOD\_MS@{NETWORK\_MQTT\_REFRESH\_PERIOD\_MS}}
+\index{NETWORK\_MQTT\_REFRESH\_PERIOD\_MS@{NETWORK\_MQTT\_REFRESH\_PERIOD\_MS}!MQTT@{MQTT}}
+\doxysubsubsection{\texorpdfstring{NETWORK\_MQTT\_REFRESH\_PERIOD\_MS}{NETWORK\_MQTT\_REFRESH\_PERIOD\_MS}}
+{\footnotesize\ttfamily \#define N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+Q\+T\+T\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+MS~66}
+
+Refresh period for the M\+Q\+TT task, in milliseconds. \mbox{\Hypertarget{group__netMQTT_ga60d9dd8631376b5e42299e14c5fbabde}\label{group__netMQTT_ga60d9dd8631376b5e42299e14c5fbabde}} 
+\index{MQTT@{MQTT}!NETWORK\_MQTT\_TASK\_STACK\_SIZE@{NETWORK\_MQTT\_TASK\_STACK\_SIZE}}
+\index{NETWORK\_MQTT\_TASK\_STACK\_SIZE@{NETWORK\_MQTT\_TASK\_STACK\_SIZE}!MQTT@{MQTT}}
+\doxysubsubsection{\texorpdfstring{NETWORK\_MQTT\_TASK\_STACK\_SIZE}{NETWORK\_MQTT\_TASK\_STACK\_SIZE}}
+{\footnotesize\ttfamily \#define N\+E\+T\+W\+O\+R\+K\+\_\+\+M\+Q\+T\+T\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE $\ast$ 9}
+
+Stack size for the M\+Q\+TT task. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__netMQTT_ga121599152cfe4ef9ccf4b197566020de}\label{group__netMQTT_ga121599152cfe4ef9ccf4b197566020de}} 
+\index{MQTT@{MQTT}!netMQTT\_Config@{netMQTT\_Config}}
+\index{netMQTT\_Config@{netMQTT\_Config}!MQTT@{MQTT}}
+\doxysubsubsection{\texorpdfstring{netMQTT\_Config()}{netMQTT\_Config()}}
+{\footnotesize\ttfamily void net\+M\+Q\+T\+T\+\_\+\+Config (\begin{DoxyParamCaption}\item[{char $\ast$}]{address,  }\item[{char $\ast$}]{token,  }\item[{unsigned long}]{port,  }\item[{unsigned long}]{keepalive }\end{DoxyParamCaption})}
+
+
+
+Configures the credentials to be used in the M\+Q\+TT protocol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & Address of the remote server to connect to. \\
+\hline
+{\em token} & Access token to access the remote server. \\
+\hline
+{\em port} & Port to be used to connect the remote server. \\
+\hline
+{\em keepalive} & Keepalive time, in seconds, to be used in the connection. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if ready, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__netMQTT_ga14db8677fc69c33468fdd569254e5189}\label{group__netMQTT_ga14db8677fc69c33468fdd569254e5189}} 
+\index{MQTT@{MQTT}!netMQTT\_Init@{netMQTT\_Init}}
+\index{netMQTT\_Init@{netMQTT\_Init}!MQTT@{MQTT}}
+\doxysubsubsection{\texorpdfstring{netMQTT\_Init()}{netMQTT\_Init()}}
+{\footnotesize\ttfamily bool net\+M\+Q\+T\+T\+\_\+\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the net\+M\+Q\+TT A\+PI. 
+
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function must be called prior to any other net\+M\+Q\+TT functions. 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__netMQTT_gac08b5f8696b96f5067e82fd9e694e374}\label{group__netMQTT_gac08b5f8696b96f5067e82fd9e694e374}} 
+\index{MQTT@{MQTT}!netMQTT\_Publish@{netMQTT\_Publish}}
+\index{netMQTT\_Publish@{netMQTT\_Publish}!MQTT@{MQTT}}
+\doxysubsubsection{\texorpdfstring{netMQTT\_Publish()}{netMQTT\_Publish()}}
+{\footnotesize\ttfamily bool net\+M\+Q\+T\+T\+\_\+\+Publish (\begin{DoxyParamCaption}\item[{char $\ast$}]{key,  }\item[{char $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Publishes data to the previously configured M\+Q\+TT server. 
+
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__netMQTT_ga90972025151beaaa2ec9995a730f3dce}\label{group__netMQTT_ga90972025151beaaa2ec9995a730f3dce}} 
+\index{MQTT@{MQTT}!netMQTT\_Ready@{netMQTT\_Ready}}
+\index{netMQTT\_Ready@{netMQTT\_Ready}!MQTT@{MQTT}}
+\doxysubsubsection{\texorpdfstring{netMQTT\_Ready()}{netMQTT\_Ready()}}
+{\footnotesize\ttfamily bool net\+M\+Q\+T\+T\+\_\+\+Ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the M\+Q\+TT service is connected to the server and ready to be used. 
+
+\begin{DoxyReturn}{Returns}
+True if ready, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__netMQTT_ga9570650f7d7dd174fb6a6349573026c6}\label{group__netMQTT_ga9570650f7d7dd174fb6a6349573026c6}} 
+\index{MQTT@{MQTT}!netMQTT\_Start@{netMQTT\_Start}}
+\index{netMQTT\_Start@{netMQTT\_Start}!MQTT@{MQTT}}
+\doxysubsubsection{\texorpdfstring{netMQTT\_Start()}{netMQTT\_Start()}}
+{\footnotesize\ttfamily void net\+M\+Q\+T\+T\+\_\+\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the M\+Q\+TT task. 
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__netMQTT_ga70afb41479dde4f22cfb75c000463d19}\label{group__netMQTT_ga70afb41479dde4f22cfb75c000463d19}} 
+\index{MQTT@{MQTT}!netMQTT\_Stop@{netMQTT\_Stop}}
+\index{netMQTT\_Stop@{netMQTT\_Stop}!MQTT@{MQTT}}
+\doxysubsubsection{\texorpdfstring{netMQTT\_Stop()}{netMQTT\_Stop()}}
+{\footnotesize\ttfamily void net\+M\+Q\+T\+T\+\_\+\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops the M\+Q\+TT task. 
+
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}

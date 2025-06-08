@@ -1,0 +1,4 @@
+../src/netntp.c:49:6:netNTP_Init	16	static
+../src/netntp.c:67:8:netNTP_GetTime	32	static
+../src/netntp.c:82:13:netNTP_Task	32	static
+../src/netntp.c:95:8:netNTP_xGetTime	104	static

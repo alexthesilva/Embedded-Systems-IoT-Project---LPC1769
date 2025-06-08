@@ -1,0 +1,62 @@
+\hypertarget{group__PIR}{}\doxysection{Presence detecting sensor.}
+\label{group__PIR}\index{Presence detecting sensor.@{Presence detecting sensor.}}
+
+
+This package provides the interface for driving the presence detecting sensor in a multi-\/threaded manner.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__PIR_ga107f9dba8dc2a6a0d4b3711c9ec704b2}{R\+T\+O\+S\+\_\+\+P\+I\+R\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+MS}}~100
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{group__PIR_ga7492b201d1c0f2ec22cdfd3cafa95934}{rtos\+P\+I\+R\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the P\+IR Presence detecting sensor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__PIR_ga3022a1f8e96f683c200d4e5c255a5506}{rtos\+P\+I\+R\+\_\+\+Get\+Value}} ()
+\begin{DoxyCompactList}\small\item\em Gets the most recent presence detection value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This package provides the interface for driving the presence detecting sensor in a multi-\/threaded manner. 
+
+The sensor is connected to the microcontroller L\+P\+C1769 in the P2.\+12 pin. 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__PIR_ga107f9dba8dc2a6a0d4b3711c9ec704b2}\label{group__PIR_ga107f9dba8dc2a6a0d4b3711c9ec704b2}} 
+\index{Presence detecting sensor.@{Presence detecting sensor.}!RTOS\_PIR\_PERIOD\_MS@{RTOS\_PIR\_PERIOD\_MS}}
+\index{RTOS\_PIR\_PERIOD\_MS@{RTOS\_PIR\_PERIOD\_MS}!Presence detecting sensor.@{Presence detecting sensor.}}
+\doxysubsubsection{\texorpdfstring{RTOS\_PIR\_PERIOD\_MS}{RTOS\_PIR\_PERIOD\_MS}}
+{\footnotesize\ttfamily \#define R\+T\+O\+S\+\_\+\+P\+I\+R\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+MS~100}
+
+Period in milliseconds to update the presence detection value. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__PIR_ga3022a1f8e96f683c200d4e5c255a5506}\label{group__PIR_ga3022a1f8e96f683c200d4e5c255a5506}} 
+\index{Presence detecting sensor.@{Presence detecting sensor.}!rtosPIR\_GetValue@{rtosPIR\_GetValue}}
+\index{rtosPIR\_GetValue@{rtosPIR\_GetValue}!Presence detecting sensor.@{Presence detecting sensor.}}
+\doxysubsubsection{\texorpdfstring{rtosPIR\_GetValue()}{rtosPIR\_GetValue()}}
+{\footnotesize\ttfamily bool rtos\+P\+I\+R\+\_\+\+Get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the most recent presence detection value. 
+
+\begin{DoxyReturn}{Returns}
+True if presence was detected, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__PIR_ga7492b201d1c0f2ec22cdfd3cafa95934}\label{group__PIR_ga7492b201d1c0f2ec22cdfd3cafa95934}} 
+\index{Presence detecting sensor.@{Presence detecting sensor.}!rtosPIR\_Init@{rtosPIR\_Init}}
+\index{rtosPIR\_Init@{rtosPIR\_Init}!Presence detecting sensor.@{Presence detecting sensor.}}
+\doxysubsubsection{\texorpdfstring{rtosPIR\_Init()}{rtosPIR\_Init()}}
+{\footnotesize\ttfamily bool rtos\+P\+I\+R\+\_\+\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the P\+IR Presence detecting sensor. 
+
+\begin{DoxyReturn}{Returns}
+True if successful, false otherwise. 
+\end{DoxyReturn}

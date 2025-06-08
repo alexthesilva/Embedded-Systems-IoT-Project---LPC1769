@@ -1,0 +1,70 @@
+\hypertarget{rtoslcd_8h}{}\doxysection{C\+:/\+Users/alext/\+Desktop/\+S\+E/\+Workspace/\+Free\+R\+T\+O\+S-\/\+Drivers/inc/rtoslcd.h File Reference}
+\label{rtoslcd_8h}\index{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtoslcd.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtoslcd.h}}
+
+
+Contains the rtos\+L\+C\+D\+Text A\+PI.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}rtoslock.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lcdtext.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__rtosLCD_gadd727dddc29a757f507f30ee355ccba0}{L\+C\+D\+Text\+\_\+\+L\+I\+N\+ES}}~L\+C\+D\+Text\+\_\+\+L\+I\+N\+ES
+\item 
+\#define \mbox{\hyperlink{group__rtosLCD_gae0304a744b55bbfc24a672fcf4a5d4d6}{L\+C\+D\+Text\+\_\+\+C\+O\+L\+U\+M\+NS}}~\mbox{\hyperlink{group__rtosLCD_gadd727dddc29a757f507f30ee355ccba0}{L\+C\+D\+Text\+\_\+\+L\+I\+N\+ES}}
+\item 
+\#define \mbox{\hyperlink{group__rtosLCD_ga3a2d9bcb6d67197781bb7db28930b18a}{R\+T\+O\+S\+\_\+\+L\+C\+D\+\_\+\+T\+A\+S\+K\+\_\+\+S\+T\+A\+C\+K\+S\+I\+ZE}}~config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE $\ast$ 2
+\item 
+\#define \mbox{\hyperlink{group__rtosLCD_ga9f9709c0df0d8ad70d7989bfdc12d0a5}{R\+T\+O\+S\+\_\+\+L\+C\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+I\+ZE}}~10
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{group__rtosLCD_ga8677110746311b7ba2bb1a09ed5fb3e2}{rtos\+L\+C\+D\+Text\+\_\+\+Init}} ()
+\item 
+void \mbox{\hyperlink{group__rtosLCD_ga1cd8d1288bb7c2add970df582216628a}{rtos\+L\+C\+D\+Text\+\_\+\+Write\+Char}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, char c)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_ga87e13380e72769805da1c2eb8d6e9063}{rtos\+L\+C\+D\+Text\+\_\+\+Write\+String}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, const char $\ast$str)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_gadef3c25d048eb2eea8f556fc2684c6b4}{rtos\+L\+C\+D\+Text\+\_\+\+Write\+Line}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, const char $\ast$first\+Line, const char $\ast$second\+Line)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_ga471547c19b9f553f0f116c70e7ac9c7a}{rtos\+L\+C\+D\+Text\+\_\+\+Clear}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_ga63ac943ab6e9546579ab2ffba445a0d9}{rtos\+L\+C\+D\+Text\+\_\+\+Locate}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, int line, int column)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_ga7cdf977867e83cf34f8842bf683a45d4}{rtos\+L\+C\+D\+Text\+\_\+\+Cursor\+On}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_gad49f15324378c8cb707dc055dfab7231}{rtos\+L\+C\+D\+Text\+\_\+\+Cursor\+Off}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_gaacea072681567380f5c688a3ac484f33}{rtos\+L\+C\+D\+Text\+\_\+\+Create\+Char}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, unsigned char location, unsigned char charmap\mbox{[}$\,$\mbox{]}, int size)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_gadf7beff584c4450ebdd8f13344ddbebc}{rtos\+L\+C\+D\+Text\+\_\+\+On}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_gafdf1c1d6397373e9446235bbc028ad0d}{rtos\+L\+C\+D\+Text\+\_\+\+Off}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_gacd53d65f54df3b656384530eb83efe30}{rtos\+L\+C\+D\+Text\+\_\+\+Printf}} (\mbox{\hyperlink{group__rtosLOCK_gad29b16c57fd6f40710b91236a5b3b94c}{Lock\+State\+\_\+t}} lock, const char $\ast$fmt,...)
+\item 
+void \mbox{\hyperlink{group__rtosLCD_gaaf4bd9b04cd6646710f40fdcbc4c2ba0}{rtos\+L\+C\+D\+Text\+\_\+\+Lock\+Begin}} ()
+\item 
+void \mbox{\hyperlink{group__rtosLCD_gadb9d3069fb4881f73cc90f4151793676}{rtos\+L\+C\+D\+Text\+\_\+\+Lock\+End}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the rtos\+L\+C\+D\+Text A\+PI. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+17 jun 2023 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Alexandre Silva
+\end{DoxyAuthor}
+Copyright(\+C) 2023, Alexandre Silva All rights reserved.
+
+Software that is described herein is for illustrative purposes only which provides customers with programming information regarding the products. This software is supplied \char`\"{}\+A\+S I\+S\char`\"{} without any warranties. 

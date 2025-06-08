@@ -1,0 +1,15 @@
+../src/rtoslcd.c:46:6:rtosLCDText_ReceiverTask	24	static
+../src/rtoslcd.c:101:6:rtosLCDText_Init	16	static
+../src/rtoslcd.c:119:6:rtosLCDText_WriteString	24	static
+../src/rtoslcd.c:140:6:rtosLCDText_WriteLine	32	static
+../src/rtoslcd.c:165:6:rtosLCDText_Clear	24	static
+../src/rtoslcd.c:184:6:rtosLCDText_WriteChar	24	static
+../src/rtoslcd.c:202:6:rtosLCDText_Locate	32	static
+../src/rtoslcd.c:221:6:rtosLCDText_CursorOn	24	static
+../src/rtoslcd.c:238:6:rtosLCDText_CursorOff	24	static
+../src/rtoslcd.c:256:6:rtosLCDText_CreateChar	32	static
+../src/rtoslcd.c:278:6:rtosLCDText_On	24	static
+../src/rtoslcd.c:296:6:rtosLCDText_Off	24	static
+../src/rtoslcd.c:312:6:rtosLCDText_Printf	28	static
+../src/rtoslcd.c:336:6:rtosLCDText_LockBegin	8	static
+../src/rtoslcd.c:341:6:rtosLCDText_LockEnd	8	static

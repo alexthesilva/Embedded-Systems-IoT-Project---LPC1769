@@ -1,0 +1,13 @@
+../src/network.c:50:6:NETWORK_WiFiConnect	160	static
+../src/network.c:80:6:NETWORK_WiFiDisconnect	8	static
+../src/network.c:84:6:NETWORK_CheckWiFi	8	static
+../src/network.c:88:6:NETWORK_Setup	24	static
+../src/network.c:147:8:NETWORK_NTP	104	static
+../src/network.c:207:6:NETWORK_UDPStart	24	static
+../src/network.c:213:6:NETWORK_UDPClose	8	static
+../src/network.c:217:6:NETWORK_TCPClose	8	static
+../src/network.c:221:6:NETWORK_TCPStart	32	static
+../src/network.c:231:5:NETWORK_Send	24	static
+../src/network.c:260:5:NETWORK_Recv	40	static
+../src/network.c:302:13:MQTT_Task	336	static
+../src/network.c:400:6:NETWORK_MQTTInit	16	static

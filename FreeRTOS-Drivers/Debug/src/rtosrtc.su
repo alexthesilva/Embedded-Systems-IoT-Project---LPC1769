@@ -1,0 +1,7 @@
+../src/rtosrtc.c:27:6:rtosRTC_Task	40	static
+../src/rtosrtc.c:61:6:rtosRTC_Init	24	static
+../src/rtosrtc.c:81:6:rtosRTC_InitSeconds	24	static
+../src/rtosrtc.c:102:6:rtosRTC_GetValue	56	static
+../src/rtosrtc.c:114:6:rtosRTC_SetValue	56	static
+../src/rtosrtc.c:126:8:rtosRTC_GetSeconds	24	static
+../src/rtosrtc.c:139:6:rtosRTC_SetSeconds	56	static

@@ -1,0 +1,13 @@
+../src/uimenu.c:24:9:uiMENU_Generate	40	static
+../src/uimenu.c:43:6:uiMENU_Destroy	24	static
+../src/uimenu.c:56:6:uiMENU_Execute	56	static
+../src/uimenu.c:107:5:uiMENU_SelectOptions	96	dynamic
+../src/uimenu.c:162:6:uiMENU_Ask	24	static
+../src/uimenu.c:169:6:uiMENU_ExecuteCMD	64	static
+../src/uimenu.c:230:6:uiMENU_InputData	88	static
+../src/uimenu.c:375:8:uiMENU_FillString	24	static
+../src/uimenu.c:387:8:uiMENU_CenterString	40	static
+../src/uimenu.c:400:8:uiMENU_ItemizeString	16	static
+../src/uimenu.c:406:6:uiENCODER_Handle	32	static
+../src/uimenu.c:420:6:uiMENU_BlinkStr	56	dynamic
+../src/uimenu.c:441:6:uiMENU_BlinkStrClear	56	dynamic

@@ -1,0 +1,243 @@
+\indexentry{FreeRTOS-\/Drivers@{FreeRTOS-\/Drivers}|hyperpage}{5}
+\indexentry{Library information@{Library information}|hyperpage}{6}
+\indexentry{Library information@{Library information}!INFO\_GetVersion@{INFO\_GetVersion}|hyperpage}{6}
+\indexentry{INFO\_GetVersion@{INFO\_GetVersion}!Library information@{Library information}|hyperpage}{6}
+\indexentry{BH1750@{BH1750}|hyperpage}{7}
+\indexentry{BH1750@{BH1750}!RTOS\_BH1750\_QUEUES\_SIZE@{RTOS\_BH1750\_QUEUES\_SIZE}|hyperpage}{8}
+\indexentry{RTOS\_BH1750\_QUEUES\_SIZE@{RTOS\_BH1750\_QUEUES\_SIZE}!BH1750@{BH1750}|hyperpage}{8}
+\indexentry{BH1750@{BH1750}!RTOS\_BH1750\_TASK\_STACK\_SIZE@{RTOS\_BH1750\_TASK\_STACK\_SIZE}|hyperpage}{8}
+\indexentry{RTOS\_BH1750\_TASK\_STACK\_SIZE@{RTOS\_BH1750\_TASK\_STACK\_SIZE}!BH1750@{BH1750}|hyperpage}{8}
+\indexentry{BH1750@{BH1750}!BH1750MeasurementTimeEnum@{BH1750MeasurementTimeEnum}|hyperpage}{8}
+\indexentry{BH1750MeasurementTimeEnum@{BH1750MeasurementTimeEnum}!BH1750@{BH1750}|hyperpage}{8}
+\indexentry{DEFAULT\_MEASUREMENT\_TIME@{DEFAULT\_MEASUREMENT\_TIME}!BH1750@{BH1750}|hyperpage}{8}
+\indexentry{BH1750@{BH1750}!DEFAULT\_MEASUREMENT\_TIME@{DEFAULT\_MEASUREMENT\_TIME}|hyperpage}{8}
+\indexentry{MIN\_MEASUREMENT\_TIME@{MIN\_MEASUREMENT\_TIME}!BH1750@{BH1750}|hyperpage}{8}
+\indexentry{BH1750@{BH1750}!MIN\_MEASUREMENT\_TIME@{MIN\_MEASUREMENT\_TIME}|hyperpage}{8}
+\indexentry{MAX\_MEASUREMENT\_TIME@{MAX\_MEASUREMENT\_TIME}!BH1750@{BH1750}|hyperpage}{8}
+\indexentry{BH1750@{BH1750}!MAX\_MEASUREMENT\_TIME@{MAX\_MEASUREMENT\_TIME}|hyperpage}{8}
+\indexentry{BH1750@{BH1750}!BH1750ModeEnum@{BH1750ModeEnum}|hyperpage}{8}
+\indexentry{BH1750ModeEnum@{BH1750ModeEnum}!BH1750@{BH1750}|hyperpage}{8}
+\indexentry{UNCONFIGURED@{UNCONFIGURED}!BH1750@{BH1750}|hyperpage}{10}
+\indexentry{BH1750@{BH1750}!UNCONFIGURED@{UNCONFIGURED}|hyperpage}{10}
+\indexentry{CONTINUOUS\_HIGH\_RES\_MODE@{CONTINUOUS\_HIGH\_RES\_MODE}!BH1750@{BH1750}|hyperpage}{10}
+\indexentry{BH1750@{BH1750}!CONTINUOUS\_HIGH\_RES\_MODE@{CONTINUOUS\_HIGH\_RES\_MODE}|hyperpage}{10}
+\indexentry{CONTINUOUS\_HIGH\_RES\_MODE\_2@{CONTINUOUS\_HIGH\_RES\_MODE\_2}!BH1750@{BH1750}|hyperpage}{10}
+\indexentry{BH1750@{BH1750}!CONTINUOUS\_HIGH\_RES\_MODE\_2@{CONTINUOUS\_HIGH\_RES\_MODE\_2}|hyperpage}{10}
+\indexentry{CONTINUOUS\_LOW\_RES\_MODE@{CONTINUOUS\_LOW\_RES\_MODE}!BH1750@{BH1750}|hyperpage}{10}
+\indexentry{BH1750@{BH1750}!CONTINUOUS\_LOW\_RES\_MODE@{CONTINUOUS\_LOW\_RES\_MODE}|hyperpage}{10}
+\indexentry{ONE\_TIME\_HIGH\_RES\_MODE@{ONE\_TIME\_HIGH\_RES\_MODE}!BH1750@{BH1750}|hyperpage}{10}
+\indexentry{BH1750@{BH1750}!ONE\_TIME\_HIGH\_RES\_MODE@{ONE\_TIME\_HIGH\_RES\_MODE}|hyperpage}{10}
+\indexentry{ONE\_TIME\_HIGH\_RES\_MODE\_2@{ONE\_TIME\_HIGH\_RES\_MODE\_2}!BH1750@{BH1750}|hyperpage}{10}
+\indexentry{BH1750@{BH1750}!ONE\_TIME\_HIGH\_RES\_MODE\_2@{ONE\_TIME\_HIGH\_RES\_MODE\_2}|hyperpage}{10}
+\indexentry{ONE\_TIME\_LOW\_RES\_MODE@{ONE\_TIME\_LOW\_RES\_MODE}!BH1750@{BH1750}|hyperpage}{10}
+\indexentry{BH1750@{BH1750}!ONE\_TIME\_LOW\_RES\_MODE@{ONE\_TIME\_LOW\_RES\_MODE}|hyperpage}{10}
+\indexentry{BH1750@{BH1750}!rtosBH1750\_ConfigureMode@{rtosBH1750\_ConfigureMode}|hyperpage}{10}
+\indexentry{rtosBH1750\_ConfigureMode@{rtosBH1750\_ConfigureMode}!BH1750@{BH1750}|hyperpage}{10}
+\indexentry{BH1750@{BH1750}!rtosBH1750\_GetLight@{rtosBH1750\_GetLight}|hyperpage}{10}
+\indexentry{rtosBH1750\_GetLight@{rtosBH1750\_GetLight}!BH1750@{BH1750}|hyperpage}{10}
+\indexentry{BH1750@{BH1750}!rtosBH1750\_Init@{rtosBH1750\_Init}|hyperpage}{10}
+\indexentry{rtosBH1750\_Init@{rtosBH1750\_Init}!BH1750@{BH1750}|hyperpage}{10}
+\indexentry{BH1750@{BH1750}!rtosBH1750\_Ready@{rtosBH1750\_Ready}|hyperpage}{11}
+\indexentry{rtosBH1750\_Ready@{rtosBH1750\_Ready}!BH1750@{BH1750}|hyperpage}{11}
+\indexentry{BH1750@{BH1750}!rtosBH1750\_SetMeasurementTime@{rtosBH1750\_SetMeasurementTime}|hyperpage}{11}
+\indexentry{rtosBH1750\_SetMeasurementTime@{rtosBH1750\_SetMeasurementTime}!BH1750@{BH1750}|hyperpage}{11}
+\indexentry{ENCODER@{ENCODER}|hyperpage}{12}
+\indexentry{ENCODER@{ENCODER}!RTOS\_ENCODER\_QUEUES\_SIZE@{RTOS\_ENCODER\_QUEUES\_SIZE}|hyperpage}{13}
+\indexentry{RTOS\_ENCODER\_QUEUES\_SIZE@{RTOS\_ENCODER\_QUEUES\_SIZE}!ENCODER@{ENCODER}|hyperpage}{13}
+\indexentry{ENCODER@{ENCODER}!RTOS\_ENCODER\_TASK\_STACK\_SIZE@{RTOS\_ENCODER\_TASK\_STACK\_SIZE}|hyperpage}{13}
+\indexentry{RTOS\_ENCODER\_TASK\_STACK\_SIZE@{RTOS\_ENCODER\_TASK\_STACK\_SIZE}!ENCODER@{ENCODER}|hyperpage}{13}
+\indexentry{ENCODER@{ENCODER}!ButtonEnum@{ButtonEnum}|hyperpage}{13}
+\indexentry{ButtonEnum@{ButtonEnum}!ENCODER@{ENCODER}|hyperpage}{13}
+\indexentry{BUTTON\_NOTPRESSED@{BUTTON\_NOTPRESSED}!ENCODER@{ENCODER}|hyperpage}{13}
+\indexentry{ENCODER@{ENCODER}!BUTTON\_NOTPRESSED@{BUTTON\_NOTPRESSED}|hyperpage}{13}
+\indexentry{BUTTON\_PRESSED@{BUTTON\_PRESSED}!ENCODER@{ENCODER}|hyperpage}{13}
+\indexentry{ENCODER@{ENCODER}!BUTTON\_PRESSED@{BUTTON\_PRESSED}|hyperpage}{13}
+\indexentry{BUTTON\_HELD@{BUTTON\_HELD}!ENCODER@{ENCODER}|hyperpage}{13}
+\indexentry{ENCODER@{ENCODER}!BUTTON\_HELD@{BUTTON\_HELD}|hyperpage}{13}
+\indexentry{BUTTON\_RELEASE@{BUTTON\_RELEASE}!ENCODER@{ENCODER}|hyperpage}{13}
+\indexentry{ENCODER@{ENCODER}!BUTTON\_RELEASE@{BUTTON\_RELEASE}|hyperpage}{13}
+\indexentry{BUTTON\_CLICKED@{BUTTON\_CLICKED}!ENCODER@{ENCODER}|hyperpage}{13}
+\indexentry{ENCODER@{ENCODER}!BUTTON\_CLICKED@{BUTTON\_CLICKED}|hyperpage}{13}
+\indexentry{BUTTON\_DCLICKED@{BUTTON\_DCLICKED}!ENCODER@{ENCODER}|hyperpage}{13}
+\indexentry{ENCODER@{ENCODER}!BUTTON\_DCLICKED@{BUTTON\_DCLICKED}|hyperpage}{13}
+\indexentry{ENCODER@{ENCODER}!rtosENCODER\_GetButton@{rtosENCODER\_GetButton}|hyperpage}{13}
+\indexentry{rtosENCODER\_GetButton@{rtosENCODER\_GetButton}!ENCODER@{ENCODER}|hyperpage}{13}
+\indexentry{ENCODER@{ENCODER}!rtosENCODER\_GetValue@{rtosENCODER\_GetValue}|hyperpage}{14}
+\indexentry{rtosENCODER\_GetValue@{rtosENCODER\_GetValue}!ENCODER@{ENCODER}|hyperpage}{14}
+\indexentry{ENCODER@{ENCODER}!rtosENCODER\_Init@{rtosENCODER\_Init}|hyperpage}{14}
+\indexentry{rtosENCODER\_Init@{rtosENCODER\_Init}!ENCODER@{ENCODER}|hyperpage}{14}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{15}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_BUFFER\_SIZE@{RTOS\_ESPSERIAL\_BUFFER\_SIZE}|hyperpage}{16}
+\indexentry{RTOS\_ESPSERIAL\_BUFFER\_SIZE@{RTOS\_ESPSERIAL\_BUFFER\_SIZE}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{16}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_BUFFERREFRESH\_TIMEOUT@{RTOS\_ESPSERIAL\_BUFFERREFRESH\_TIMEOUT}|hyperpage}{16}
+\indexentry{RTOS\_ESPSERIAL\_BUFFERREFRESH\_TIMEOUT@{RTOS\_ESPSERIAL\_BUFFERREFRESH\_TIMEOUT}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{16}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_DEFAULT\_SETUP@{RTOS\_ESPSERIAL\_DEFAULT\_SETUP}|hyperpage}{16}
+\indexentry{RTOS\_ESPSERIAL\_DEFAULT\_SETUP@{RTOS\_ESPSERIAL\_DEFAULT\_SETUP}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{16}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_LONG\_PAUSE@{RTOS\_ESPSERIAL\_LONG\_PAUSE}|hyperpage}{16}
+\indexentry{RTOS\_ESPSERIAL\_LONG\_PAUSE@{RTOS\_ESPSERIAL\_LONG\_PAUSE}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{16}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_PRINTF\_DEBUG@{RTOS\_ESPSERIAL\_PRINTF\_DEBUG}|hyperpage}{16}
+\indexentry{RTOS\_ESPSERIAL\_PRINTF\_DEBUG@{RTOS\_ESPSERIAL\_PRINTF\_DEBUG}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{16}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_QUEUES\_SIZE@{RTOS\_ESPSERIAL\_QUEUES\_SIZE}|hyperpage}{17}
+\indexentry{RTOS\_ESPSERIAL\_QUEUES\_SIZE@{RTOS\_ESPSERIAL\_QUEUES\_SIZE}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{17}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_REFRESH\_PERIOD\_MS@{RTOS\_ESPSERIAL\_REFRESH\_PERIOD\_MS}|hyperpage}{17}
+\indexentry{RTOS\_ESPSERIAL\_REFRESH\_PERIOD\_MS@{RTOS\_ESPSERIAL\_REFRESH\_PERIOD\_MS}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{17}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_RESTORE\_ON\_DEFAULT\_SETUP@{RTOS\_ESPSERIAL\_RESTORE\_ON\_DEFAULT\_SETUP}|hyperpage}{17}
+\indexentry{RTOS\_ESPSERIAL\_RESTORE\_ON\_DEFAULT\_SETUP@{RTOS\_ESPSERIAL\_RESTORE\_ON\_DEFAULT\_SETUP}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{17}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_SETUP\_TASK\_STACK\_SIZE@{RTOS\_ESPSERIAL\_SETUP\_TASK\_STACK\_SIZE}|hyperpage}{17}
+\indexentry{RTOS\_ESPSERIAL\_SETUP\_TASK\_STACK\_SIZE@{RTOS\_ESPSERIAL\_SETUP\_TASK\_STACK\_SIZE}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{17}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_SETUP\_TIMEOUT@{RTOS\_ESPSERIAL\_SETUP\_TIMEOUT}|hyperpage}{17}
+\indexentry{RTOS\_ESPSERIAL\_SETUP\_TIMEOUT@{RTOS\_ESPSERIAL\_SETUP\_TIMEOUT}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{17}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!RTOS\_ESPSERIAL\_SHORT\_PAUSE@{RTOS\_ESPSERIAL\_SHORT\_PAUSE}|hyperpage}{17}
+\indexentry{RTOS\_ESPSERIAL\_SHORT\_PAUSE@{RTOS\_ESPSERIAL\_SHORT\_PAUSE}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{17}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!ESPState\_t@{ESPState\_t}|hyperpage}{17}
+\indexentry{ESPState\_t@{ESPState\_t}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{17}
+\indexentry{START@{START}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{18}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!START@{START}|hyperpage}{18}
+\indexentry{QUEUE@{QUEUE}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{18}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!QUEUE@{QUEUE}|hyperpage}{18}
+\indexentry{WAIT@{WAIT}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{18}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!WAIT@{WAIT}|hyperpage}{18}
+\indexentry{FAIL@{FAIL}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{18}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!FAIL@{FAIL}|hyperpage}{18}
+\indexentry{SUCCESS@{SUCCESS}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{18}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!SUCCESS@{SUCCESS}|hyperpage}{18}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_Clear@{rtosESPSERIAL\_Clear}|hyperpage}{18}
+\indexentry{rtosESPSERIAL\_Clear@{rtosESPSERIAL\_Clear}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{18}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_FindStr@{rtosESPSERIAL\_FindStr}|hyperpage}{18}
+\indexentry{rtosESPSERIAL\_FindStr@{rtosESPSERIAL\_FindStr}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{18}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_Init@{rtosESPSERIAL\_Init}|hyperpage}{18}
+\indexentry{rtosESPSERIAL\_Init@{rtosESPSERIAL\_Init}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{18}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_LockBegin@{rtosESPSERIAL\_LockBegin}|hyperpage}{19}
+\indexentry{rtosESPSERIAL\_LockBegin@{rtosESPSERIAL\_LockBegin}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{19}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_LockEnd@{rtosESPSERIAL\_LockEnd}|hyperpage}{19}
+\indexentry{rtosESPSERIAL\_LockEnd@{rtosESPSERIAL\_LockEnd}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{19}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_ReadLine@{rtosESPSERIAL\_ReadLine}|hyperpage}{19}
+\indexentry{rtosESPSERIAL\_ReadLine@{rtosESPSERIAL\_ReadLine}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{19}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_Recv@{rtosESPSERIAL\_Recv}|hyperpage}{20}
+\indexentry{rtosESPSERIAL\_Recv@{rtosESPSERIAL\_Recv}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{20}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_RecvByte@{rtosESPSERIAL\_RecvByte}|hyperpage}{20}
+\indexentry{rtosESPSERIAL\_RecvByte@{rtosESPSERIAL\_RecvByte}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{20}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_Refresh@{rtosESPSERIAL\_Refresh}|hyperpage}{20}
+\indexentry{rtosESPSERIAL\_Refresh@{rtosESPSERIAL\_Refresh}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{20}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_Send@{rtosESPSERIAL\_Send}|hyperpage}{21}
+\indexentry{rtosESPSERIAL\_Send@{rtosESPSERIAL\_Send}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{21}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_SendAT@{rtosESPSERIAL\_SendAT}|hyperpage}{21}
+\indexentry{rtosESPSERIAL\_SendAT@{rtosESPSERIAL\_SendAT}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{21}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_Setup@{rtosESPSERIAL\_Setup}|hyperpage}{22}
+\indexentry{rtosESPSERIAL\_Setup@{rtosESPSERIAL\_Setup}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{22}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_WaitResp@{rtosESPSERIAL\_WaitResp}|hyperpage}{22}
+\indexentry{rtosESPSERIAL\_WaitResp@{rtosESPSERIAL\_WaitResp}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{22}
+\indexentry{ESP8266 serial interface@{ESP8266 serial interface}!rtosESPSERIAL\_WaitStr@{rtosESPSERIAL\_WaitStr}|hyperpage}{22}
+\indexentry{rtosESPSERIAL\_WaitStr@{rtosESPSERIAL\_WaitStr}!ESP8266 serial interface@{ESP8266 serial interface}|hyperpage}{22}
+\indexentry{Text LCD@{Text LCD}|hyperpage}{24}
+\indexentry{Text LCD@{Text LCD}!LCDText\_COLUMNS@{LCDText\_COLUMNS}|hyperpage}{24}
+\indexentry{LCDText\_COLUMNS@{LCDText\_COLUMNS}!Text LCD@{Text LCD}|hyperpage}{24}
+\indexentry{Text LCD@{Text LCD}!LCDText\_LINES@{LCDText\_LINES}|hyperpage}{24}
+\indexentry{LCDText\_LINES@{LCDText\_LINES}!Text LCD@{Text LCD}|hyperpage}{24}
+\indexentry{Text LCD@{Text LCD}!RTOS\_LCD\_QUEUE\_SIZE@{RTOS\_LCD\_QUEUE\_SIZE}|hyperpage}{24}
+\indexentry{RTOS\_LCD\_QUEUE\_SIZE@{RTOS\_LCD\_QUEUE\_SIZE}!Text LCD@{Text LCD}|hyperpage}{24}
+\indexentry{Text LCD@{Text LCD}!RTOS\_LCD\_TASK\_STACKSIZE@{RTOS\_LCD\_TASK\_STACKSIZE}|hyperpage}{25}
+\indexentry{RTOS\_LCD\_TASK\_STACKSIZE@{RTOS\_LCD\_TASK\_STACKSIZE}!Text LCD@{Text LCD}|hyperpage}{25}
+\indexentry{Text LCD@{Text LCD}!rtosLCDText\_Clear@{rtosLCDText\_Clear}|hyperpage}{25}
+\indexentry{rtosLCDText\_Clear@{rtosLCDText\_Clear}!Text LCD@{Text LCD}|hyperpage}{25}
+\indexentry{Text LCD@{Text LCD}!rtosLCDText\_CreateChar@{rtosLCDText\_CreateChar}|hyperpage}{25}
+\indexentry{rtosLCDText\_CreateChar@{rtosLCDText\_CreateChar}!Text LCD@{Text LCD}|hyperpage}{25}
+\indexentry{Text LCD@{Text LCD}!rtosLCDText\_CursorOff@{rtosLCDText\_CursorOff}|hyperpage}{25}
+\indexentry{rtosLCDText\_CursorOff@{rtosLCDText\_CursorOff}!Text LCD@{Text LCD}|hyperpage}{25}
+\indexentry{Text LCD@{Text LCD}!rtosLCDText\_CursorOn@{rtosLCDText\_CursorOn}|hyperpage}{26}
+\indexentry{rtosLCDText\_CursorOn@{rtosLCDText\_CursorOn}!Text LCD@{Text LCD}|hyperpage}{26}
+\indexentry{Text LCD@{Text LCD}!rtosLCDText\_Init@{rtosLCDText\_Init}|hyperpage}{26}
+\indexentry{rtosLCDText\_Init@{rtosLCDText\_Init}!Text LCD@{Text LCD}|hyperpage}{26}
+\indexentry{Text LCD@{Text LCD}!rtosLCDText\_Locate@{rtosLCDText\_Locate}|hyperpage}{26}
+\indexentry{rtosLCDText\_Locate@{rtosLCDText\_Locate}!Text LCD@{Text LCD}|hyperpage}{26}
+\indexentry{Text LCD@{Text LCD}!rtosLCDText\_LockBegin@{rtosLCDText\_LockBegin}|hyperpage}{26}
+\indexentry{rtosLCDText\_LockBegin@{rtosLCDText\_LockBegin}!Text LCD@{Text LCD}|hyperpage}{26}
+\indexentry{Text LCD@{Text LCD}!rtosLCDText\_LockEnd@{rtosLCDText\_LockEnd}|hyperpage}{27}
+\indexentry{rtosLCDText\_LockEnd@{rtosLCDText\_LockEnd}!Text LCD@{Text LCD}|hyperpage}{27}
+\indexentry{Text LCD@{Text LCD}!rtosLCDText\_Off@{rtosLCDText\_Off}|hyperpage}{27}
+\indexentry{rtosLCDText\_Off@{rtosLCDText\_Off}!Text LCD@{Text LCD}|hyperpage}{27}
+\indexentry{Text LCD@{Text LCD}!rtosLCDText\_On@{rtosLCDText\_On}|hyperpage}{27}
+\indexentry{rtosLCDText\_On@{rtosLCDText\_On}!Text LCD@{Text LCD}|hyperpage}{27}
+\indexentry{Text LCD@{Text LCD}!rtosLCDText\_Printf@{rtosLCDText\_Printf}|hyperpage}{27}
+\indexentry{rtosLCDText\_Printf@{rtosLCDText\_Printf}!Text LCD@{Text LCD}|hyperpage}{27}
+\indexentry{Text LCD@{Text LCD}!rtosLCDText\_WriteChar@{rtosLCDText\_WriteChar}|hyperpage}{28}
+\indexentry{rtosLCDText\_WriteChar@{rtosLCDText\_WriteChar}!Text LCD@{Text LCD}|hyperpage}{28}
+\indexentry{Text LCD@{Text LCD}!rtosLCDText\_WriteLine@{rtosLCDText\_WriteLine}|hyperpage}{28}
+\indexentry{rtosLCDText\_WriteLine@{rtosLCDText\_WriteLine}!Text LCD@{Text LCD}|hyperpage}{28}
+\indexentry{Text LCD@{Text LCD}!rtosLCDText\_WriteString@{rtosLCDText\_WriteString}|hyperpage}{28}
+\indexentry{rtosLCDText\_WriteString@{rtosLCDText\_WriteString}!Text LCD@{Text LCD}|hyperpage}{28}
+\indexentry{LED@{LED}|hyperpage}{29}
+\indexentry{LED@{LED}!RTOS\_LED\_QUEUES\_SIZE@{RTOS\_LED\_QUEUES\_SIZE}|hyperpage}{29}
+\indexentry{RTOS\_LED\_QUEUES\_SIZE@{RTOS\_LED\_QUEUES\_SIZE}!LED@{LED}|hyperpage}{29}
+\indexentry{LED@{LED}!RTOS\_LED\_TASK\_STACK\_SIZE@{RTOS\_LED\_TASK\_STACK\_SIZE}|hyperpage}{29}
+\indexentry{RTOS\_LED\_TASK\_STACK\_SIZE@{RTOS\_LED\_TASK\_STACK\_SIZE}!LED@{LED}|hyperpage}{29}
+\indexentry{LED@{LED}!rtosLED\_GetState@{rtosLED\_GetState}|hyperpage}{29}
+\indexentry{rtosLED\_GetState@{rtosLED\_GetState}!LED@{LED}|hyperpage}{29}
+\indexentry{LED@{LED}!rtosLED\_Init@{rtosLED\_Init}|hyperpage}{29}
+\indexentry{rtosLED\_Init@{rtosLED\_Init}!LED@{LED}|hyperpage}{29}
+\indexentry{LED@{LED}!rtosLED\_Off@{rtosLED\_Off}|hyperpage}{30}
+\indexentry{rtosLED\_Off@{rtosLED\_Off}!LED@{LED}|hyperpage}{30}
+\indexentry{LED@{LED}!rtosLED\_On@{rtosLED\_On}|hyperpage}{30}
+\indexentry{rtosLED\_On@{rtosLED\_On}!LED@{LED}|hyperpage}{30}
+\indexentry{LED@{LED}!rtosLED\_Toggle@{rtosLED\_Toggle}|hyperpage}{30}
+\indexentry{rtosLED\_Toggle@{rtosLED\_Toggle}!LED@{LED}|hyperpage}{30}
+\indexentry{Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}|hyperpage}{31}
+\indexentry{Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}!LockState\_t@{LockState\_t}|hyperpage}{31}
+\indexentry{LockState\_t@{LockState\_t}!Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}|hyperpage}{31}
+\indexentry{LOCK\_NONE@{LOCK\_NONE}!Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}|hyperpage}{31}
+\indexentry{Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}!LOCK\_NONE@{LOCK\_NONE}|hyperpage}{31}
+\indexentry{LOCK\_BEGIN@{LOCK\_BEGIN}!Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}|hyperpage}{31}
+\indexentry{Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}!LOCK\_BEGIN@{LOCK\_BEGIN}|hyperpage}{31}
+\indexentry{LOCK\_CONTINUE@{LOCK\_CONTINUE}!Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}|hyperpage}{31}
+\indexentry{Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}!LOCK\_CONTINUE@{LOCK\_CONTINUE}|hyperpage}{31}
+\indexentry{LOCK\_END@{LOCK\_END}!Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}|hyperpage}{31}
+\indexentry{Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}!LOCK\_END@{LOCK\_END}|hyperpage}{31}
+\indexentry{LOCK\_SINGLE@{LOCK\_SINGLE}!Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}|hyperpage}{31}
+\indexentry{Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}!LOCK\_SINGLE@{LOCK\_SINGLE}|hyperpage}{31}
+\indexentry{Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}!rtosLOCK\_Begin@{rtosLOCK\_Begin}|hyperpage}{32}
+\indexentry{rtosLOCK\_Begin@{rtosLOCK\_Begin}!Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}|hyperpage}{32}
+\indexentry{Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}!rtosLOCK\_Destroy@{rtosLOCK\_Destroy}|hyperpage}{32}
+\indexentry{rtosLOCK\_Destroy@{rtosLOCK\_Destroy}!Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}|hyperpage}{32}
+\indexentry{Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}!rtosLOCK\_End@{rtosLOCK\_End}|hyperpage}{32}
+\indexentry{rtosLOCK\_End@{rtosLOCK\_End}!Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}|hyperpage}{32}
+\indexentry{Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}!rtosLOCK\_Init@{rtosLOCK\_Init}|hyperpage}{33}
+\indexentry{rtosLOCK\_Init@{rtosLOCK\_Init}!Task locking mechanism for FreeRTOS@{Task locking mechanism for FreeRTOS}|hyperpage}{33}
+\indexentry{Presence detecting sensor.@{Presence detecting sensor.}|hyperpage}{34}
+\indexentry{Presence detecting sensor.@{Presence detecting sensor.}!RTOS\_PIR\_PERIOD\_MS@{RTOS\_PIR\_PERIOD\_MS}|hyperpage}{34}
+\indexentry{RTOS\_PIR\_PERIOD\_MS@{RTOS\_PIR\_PERIOD\_MS}!Presence detecting sensor.@{Presence detecting sensor.}|hyperpage}{34}
+\indexentry{Presence detecting sensor.@{Presence detecting sensor.}!rtosPIR\_GetValue@{rtosPIR\_GetValue}|hyperpage}{34}
+\indexentry{rtosPIR\_GetValue@{rtosPIR\_GetValue}!Presence detecting sensor.@{Presence detecting sensor.}|hyperpage}{34}
+\indexentry{Presence detecting sensor.@{Presence detecting sensor.}!rtosPIR\_Init@{rtosPIR\_Init}|hyperpage}{34}
+\indexentry{rtosPIR\_Init@{rtosPIR\_Init}!Presence detecting sensor.@{Presence detecting sensor.}|hyperpage}{34}
+\indexentry{Real Time Clock@{Real Time Clock}|hyperpage}{35}
+\indexentry{Real Time Clock@{Real Time Clock}!RTOS\_RTC\_QUEUES\_SIZE@{RTOS\_RTC\_QUEUES\_SIZE}|hyperpage}{35}
+\indexentry{RTOS\_RTC\_QUEUES\_SIZE@{RTOS\_RTC\_QUEUES\_SIZE}!Real Time Clock@{Real Time Clock}|hyperpage}{35}
+\indexentry{Real Time Clock@{Real Time Clock}!RTOS\_RTC\_TASK\_STACK\_SIZE@{RTOS\_RTC\_TASK\_STACK\_SIZE}|hyperpage}{35}
+\indexentry{RTOS\_RTC\_TASK\_STACK\_SIZE@{RTOS\_RTC\_TASK\_STACK\_SIZE}!Real Time Clock@{Real Time Clock}|hyperpage}{35}
+\indexentry{Real Time Clock@{Real Time Clock}!rtosRTC\_GetSeconds@{rtosRTC\_GetSeconds}|hyperpage}{35}
+\indexentry{rtosRTC\_GetSeconds@{rtosRTC\_GetSeconds}!Real Time Clock@{Real Time Clock}|hyperpage}{35}
+\indexentry{Real Time Clock@{Real Time Clock}!rtosRTC\_GetValue@{rtosRTC\_GetValue}|hyperpage}{35}
+\indexentry{rtosRTC\_GetValue@{rtosRTC\_GetValue}!Real Time Clock@{Real Time Clock}|hyperpage}{35}
+\indexentry{Real Time Clock@{Real Time Clock}!rtosRTC\_Init@{rtosRTC\_Init}|hyperpage}{36}
+\indexentry{rtosRTC\_Init@{rtosRTC\_Init}!Real Time Clock@{Real Time Clock}|hyperpage}{36}
+\indexentry{Real Time Clock@{Real Time Clock}!rtosRTC\_InitSeconds@{rtosRTC\_InitSeconds}|hyperpage}{36}
+\indexentry{rtosRTC\_InitSeconds@{rtosRTC\_InitSeconds}!Real Time Clock@{Real Time Clock}|hyperpage}{36}
+\indexentry{Real Time Clock@{Real Time Clock}!rtosRTC\_SetSeconds@{rtosRTC\_SetSeconds}|hyperpage}{36}
+\indexentry{rtosRTC\_SetSeconds@{rtosRTC\_SetSeconds}!Real Time Clock@{Real Time Clock}|hyperpage}{36}
+\indexentry{Real Time Clock@{Real Time Clock}!rtosRTC\_SetValue@{rtosRTC\_SetValue}|hyperpage}{38}
+\indexentry{rtosRTC\_SetValue@{rtosRTC\_SetValue}!Real Time Clock@{Real Time Clock}|hyperpage}{38}
+\indexentry{Timeout@{Timeout}|hyperpage}{39}
+\indexentry{Timeout@{Timeout}!rtosTIMEOUT\_Expired@{rtosTIMEOUT\_Expired}|hyperpage}{39}
+\indexentry{rtosTIMEOUT\_Expired@{rtosTIMEOUT\_Expired}!Timeout@{Timeout}|hyperpage}{39}
+\indexentry{Timeout@{Timeout}!rtosTIMEOUT\_Start@{rtosTIMEOUT\_Start}|hyperpage}{39}
+\indexentry{rtosTIMEOUT\_Start@{rtosTIMEOUT\_Start}!Timeout@{Timeout}|hyperpage}{39}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/info.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/info.h}|hyperpage}{41}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtosbh1750.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtosbh1750.h}|hyperpage}{41}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtosencoder.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtosencoder.h}|hyperpage}{43}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtosespserial.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtosespserial.h}|hyperpage}{44}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtoslcd.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtoslcd.h}|hyperpage}{45}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtosled.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtosled.h}|hyperpage}{46}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtoslock.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtoslock.h}|hyperpage}{47}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtospir.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtospir.h}|hyperpage}{48}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtosrtc.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtosrtc.h}|hyperpage}{49}
+\indexentry{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtostimeout.h@{C:/Users/alext/Desktop/SE/Workspace/FreeRTOS-\/Drivers/inc/rtostimeout.h}|hyperpage}{49}
