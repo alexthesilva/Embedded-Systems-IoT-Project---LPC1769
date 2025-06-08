@@ -1,4 +1,4 @@
-# Embedded Systems IoT Project – Ethernet Lighting Management (FreeRTOS)
+# Embedded Systems IoT Project – Ethernet Lighting Management (FreeRTOS) - 2023
 
 ## 🎯 Objective
 
